@@ -1371,6 +1371,7 @@ layout activity_main
 layout activity_popup
 layout activity_res_auth
 layout activity_res_signup
+layout activity_res_singup2
 layout activity_signin
 layout activity_signup
 layout activity_signup2
@@ -1491,6 +1492,7 @@ string search_menu_title
 string signup_actionbar
 string status_bar_notification_info_overflow
 string title_activity_juso
+string title_activity_res_signup2
 string title_for_ssl_warning
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

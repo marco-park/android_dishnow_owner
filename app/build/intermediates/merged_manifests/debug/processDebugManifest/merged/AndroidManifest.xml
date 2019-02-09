@@ -27,7 +27,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.kakao.sdk.AppKey"
@@ -49,6 +48,8 @@
         <activity android:name="com.picke.dishnow_owner.PopupActivity" />
         <activity android:name="com.picke.dishnow_owner.JusoActivity" />
         <activity android:name="com.picke.dishnow_owner.SigninActivity" />
+        <activity android:name="com.picke.dishnow_owner.Utility.ResSingupActivity1" />
+        <activity android:name="com.picke.dishnow_owner.ResSingupActivity2" />
         <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:configChanges="orientation|screenSize"

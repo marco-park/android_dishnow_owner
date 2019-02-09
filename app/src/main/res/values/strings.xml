@@ -2,4 +2,5 @@
     <string name="app_name">dishnow_owner</string>
     <string name="title_activity_juso">JusoActivity</string>
     <string name="signup_actionbar">회원가입</string>
+    <string name="title_activity_res_signup2">ResSignupActivity2</string>
 </resources>
