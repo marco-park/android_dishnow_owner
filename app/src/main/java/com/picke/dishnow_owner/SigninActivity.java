@@ -104,27 +104,42 @@ public class SigninActivity extends AppCompatActivity {
                     String resauth = jsonObject.getString("owner_resauth");
 
                     if(success==true){
-                        Intent intent = new Intent(SigninActivity.this,MainActivity.class);
-                        Intent intent_resauth = new Intent(SigninActivity.this,RegisterGuideActivity.class);
-                        intent.putExtra("o_id",id);
-                        intent.putExtra("o_name",name);
-                        intent.putExtra("o_resauth",resauth);
-                        intent_resauth.putExtra("o_id",id);
-                        intent_resauth.putExtra("o_name",name);
-                        intent_resauth.putExtra("o_resauth",resauth);
-                        if(resauth.equals("1")){
+                        Intent intent2 = new Intent(SigninActivity.this,MainActivity.class);
+                        Intent intent1 = new Intent(SigninActivity.this,JudgingActivity.class);
+                        Intent intent0 = new Intent(SigninActivity.this,RegisterGuideActivity.class);
+
+                        intent0.putExtra("o_id",id);
+                        intent0.putExtra("o_name",name);
+                        intent0.putExtra("o_resauth",resauth);
+                        intent1.putExtra("o_id",id);
+                        intent1.putExtra("o_name",name);
+                        intent1.putExtra("o_resauth",resauth);
+                        intent2.putExtra("o_id",id);
+                        intent2.putExtra("o_name",name);
+                        intent2.putExtra("o_resauth",resauth);
+                        if(resauth.equals("2")){
                             SharedPreferences.Editor autologin = auto.edit();
                             autologin.putString("o_resauth",resauth);
                             autologin.commit();
-                            startActivity(intent);
+                            startActivity(intent2);
+                            finish();
+                        }
+                        else if(resauth.equals("1")){
+                            SharedPreferences.Editor autologin = auto.edit();
+                            autologin.putString("o_resauth",resauth);
+                            autologin.commit();
+                            startActivity(intent1);
                             finish();
                         }
                         else{
-                            startActivity(intent_resauth);
+                            SharedPreferences.Editor autologin = auto.edit();
+                            autologin.putString("o_resauth",resauth);
+                            autologin.commit();
+                            startActivity(intent0);
                             finish();
                         }
                     }else{
-                        wronginput.setText("아이디 또는 비밀번호가 일치하지 않습니다.");
+                        wronginput.setText("이메일 또는 비밀번호가 일치하지 않습니다.");
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -197,7 +212,7 @@ public class SigninActivity extends AppCompatActivity {
                         }
                         finish();
                     }else{
-                        wronginput.setText("아이디 또는 비밀번호가 일치하지 않습니다.");
+                        wronginput.setText("이메일 또는 비밀번호가 일치하지 않습니다.");
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -236,17 +251,15 @@ public class SigninActivity extends AppCompatActivity {
             }
         });
 
-
         signupbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 userAuthClass.setOwnerid(Eidinput.getText().toString());
                 userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
-                Intent intent = new Intent(SigninActivity.this,JoinActivity.class);
+                Intent intent = new Intent(SigninActivity.this,TermsActivity.class);
                 startActivity(intent);
                 //finish();
             }
         });
     }
-
 }

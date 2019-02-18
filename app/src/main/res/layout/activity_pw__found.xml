@@ -61,6 +61,7 @@
         android:gravity="bottom"
         >
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:fontFamily="@font/nanumsquareotfregular"
             android:layout_centerHorizontal="true"
             android:id="@+id/repass2_gobackbutton"

@@ -38,7 +38,9 @@
             android:name=".JoinActivity"
             android:label="" />
         <activity android:name=".JoinedActivity" />
-        <activity android:name=".Registration_BusinessActivity" />
+        <activity
+            android:name=".Registration_BusinessActivity"
+            android:label="" />
         <activity android:name=".PopupActivity" />
         <activity android:name=".Utility.JusoActivity" />
         <activity
@@ -59,7 +61,29 @@
             android:name=".Additional_InfoActivity"
             android:label="" />
         <activity android:name=".Change_PWActivity" />
-        <activity android:name=".PW_FoundActivity"></activity>
+        <activity android:name=".PW_FoundActivity" />
+        <activity
+            android:name=".TermsActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TermsServiceActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TermsIndividualInfoActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TermsLocationActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TermsMarketingReceiveActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MyActivity" />
+        <activity android:name=".PopupCallActivity" />
     </application>
 
 </manifest>

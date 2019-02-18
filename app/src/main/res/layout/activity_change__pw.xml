@@ -48,6 +48,7 @@
             android:textSize="14sp"
             />
         <EditText
+            android:inputType="textPassword"
             android:id="@+id/repass_pass1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,18 +56,29 @@
             android:textSize="16sp"
             android:layout_marginTop="9dp"
             android:hint="영문, 숫자 6~15자의 비밀번호를 설정하세요."
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/input"
             android:singleLine="true"
-            android:lines="1"
+            android:paddingTop="1dp"
+            android:textColorHint="@color/color_bolder"
             />
+        <TextView
+            android:id="@+id/change_pw_passworderror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:textColor="#E60012"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nanumsquareotfbold"
             android:textSize="14sp"
             android:text="신규 비밀번호 확인"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="12dp"
             />
         <EditText
+            android:inputType="textPassword"
             android:fontFamily="@font/nanumsquareotfregular"
             android:id="@+id/repass_pass2"
             android:layout_width="match_parent"
@@ -74,9 +86,19 @@
             android:layout_marginTop="9dp"
             android:hint="비밀번호를 다시 한 번 입력하세요"
             android:textSize="16sp"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/input"
             android:singleLine="true"
-            android:lines="1"
+            android:paddingTop="1dp"
+            android:textColorHint="@color/color_bolder"
             />
+        <TextView
+            android:id="@+id/change_pw_passnotmatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:textColor="#E60012"/>
 
     </LinearLayout>
 
@@ -88,6 +110,7 @@
         android:gravity="bottom"
         >
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:fontFamily="@font/nanumsquareotfregular"
             android:layout_centerHorizontal="true"
             android:id="@+id/repass_button"

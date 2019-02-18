@@ -26,6 +26,9 @@
         android:textColor="#FFFFFF"
         android:text="for 사장님" />
     <EditText
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/input"
+        android:singleLine="true"
         android:fontFamily="@font/nanumsquareotfregular"
         android:id="@+id/signin_idinput"
         android:layout_width="245dp"
@@ -35,9 +38,12 @@
         android:layout_marginTop="250dp"
         android:textColor="#FFFFFF"
         android:paddingTop="1dp"
-        android:hint="아이디" />
+        android:hint="이메일"/>
 
     <EditText
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/input"
+        android:singleLine="true"
         android:fontFamily="@font/nanumsquareotfregular"
         android:id="@+id/signin_passwordinput"
         android:layout_width="245dp"
@@ -92,7 +98,7 @@
         android:layout_centerHorizontal="true"
         android:background="#00ff0000"
         android:layout_below="@id/signin_loginButton"
-        android:text="아이디 또는 비밀번호를 잊으셨나요?"
+        android:text="이메일 또는 비밀번호를 잊으셨나요?"
          />
     <Button
         android:fontFamily="@font/nanumsquareotfregular"

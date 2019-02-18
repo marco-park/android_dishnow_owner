@@ -70,15 +70,20 @@
                 android:textSize="14sp"
                 android:textColor="#555555"
                 android:fontFamily="@font/nanumsquareotfregular"
-                android:text="아이디"/>
+                android:text="이메일"/>
             <android.support.v7.widget.AppCompatEditText
+                android:layout_marginTop="9dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/signup_ownerid"
                 android:textColorHint="@color/color_bolder"
-                android:hint="4~20자의 아이디를 입력하세요."
+                android:hint="이메일을 입력하세요."
                 android:fontFamily="@font/nanumsquareotfregular"
                 android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/input"
+                android:singleLine="true"
+                android:paddingTop="1dp"
                 />
             <TextView
                 android:id="@+id/signup_iderror"
@@ -97,6 +102,7 @@
                 android:textColor="#555555"
                 />
         <EditText
+            android:layout_marginTop="9dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/signup_ownerpassword"
@@ -105,6 +111,10 @@
             android:textColorHint="@color/color_bolder"
             android:inputType="textPassword"
             android:fontFamily="@font/nanumsquareotfregular"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/input"
+            android:singleLine="true"
+            android:paddingTop="1dp"
             />
             <TextView
                 android:id="@+id/signup_passworderror"
@@ -124,14 +134,19 @@
                 />
 
             <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/signup_ownerpassword_repeat"
+                android:layout_marginTop="9dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_ownerpassword_repeat"
                 android:textColorHint="@color/color_bolder"
                 android:inputType="textPassword"
                 android:fontFamily="@font/nanumsquareotfregular"
-            android:hint="비밀번호를 다시 한번 입력하세요."
+                android:hint="비밀번호를 다시 한번 입력하세요."
                 android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/input"
+                android:singleLine="true"
+                android:paddingTop="1dp"
                />
             <TextView
                 android:id="@+id/signup_passwordoverlaperror"

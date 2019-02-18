@@ -46,7 +46,9 @@
             android:name="com.picke.dishnow_owner.JoinActivity"
             android:label="" />
         <activity android:name="com.picke.dishnow_owner.JoinedActivity" />
-        <activity android:name="com.picke.dishnow_owner.Registration_BusinessActivity" />
+        <activity
+            android:name="com.picke.dishnow_owner.Registration_BusinessActivity"
+            android:label="" />
         <activity android:name="com.picke.dishnow_owner.PopupActivity" />
         <activity android:name="com.picke.dishnow_owner.Utility.JusoActivity" />
         <activity
@@ -68,6 +70,28 @@
             android:label="" />
         <activity android:name="com.picke.dishnow_owner.Change_PWActivity" />
         <activity android:name="com.picke.dishnow_owner.PW_FoundActivity" />
+        <activity
+            android:name="com.picke.dishnow_owner.TermsActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.picke.dishnow_owner.TermsServiceActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.picke.dishnow_owner.TermsIndividualInfoActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.picke.dishnow_owner.TermsLocationActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.picke.dishnow_owner.TermsMarketingReceiveActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.picke.dishnow_owner.MyActivity" />
+        <activity android:name="com.picke.dishnow_owner.PopupCallActivity" />
         <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:configChanges="orientation|screenSize"

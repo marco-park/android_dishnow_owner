@@ -57,7 +57,7 @@
         android:layout_centerHorizontal="true"
         android:layout_height="50dp"
         android:textSize="20sp"
-        android:id="@+id/res_info_2_button"
+        android:id="@+id/judging_okaybutton"
         android:text="확인"
         android:textColor="@color/color_violet"
         style="?android:attr/borderlessButtonStyle"

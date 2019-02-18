@@ -37,17 +37,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="bottom">
+
         <Button
-            android:layout_centerHorizontal="true"
             android:id="@+id/ressignup_signupbutton"
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="262dp"
             android:layout_height="50dp"
-            android:textSize="18sp"
-            android:fontFamily="@font/nanumsquareotfregular"
-            android:textColor="@color/color_violet"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:background="@drawable/auth_phone_button"
-            style="?android:attr/borderlessButtonStyle"
-            android:text="다음" />
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:text="다음"
+            android:textColor="@color/color_violet"
+            android:textSize="18sp" />
     </RelativeLayout>
 
     <LinearLayout
@@ -70,7 +72,7 @@
 
 
         <TextView
-            android:layout_marginTop="21dp"
+            android:layout_marginTop="43dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
@@ -78,6 +80,7 @@
             android:fontFamily="@font/nanumsquareotfregular"
             android:text="사업자번호"/>
         <android.support.v7.widget.AppCompatEditText
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/color_bolder"
@@ -85,9 +88,13 @@
             android:id="@+id/ressignup_resnum"
             android:hint="'-'를 뺀 11자리 사업자번호를 입력하세요."
             android:textSize="16sp"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/input"
+            android:singleLine="true"
+            android:paddingTop="1dp"
             />
         <TextView
-            android:layout_marginTop="31dp"
+            android:layout_marginTop="32dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nanumsquareotfregular"
@@ -96,6 +103,7 @@
             android:textColor="#555555"
             />
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -108,6 +116,10 @@
                 android:fontFamily="@font/nanumsquareotfregular"
                 android:hint="사본 파일을 등록하세요."
                 android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/input"
+                android:singleLine="true"
+                android:paddingTop="1dp"
                 />
 
             <Button
@@ -132,10 +144,11 @@
             android:text="사업주명"
             android:fontFamily="@font/nanumsquareotfregular"
             android:textColor="#555555"
-            android:layout_marginTop="31dp"
+            android:layout_marginTop="32dp"
             />
 
         <EditText
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/color_bolder"
@@ -143,6 +156,10 @@
             android:fontFamily="@font/nanumsquareotfregular"
             android:hint="사업주명을 입력하세요."
             android:textSize="16sp"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/input"
+            android:singleLine="true"
+            android:paddingTop="1dp"
             />
         <TextView
             android:id="@+id/signup2_phoneautherror"

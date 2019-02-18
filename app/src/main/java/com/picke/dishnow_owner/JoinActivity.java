@@ -12,6 +12,7 @@ import android.text.InputType;
 import android.text.TextWatcher;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -98,7 +99,7 @@ public class JoinActivity extends AppCompatActivity {
                     JSONObject jsonObject = new JSONObject(response);
                     boolean success = jsonObject.getBoolean("success");
                     if(success==false) {
-                        errorid.setText("이미 사용중인 아이디입니다.");
+                        errorid.setText("이미 사용중인 이메일입니다.");
                         Eownerid.setCompoundDrawablesWithIntrinsicBounds(null, null, image_no, null);
                         Eownerid.getBackground().setColorFilter(getResources().getColor(R.color.color_red), PorterDuff.Mode.SRC_ATOP);
                         flag1=false;
@@ -133,23 +134,49 @@ public class JoinActivity extends AppCompatActivity {
                 if(!isFocused)
                 {
                     ownerid = Eownerid.getText().toString();
-                   // Eownerid.setCompoundDrawablesWithIntrinsicBounds(null,null,image,null);
+                    // Eownerid.setCompoundDrawablesWithIntrinsicBounds(null,null,image,null);
                     requestQueue.add(StringRequest2);
+                }
+                if(Eownerpassword.getText().toString().length()==0) {
+                    errorpassword.setText("");
+                    Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
+                if(Eownerpassword2.getText().toString().length()==0) {
+                    errorpassword2.setText("");
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
                 }
             }
         });
 
-
-
         Eownerpassword.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
+                if(Eownerpassword.getText().toString().length()==0) {
+                    errorpassword.setText("");
+                    Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
+                if(Eownerpassword2.getText().toString().length()==0) {
+                    errorpassword2.setText("");
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+                if(Eownerpassword.getText().toString().length()==0) {
+                    errorpassword.setText("");
+                    Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
+                if(Eownerpassword2.getText().toString().length()==0) {
+                    errorpassword2.setText("");
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
             }
 
             @Override
@@ -165,33 +192,112 @@ public class JoinActivity extends AppCompatActivity {
                     Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null,null,image_ok,null);
                     flag2=true;
                 }
-            }
-        });
-
-        Eownerpassword2.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if(Eownerpassword.getText().toString().equals(Eownerpassword2.getText().toString())){
+                if(Eownerpassword.getText().toString().equals(Eownerpassword2.getText().toString())
+                        &&Eownerpassword2.getText().toString().length()!=0){
                     errorpassword2.setText("");
                     Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_violet),PorterDuff.Mode.SRC_ATOP);
                     flag3=true;
                     Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null,null,image_ok,null);
-                }else if(Eownerpassword2.getText().toString().length()!=0){
+                }else if(Eownerpassword2.getText().toString().length()!=0) {
                     errorpassword2.setText("비밀번호가 일치하지 않습니다.");
                     Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null,null,image_no,null);
                     Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
                     flag3=false;
                 }
+                if(Eownerpassword.getText().toString().length()==0) {
+                    errorpassword.setText("");
+                    Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
+                if(Eownerpassword2.getText().toString().length()==0) {
+                    errorpassword2.setText("");
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
+            }
+        });
+        Eownerpassword2.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(Eownerpassword.getText().toString().equals(Eownerpassword2.getText().toString())
+                        &&Eownerpassword2.getText().toString().length()!=0){
+                    errorpassword2.setText("");
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_violet),PorterDuff.Mode.SRC_ATOP);
+                    flag3=true;
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null,null,image_ok,null);
+                }else if(Eownerpassword2.getText().toString().length()!=0) {
+                    errorpassword2.setText("비밀번호가 일치하지 않습니다.");
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null,null,image_no,null);
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
+                    flag3=false;
+                }
+                if(Eownerpassword.getText().toString().length()==0) {
+                    errorpassword.setText("");
+                    Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
+                if(Eownerpassword2.getText().toString().length()==0) {
+                    errorpassword2.setText("");
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
+
+            }
+        });
+        Eownerpassword2.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                if(Eownerpassword.getText().toString().length()==0) {
+                    errorpassword.setText("");
+                    Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
+                if(Eownerpassword2.getText().toString().length()==0) {
+                    errorpassword2.setText("");
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(Eownerpassword.getText().toString().equals(Eownerpassword2.getText().toString())
+                        &&Eownerpassword2.getText().toString().length()!=0){
+                    errorpassword2.setText("");
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_violet),PorterDuff.Mode.SRC_ATOP);
+                    flag3=true;
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null,null,image_ok,null);
+                }else if(Eownerpassword2.getText().toString().length()!=0) {
+                    errorpassword2.setText("비밀번호가 일치하지 않습니다.");
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null,null,image_no,null);
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
+                    flag3=false;
+                }
+                if(Eownerpassword.getText().toString().length()==0) {
+                    errorpassword.setText("");
+                    Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
+                if(Eownerpassword2.getText().toString().length()==0) {
+                    errorpassword2.setText("");
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-
+                if(Eownerpassword.getText().toString().length()==0) {
+                    errorpassword.setText("");
+                    Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
+                if(Eownerpassword2.getText().toString().length()==0) {
+                    errorpassword2.setText("");
+                    Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                }
             }
         });
 
