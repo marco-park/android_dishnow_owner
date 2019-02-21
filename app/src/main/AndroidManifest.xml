@@ -26,64 +26,124 @@
 
         <activity
             android:name=".SigninActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".JoinActivity"
-            android:label="" />
-        <activity android:name=".JoinedActivity" />
+            android:screenOrientation="portrait"
+            android:label=""
+            />
+        <activity
+            android:name=".JoinedActivity"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".Registration_BusinessActivity"
-            android:label="" />
-        <activity android:name=".PopupActivity" />
-        <activity android:name=".Utility.JusoActivity" />
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".PopupActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Utility.JusoActivity"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".VerificationActivity"
-            android:label="" />
+            android:label=""
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".Registration_RestaurantActivity"
-            android:label="" />
+            android:label=""
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".FindidpassActivity"
-            android:label="" />
+            android:label=""
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".FindemailActivity"
-            android:label="" />
-        <activity android:name=".RegisterGuideActivity" />
-        <activity android:name=".JudgingActivity" />
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".RegisterGuideActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".JudgingActivity"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".Additional_InfoActivity"
-            android:label="" />
-        <activity android:name=".Change_PWActivity" />
-        <activity android:name=".PW_FoundActivity" />
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Change_PWActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".PW_FoundActivity"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".TermsActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".TermsServiceActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".TermsIndividualInfoActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".TermsLocationActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".TermsMarketingReceiveActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MyActivity" />
-        <activity android:name=".PopupCallActivity" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".MyActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".PopupCallActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".OnWaitActivity"
+            android:screenOrientation="portrait"
+            />
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/anim_slide_in_left" />
     </application>
 
 </manifest>

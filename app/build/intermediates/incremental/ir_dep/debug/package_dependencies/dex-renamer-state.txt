@@ -1,4 +1,4 @@
-#Tue Feb 12 23:31:22 KST 2019
-base.0=/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/transforms/dexMerger/debug/10
+#Thu Feb 21 13:17:29 KST 2019
+base.0=/Users/spark/Downloads/android_dishnow_owner (1)/app/build/intermediates/transforms/dexMerger/debug/10
 path.0=classes.dex
 renamed.0=classes.dex

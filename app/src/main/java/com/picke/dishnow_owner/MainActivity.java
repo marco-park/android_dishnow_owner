@@ -2,43 +2,31 @@ package com.picke.dishnow_owner;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Handler;
-import android.os.Parcelable;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.JsonReader;
-import android.util.Log;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.picke.dishnow_owner.Owner_User.ReservationClass;
+import com.picke.dishnow_owner.Owner_User.UserInfoClass;
+import com.picke.dishnow_owner.Utility.RecyclerAdapter;
 
-import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.ArrayList;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
-import io.socket.emitter.Emitter;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -53,6 +41,20 @@ public class MainActivity extends AppCompatActivity {
     Handler handler = null;
     String res_id;
     private Vibrator vibrator;
+    private LinearLayout Lreservation;
+    private ImageView Ireservation;
+    private TextView Treservation;
+
+    private LinearLayout Lwaitmatching;
+    private ImageView Iwaitmatching;
+    private TextView Twaitmatching;
+
+    private LinearLayout Lmy;
+    private ImageView Imy;
+    private TextView Tmy;
+    //
+
+    private UserInfoClass userInfoClass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,8 +63,29 @@ public class MainActivity extends AppCompatActivity {
         tv = findViewById(R.id.main_show);
         vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
 
-        intent = getIntent();
-        res_id=intent.getStringExtra("o_id");
+        Lreservation = findViewById(R.id.main_rescompletelayout);
+        Ireservation = findViewById(R.id.main_reservation_imageview);
+        Treservation = findViewById(R.id.main_reservation_txtview);
+
+        Lwaitmatching = findViewById(R.id.main_waitmatchinglayout);
+        Iwaitmatching = findViewById(R.id.main_wait_matching_imageview);
+        Twaitmatching = findViewById(R.id.main_wait_matching_txtview);
+
+        Lmy = findViewById(R.id.main_mymenulayout);
+        Imy = findViewById(R.id.main_my_imageview);
+        Tmy = findViewById(R.id.main_my_txtview);
+
+        Ireservation.getBackground().setColorFilter(getResources().getColor(R.color.color_violet),PorterDuff.Mode.SRC_ATOP);
+        Treservation.setTextColor(getResources().getColor(R.color.color_violet));
+
+        Iwaitmatching.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+        Twaitmatching.setTextColor(getResources().getColor(R.color.color_bolder));
+
+        Imy.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
+        Tmy.setTextColor(getResources().getColor(R.color.color_bolder));
+
+        userInfoClass = UserInfoClass.getInstance(getApplicationContext());
+        res_id = userInfoClass.getuId();
 
         try {
             mSocket = IO.socket("http://ec2-18-218-206-167.us-east-2.compute.amazonaws.com:3000");
@@ -85,19 +108,41 @@ public class MainActivity extends AppCompatActivity {
                 JsonParser jsonParsers = new JsonParser();
                 JsonObject jsonObject = (JsonObject) jsonParsers.parse(objects[0].toString());
                 runOnUiThread(()->{
-                        Intent intent = new Intent(MainActivity.this, PopupActivity.class);
+                        Intent intent = new Intent(MainActivity.this, PopupCallActivity.class);
                         intent.putExtra("user_numbers", jsonObject.get("user_numbers").toString());
                         intent.putExtra("user_time", jsonObject.get("user_time").toString());
                         intent.putExtra("user_id", jsonObject.get("user_id").toString());
-                        intent.putExtra("res_id", res_id);
-                        //startActivity(intent);
-                        //finish();
+                        startActivity(intent);
+                        finish();
                 });
             });
             mSocket.connect();
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        Lwaitmatching.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,OnWaitActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.xml.anim_slide_in_right, R.xml.anim_slide_out_left);
+                finish();
+                overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
+
+            }
+        });
+        Lmy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,MyActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.xml.anim_slide_in_right ,R.xml.anim_slide_out_left);
+                finish();
+                overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
+
+            }
+        });
     }
 
     @Override
@@ -120,4 +165,5 @@ public class MainActivity extends AppCompatActivity {
         mSocket.emit("res_id", jsonObject_id);
         mSocket.connect();
     }
+
 }

@@ -33,7 +33,7 @@ public class JudgingActivity extends AppCompatActivity {
         requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
         userInfoClass = UserInfoClass.getInstance(getApplicationContext());
 
-        Bokaybutton.findViewById(R.id.judging_okaybutton);
+        Bokaybutton = findViewById(R.id.judging_okaybutton);
 
         final StringRequest stringRequest = new StringRequest(Request.Method.POST, feed_url, new Response.Listener<String>() {
             @Override
@@ -59,7 +59,7 @@ public class JudgingActivity extends AppCompatActivity {
         Bokaybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(JudgingActivity.this,SigninActivity.class);
+                Intent intent = new Intent(JudgingActivity.this, SigninActivity.class);
                 startActivity(intent);
                 finish();
             }

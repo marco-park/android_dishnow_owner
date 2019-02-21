@@ -27,6 +27,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.picke.dishnow_owner.Owner_User.UserAuthClass;
+import com.picke.dishnow_owner.Owner_User.UserInfoClass;
 import com.picke.dishnow_owner.Utility.VolleySingleton;
 
 import org.json.JSONException;
@@ -50,8 +51,9 @@ public class SigninActivity extends AppCompatActivity {
 
     private RequestQueue requestQueue;
     private UserAuthClass userAuthClass;
+    private UserInfoClass userInfoClass;
 
-    private final String login_url = "http://claor123.cafe24.com/Login.php";
+    private final String login_url = "https://claor123.cafe24.com/Login.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +62,7 @@ public class SigninActivity extends AppCompatActivity {
 
         requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
         userAuthClass = UserAuthClass.getInstance(getApplicationContext());
+        userInfoClass = UserInfoClass.getInstance(getApplicationContext());
 
         //  TODO: Permission Check
         if(Build.VERSION.SDK_INT>=23&&ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -99,24 +102,18 @@ public class SigninActivity extends AppCompatActivity {
                 try {
                     JSONObject jsonObject = new JSONObject(response);
                     boolean success = jsonObject.getBoolean("success");
-                    String name = jsonObject.getString("owner_name");
-                    String id = jsonObject.getString("id");
                     String resauth = jsonObject.getString("owner_resauth");
+                    String id = jsonObject.getString("uid");
 
                     if(success==true){
+                        userAuthClass.setOwnerid(Eidinput.getText().toString());
+                        userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
+                        userAuthClass.setUid(id);
+                        userInfoClass.setuId(id);
                         Intent intent2 = new Intent(SigninActivity.this,MainActivity.class);
                         Intent intent1 = new Intent(SigninActivity.this,JudgingActivity.class);
                         Intent intent0 = new Intent(SigninActivity.this,RegisterGuideActivity.class);
 
-                        intent0.putExtra("o_id",id);
-                        intent0.putExtra("o_name",name);
-                        intent0.putExtra("o_resauth",resauth);
-                        intent1.putExtra("o_id",id);
-                        intent1.putExtra("o_name",name);
-                        intent1.putExtra("o_resauth",resauth);
-                        intent2.putExtra("o_id",id);
-                        intent2.putExtra("o_name",name);
-                        intent2.putExtra("o_resauth",resauth);
                         if(resauth.equals("2")){
                             SharedPreferences.Editor autologin = auto.edit();
                             autologin.putString("o_resauth",resauth);
@@ -149,7 +146,7 @@ public class SigninActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("spark123","errorv");
+                Log.d("spark123",error.getLocalizedMessage());
             }
         }) {
             @Override
@@ -162,7 +159,7 @@ public class SigninActivity extends AppCompatActivity {
         };
 
         if(loginid!=null&&loginpassword!=null){
-            //requestQueue.add(StringRequest2);  TODO: For Auto Login
+            requestQueue.add(StringRequest2);
         }
 
         signupbutton = findViewById(R.id.signin_signupButton);
@@ -184,33 +181,43 @@ public class SigninActivity extends AppCompatActivity {
                 try {
                     JSONObject jsonObject = new JSONObject(response);
                     boolean success = jsonObject.getBoolean("success");
-                    String name = jsonObject.getString("owner_name");
-                    String id = jsonObject.getString("id");
                     String resauth = jsonObject.getString("owner_resauth");
+                    String id = jsonObject.getString("uid");
 
                     if(success==true){
-                        Intent intent = new Intent(SigninActivity.this,MainActivity.class);
-                        Intent intent_resauth = new Intent(SigninActivity.this,RegisterGuideActivity.class);
-                        intent.putExtra("o_id",id);
-                        intent.putExtra("o_name",name);
-                        intent.putExtra("o_resauth",resauth);
-                        intent_resauth.putExtra("o_id",id);
-                        intent_resauth.putExtra("o_name",name);
-                        intent_resauth.putExtra("o_resauth",resauth);
+                        userAuthClass.setOwnerid(Eidinput.getText().toString());
+                        userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
+                        userAuthClass.setUid(id);
+                        userInfoClass.setuId(id);
+                        Intent intent2 = new Intent(SigninActivity.this,MainActivity.class);
+                        Intent intent1 = new Intent(SigninActivity.this,JudgingActivity.class);
+                        Intent intent0 = new Intent(SigninActivity.this,RegisterGuideActivity.class);
+
                         SharedPreferences.Editor autologin = auto.edit();
-                        autologin.putString("id",id);
-                        autologin.putString("o_name",name);
                         autologin.putString("o_resauth", resauth);
-                        autologin.putString("o_id",idinput);
-                        autologin.putString("o_password",passwordinput);
+                        autologin.putString("o_id", idinput);
+                        autologin.putString("o_password", passwordinput);
                         autologin.commit();
-                        if(resauth.equals("1")){
-                            startActivity(intent);
+
+                        if(resauth.equals("2")){
+                            autologin.putString("o_resauth",resauth);
+                            autologin.commit();
+                            startActivity(intent2);
+                            finish();
+                        }
+                        else if(resauth.equals("1")){
+                            autologin.putString("o_resauth",resauth);
+                            autologin.commit();
+                            startActivity(intent1);
+                            finish();
                         }
                         else{
-                            startActivity(intent_resauth);
+                            autologin.putString("o_resauth",resauth);
+                            autologin.commit();
+                            startActivity(intent0);
+                            finish();
                         }
-                        finish();
+
                     }else{
                         wronginput.setText("이메일 또는 비밀번호가 일치하지 않습니다.");
                     }
@@ -222,7 +229,7 @@ public class SigninActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("spark123","errorv");
+                Log.d("spark123",error.getLocalizedMessage());
             }
         }) {
             @Override
@@ -258,7 +265,6 @@ public class SigninActivity extends AppCompatActivity {
                 userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
                 Intent intent = new Intent(SigninActivity.this,TermsActivity.class);
                 startActivity(intent);
-                //finish();
             }
         });
     }

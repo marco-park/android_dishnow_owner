@@ -1023,6 +1023,7 @@ drawable design_snackbar_background
 drawable dishnow_logo_purple
 drawable dishnow_logo_white
 drawable header_background
+drawable hollow_button
 drawable ic_bubble
 drawable ic_dot
 drawable ic_icon_call
@@ -1063,6 +1064,7 @@ drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable next_button
+drawable next_gra_button
 drawable next_white_button
 drawable notification_action_background
 drawable notification_bg
@@ -1205,6 +1207,10 @@ id input
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id item_user_arrivetime
+id item_user_calltime
+id item_user_number
+id item_userid
 id join_birtherror_textview
 id judging_okaybutton
 id juso_webview
@@ -1222,9 +1228,17 @@ id login_method_icon
 id login_method_layout
 id login_method_text
 id login_title_text
+id main_bottom
+id main_my_imageview
+id main_my_txtview
 id main_mymenulayout
+id main_recyclerView
 id main_rescompletelayout
+id main_reservation_imageview
+id main_reservation_txtview
 id main_show
+id main_wait_matching_imageview
+id main_wait_matching_txtview
 id main_waitmatchinglayout
 id masked
 id message
@@ -1233,6 +1247,10 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id my_mymenulayout
+id my_recyclerView
+id my_rescompletelayout
+id my_waitmatchinglayout
 id navigation_header_container
 id never
 id none
@@ -1240,6 +1258,10 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id onwait_mymenulayout
+id onwait_recyclerView
+id onwait_rescompletelayout
+id onwait_waitmatchinglayout
 id outline
 id ownername
 id ownerphonenum
@@ -1484,6 +1506,7 @@ layout activity_juso
 layout activity_kakao_webview
 layout activity_main
 layout activity_my
+layout activity_on_wait
 layout activity_popup
 layout activity_popup_call
 layout activity_pw__found
@@ -1522,6 +1545,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recycle_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2193,3 +2217,7 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml anim_slide_in_left
+xml anim_slide_in_right
+xml anim_slide_out_left
+xml anim_slide_out_right

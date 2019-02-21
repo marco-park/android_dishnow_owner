@@ -77,7 +77,7 @@
             android:textColor="#555555"
             android:text="음식점 이름"/>
         <android.support.v7.widget.AppCompatEditText
-            android:layout_marginTop="9dp"
+            android:layout_marginTop="11dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/res_info_res_name"
@@ -89,7 +89,6 @@
             android:imeOptions="actionNext"
             android:nextFocusForward="@+id/input"
             android:singleLine="true"
-            android:paddingTop="1dp"
             />
         <TextView
             android:layout_width="wrap_content"

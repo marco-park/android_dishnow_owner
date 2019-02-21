@@ -27,6 +27,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme.NoActionBar" >
         <meta-data
             android:name="com.kakao.sdk.AppKey"
@@ -34,6 +35,7 @@
 
         <activity
             android:name="com.picke.dishnow_owner.SigninActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,57 +43,97 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.picke.dishnow_owner.MainActivity" />
+        <activity
+            android:name="com.picke.dishnow_owner.MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.picke.dishnow_owner.JoinActivity"
-            android:label="" />
-        <activity android:name="com.picke.dishnow_owner.JoinedActivity" />
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.picke.dishnow_owner.JoinedActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.picke.dishnow_owner.Registration_BusinessActivity"
-            android:label="" />
-        <activity android:name="com.picke.dishnow_owner.PopupActivity" />
-        <activity android:name="com.picke.dishnow_owner.Utility.JusoActivity" />
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.picke.dishnow_owner.PopupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.picke.dishnow_owner.Utility.JusoActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.picke.dishnow_owner.VerificationActivity"
-            android:label="" />
+            android:label=""
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.picke.dishnow_owner.Registration_RestaurantActivity"
-            android:label="" />
+            android:label=""
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.picke.dishnow_owner.FindidpassActivity"
-            android:label="" />
+            android:label=""
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.picke.dishnow_owner.FindemailActivity"
-            android:label="" />
-        <activity android:name="com.picke.dishnow_owner.RegisterGuideActivity" />
-        <activity android:name="com.picke.dishnow_owner.JudgingActivity" />
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.picke.dishnow_owner.RegisterGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.picke.dishnow_owner.JudgingActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.picke.dishnow_owner.Additional_InfoActivity"
-            android:label="" />
-        <activity android:name="com.picke.dishnow_owner.Change_PWActivity" />
-        <activity android:name="com.picke.dishnow_owner.PW_FoundActivity" />
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.picke.dishnow_owner.Change_PWActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.picke.dishnow_owner.PW_FoundActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.picke.dishnow_owner.TermsActivity"
             android:label=""
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.picke.dishnow_owner.TermsServiceActivity"
             android:label=""
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.picke.dishnow_owner.TermsIndividualInfoActivity"
             android:label=""
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.picke.dishnow_owner.TermsLocationActivity"
             android:label=""
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.picke.dishnow_owner.TermsMarketingReceiveActivity"
             android:label=""
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.picke.dishnow_owner.MyActivity" />
-        <activity android:name="com.picke.dishnow_owner.PopupCallActivity" />
+        <activity
+            android:name="com.picke.dishnow_owner.MyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.picke.dishnow_owner.PopupCallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.picke.dishnow_owner.OnWaitActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/anim_slide_in_left" />
+
         <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:configChanges="orientation|screenSize"

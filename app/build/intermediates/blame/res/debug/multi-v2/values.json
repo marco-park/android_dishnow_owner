@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/spark/Downloads/android_dishnow_owner (1)/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/06be3be95d9df7c402cc06df2736580d/res/values/values.xml",
@@ -61,24 +61,7 @@
                     }
                 },
                 {
-                    "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1,3,2",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "17,131,69",
-                        "endColumns": "50,49,60",
-                        "endOffsets": "63,176,125"
-                    },
-                    "to": {
-                        "startLines": "2268,2312,2314",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "138945,143022,143143",
-                        "endColumns": "50,49,60",
-                        "endOffsets": "138991,143067,143199"
-                    }
-                },
-                {
-                    "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/values/dimens.xml",
+                    "source": "/Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/res/values/dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -92,6 +75,42 @@
                         "startOffsets": "128068",
                         "endColumns": "41",
                         "endOffsets": "128105"
+                    }
+                },
+                {
+                    "source": "/Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,20,10,22,17",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "57,737,364,831,642",
+                        "endLines": "8,20,15,22,19",
+                        "endColumns": "12,90,12,80,12",
+                        "endOffsets": "356,823,634,907,731"
+                    },
+                    "to": {
+                        "startLines": "2325,2331,2332,2338,3972",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "143990,144289,144379,144643,251739",
+                        "endLines": "2330,2331,2337,2338,3974",
+                        "endColumns": "12,89,12,79,12",
+                        "endOffsets": "144284,144374,144638,144718,251826"
+                    }
+                },
+                {
+                    "source": "/Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1,3,2",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "17,131,69",
+                        "endColumns": "50,49,60",
+                        "endOffsets": "63,176,125"
+                    },
+                    "to": {
+                        "startLines": "2268,2312,2314",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "138945,143022,143143",
+                        "endColumns": "50,49,60",
+                        "endOffsets": "138991,143067,143199"
                     }
                 },
                 {
@@ -130,23 +149,6 @@
                         "endLines": "20,195,196,197,198,1004,2032,2033,2034,2366,3755,3758,3761",
                         "endColumns": "51,60,61,61,63,24,58,56,53,12,12,12,12",
                         "endOffsets": "1021,10132,10194,10256,10320,55194,124310,124367,124421,146583,236782,236908,237036"
-                    }
-                },
-                {
-                    "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "4,2,3,8,9,5,6,7",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "157,57,105,344,391,204,249,297",
-                        "endColumns": "45,46,50,45,46,43,46,45",
-                        "endOffsets": "198,99,151,385,433,243,291,338"
-                    },
-                    "to": {
-                        "startLines": "199,200,201,202,203,204,205,206",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "10325,10371,10418,10469,10515,10562,10606,10653",
-                        "endColumns": "45,46,50,45,46,43,46,45",
-                        "endOffsets": "10366,10413,10464,10510,10557,10601,10648,10694"
                     }
                 },
                 {
@@ -205,22 +207,20 @@
                     }
                 },
                 {
-                    "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/values/styles.xml",
+                    "source": "/Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "3,20,10,22,17",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "57,737,364,831,642",
-                        "endLines": "8,20,15,22,19",
-                        "endColumns": "12,90,12,80,12",
-                        "endOffsets": "356,823,634,907,731"
+                        "startLines": "4,2,3,8,9,5,6,7",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "157,57,105,344,391,204,249,297",
+                        "endColumns": "45,46,50,45,46,43,46,45",
+                        "endOffsets": "198,99,151,385,433,243,291,338"
                     },
                     "to": {
-                        "startLines": "2325,2331,2332,2338,3972",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "143990,144289,144379,144643,251739",
-                        "endLines": "2330,2331,2337,2338,3974",
-                        "endColumns": "12,89,12,79,12",
-                        "endOffsets": "144284,144374,144638,144718,251826"
+                        "startLines": "199,200,201,202,203,204,205,206",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "10325,10371,10418,10469,10515,10562,10606,10653",
+                        "endColumns": "45,46,50,45,46,43,46,45",
+                        "endOffsets": "10366,10413,10464,10510,10557,10601,10648,10694"
                     }
                 },
                 {

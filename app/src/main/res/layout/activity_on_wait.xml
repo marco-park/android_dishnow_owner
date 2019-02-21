@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="32dp"
+    >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/main_bottom"
+        android:id="@+id/onwait_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F0"/>
+
+    <RelativeLayout
+        android:id="@+id/main_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="bottom"
+        >
+
+        <View
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_bolder"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/onwait_rescompletelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/main_reservation_imageview"
+                        android:layout_width="69dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="-15dp"
+                        android:layout_marginRight="-15dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/ic_icon_reservation"
+                        android:backgroundTint="@color/color_bolder" />
+                    <TextView
+                        android:id="@+id/main_reservation_txtview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:gravity="center"
+                        android:text="예약 완료"
+                        android:textColor="@color/color_bolder"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_alignParentRight="true"
+                        android:layout_width="1dp"
+                        android:layout_height="60dp"
+                        android:background="@color/color_bolder"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/onwait_waitmatchinglayout"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/main_wait_matching_imageview"
+                        android:layout_width="69dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_icon_reservation"
+                        android:backgroundTint="@color/color_bolder" />
+                    <TextView
+                        android:id="@+id/main_wait_matching_txtview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:gravity="center"
+                        android:text="매칭 대기"
+                        android:textColor="@color/color_bolder"
+                        android:textSize="15sp" />
+                    <View
+                        android:layout_alignParentRight="true"
+                        android:layout_width="1dp"
+                        android:layout_height="60dp"
+                        android:background="@color/color_bolder"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/onwait_mymenulayout"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp">
+                    <ImageView
+                        android:id="@+id/main_my_imageview"
+                        android:layout_width="69dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/ic_icon_reservation"
+                        android:backgroundTint="@color/color_bolder" />
+                    <TextView
+                        android:id="@+id/main_my_txtview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:gravity="center"
+                        android:text="My"
+                        android:textColor="@color/color_bolder"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -67,12 +67,16 @@ public class Registration_RestaurantActivity extends AppCompatActivity {
         Eresadd_num.setText(userInfoClass.getResadd_num());
         Eresaddress.setText(userInfoClass.getResaddress());
         Eresadd_detail.setText(userInfoClass.getResadd_detail());
+        Eresname.setText(userInfoClass.getResname());
+        Eresphone.setText(userInfoClass.getResphone());
 
         final Geocoder geocoder = new Geocoder(this);
 
         Btfindaddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                userInfoClass.setResname(Eresname.getText().toString());
+                userInfoClass.setResphone(Eresphone.getText().toString());
                 startActivity(new Intent(Registration_RestaurantActivity.this,JusoActivity.class));
                 finish();
             }
@@ -103,9 +107,11 @@ public class Registration_RestaurantActivity extends AppCompatActivity {
                 }
 
                 requestQueue.add(stringRequest2);
-                startActivity(new Intent(Registration_RestaurantActivity.this,JudgingActivity.class));
+                Intent intent = new Intent(Registration_RestaurantActivity.this,JudgingActivity.class);
+                startActivity(intent);
                 finish();
                 //TODO ALL PAGE MUST BE FINISHED
+
             }
         });
     }
