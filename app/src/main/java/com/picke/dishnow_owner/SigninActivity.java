@@ -110,7 +110,7 @@ public class SigninActivity extends AppCompatActivity {
                         userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
                         userAuthClass.setUid(id);
                         userInfoClass.setuId(id);
-                        Intent intent2 = new Intent(SigninActivity.this,MainActivity.class);
+                        Intent intent2 = new Intent(SigninActivity.this, HomeActivity.class);
                         Intent intent1 = new Intent(SigninActivity.this,JudgingActivity.class);
                         Intent intent0 = new Intent(SigninActivity.this,RegisterGuideActivity.class);
 
@@ -159,7 +159,7 @@ public class SigninActivity extends AppCompatActivity {
         };
 
         if(loginid!=null&&loginpassword!=null){
-            requestQueue.add(StringRequest2);
+           requestQueue.add(StringRequest2);
         }
 
         signupbutton = findViewById(R.id.signin_signupButton);
@@ -189,7 +189,7 @@ public class SigninActivity extends AppCompatActivity {
                         userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
                         userAuthClass.setUid(id);
                         userInfoClass.setuId(id);
-                        Intent intent2 = new Intent(SigninActivity.this,MainActivity.class);
+                        Intent intent2 = new Intent(SigninActivity.this, HomeActivity.class);
                         Intent intent1 = new Intent(SigninActivity.this,JudgingActivity.class);
                         Intent intent0 = new Intent(SigninActivity.this,RegisterGuideActivity.class);
 

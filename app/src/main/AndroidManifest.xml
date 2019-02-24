@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -20,127 +21,124 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MenuActivity"></activity>
+        <activity
+            android:name=".BookedActivity"
+            android:label=""
+            android:screenOrientation="portrait"></activity>
+
         <meta-data
-            android:name="com.kakao.sdk.AppKey"
-            android:value="6b32b4ba0498283ab49ee7db948eeeb1" />
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
 
         <activity
             android:name=".SigninActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".Utility.FireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Utility.SocketService"></service>
+        <service android:name=".Utility.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
         <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            />
+            android:name=".HomeActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
         <activity
             android:name=".JoinActivity"
-            android:screenOrientation="portrait"
             android:label=""
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".JoinedActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Registration_BusinessActivity"
             android:label=""
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".PopupActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".Utility.JusoActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Utility.JusoActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".VerificationActivity"
             android:label=""
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Registration_RestaurantActivity"
             android:label=""
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FindidpassActivity"
             android:label=""
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FindemailActivity"
             android:label=""
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".RegisterGuideActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".JudgingActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Additional_InfoActivity"
             android:label=""
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Change_PWActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PW_FoundActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TermsActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TermsServiceActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TermsIndividualInfoActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TermsLocationActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TermsMarketingReceiveActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MyActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".PopupCallActivity"
-            android:screenOrientation="portrait"
-            />
+            android:name=".CallActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".OnWaitActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/anim_slide_in_left" />

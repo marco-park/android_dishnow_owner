@@ -75,7 +75,6 @@ public class Additional_InfoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 userAuthClass.setOwnersex(Ssex);
                 userAuthClass.setOwnerbirth(Eownerbirth.getText().toString());
-                Toast.makeText(getApplicationContext(),userAuthClass.getOwnerbirth(),Toast.LENGTH_LONG).show();
                 startActivity(new Intent(Additional_InfoActivity.this,VerificationActivity.class));
             }
         });

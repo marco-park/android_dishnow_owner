@@ -1,20 +1,18 @@
 package com.picke.dishnow_owner.Utility;
 import android.content.Context;
 import android.support.annotation.NonNull;
-        import android.support.v7.widget.RecyclerView;
-        import android.view.LayoutInflater;
-        import android.view.View;
-        import android.view.ViewGroup;
-        import android.widget.ImageView;
-        import android.widget.TextView;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
-import com.picke.dishnow_owner.Owner_User.ReservationArrayClass;
 import com.picke.dishnow_owner.Owner_User.ReservationClass;
 import com.picke.dishnow_owner.R;
 
-        import java.util.ArrayList;
+import java.util.ArrayList;
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemViewHolder> {
+public class RecyclerAdapter_onwait extends RecyclerView.Adapter<RecyclerAdapter_onwait.ItemViewHolder>{
 
     private ArrayList<ReservationClass> listData = new ArrayList<>();
 
@@ -55,9 +53,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemVi
         }
 
         void onBind(ReservationClass data) {
-           Trestime.setText(data.getTime());
-           Tcurrenttime.setText(data.getNowtime());
-           Tpeople.setText(data.getPeople());
+           String restimehour = data.getTime().substring(0,2);
+           String restimemin = data.getTime().substring(3,5);
+           String nowtimehour = data.getNowtime().substring(0,2);
+           String nowtimemin = data.getNowtime().substring(3,5);
+           Trestime.setText(restimehour+"시 "+restimemin+"분");
+           Tcurrenttime.setText(nowtimehour+":"+nowtimemin);
+           Tpeople.setText(data.getPeople()+"명");
            Tuid.setText(data.getUid());
         }
     }

@@ -1,427 +1,708 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-149:12
-INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-149:12
-INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-149:12
-INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-149:12
-MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/536fe1f600573171681fa284abe8f911/AndroidManifest.xml:2:1-11:12
-MERGED from [com.kakao.sdk:usermgmt:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/06be3be95d9df7c402cc06df2736580d/AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/9651072a8158813d3536ff032c598f55/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/b7592e70ba7052c21c8f791c09256096/AndroidManifest.xml:17:1-22:12
-MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:2:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3e259f41a9e01d11f1a7427d32511618/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/63d73872f254471417dbb1413a2de1c1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4923e21c53e9ce55b7f061d197afa1b4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/962ed279eba7e0c6cf7497fa17c4526c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/adb6c2b88269e41da919caaee5fe9f72/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0b1b9a0d0ca199bd9dc215521fa5ca6c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f072d678b0f25ddba8513f85143e5c9a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/f36858528220da81f741406d03b7c860/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/56c8dc7acb50eb6e6ced8a66b67068f4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/79ae86b96600486c6249a73ac79295a8/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/ced3a3f5b8b933d45d09f83f44ed8fc1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6e75159cf706fbc7918a416b87e5815c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/eb79fd531e218972057996e89d87d14b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4f13217597fd145658de86e74529e88d/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/85f0a5d32c91407dc1434430b591a2bd/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/107372372d24046c44a1482e598ba08d/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1fe0acda323eadc77f39ff3fb0c44cca/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/16075c79f29b67d1a429a31956ac9aba/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/121f279a36b469b97777209e69021b06/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/accc7de677b6655fd40c05ed2255132a/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/14af0a36bee4aa134576ce07ee1e57c2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/0fc937f4ec5210317fb4c8f531c6ace0/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/fbc4f0eaeb5103c612ad26e7dc8cfe49/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/3286428a710a5ff8582c850083b1ffac/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e5271b385e57dc71d0427a2df741b8ac/AndroidManifest.xml:17:1-22:12
-MERGED from [com.kakao.sdk:network:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/network-1.15.1.aar/4407195218a7c1837aecf225621cb3d8/AndroidManifest.xml:2:1-11:12
-MERGED from [com.kakao.sdk:common:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/common-1.15.1.aar/b3440be687dc76d953cb8a13cdbe64a5/AndroidManifest.xml:2:1-11:12
-MERGED from [com.kakao.sdk:util:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/aed82e16471a13b695342048313c130c/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-149:12
-INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-149:12
-INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-149:12
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-147:12
+INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-147:12
+INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-147:12
+INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-147:12
+MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8ef07146d8986ffaf5e3c2e0fff3ff75/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bf85b9d391ae398864aa1b88dd2427a7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0e6bea800f012ddcbd51d4a2aa385dae/AndroidManifest.xml:2:1-11:12
+MERGED from [com.kakao.sdk:usermgmt:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/e2586d9ccf716890519844c46c390c09/AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.firebase:firebase-core:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/556ab31e17bf2475c7826d0839f0c359/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:17:1-37:12
+MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:2:1-22:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/34dd85d96bba5d1b6d68f2d975c48d31/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/dcfa0874cb59905b9704ad1496879b90/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/f5f767043dedab649bf47f4efd694552/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e9b358e5cc25e110a1d3fd003bb16573/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/c683e01e719605f161da8d2534134213/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/4fb894ce9c5f452affe091255017d946/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/dac41ca741ad47ecfec1aeb6a19d9dd3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/d91091a2dcaa0702d96f975949ede0b0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/77c8a070a9d3b0a64600d698ca026ee9/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/2b7e9a59019858c27fe07bf56093eab5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/a38204023efcaff8a5ff25f06f716f58/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/f055528553ec3ac4843654235253056b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/18c5a114df7851ec1d9cf1d698046fbf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8168c0f7ea68cf29cdf8fbb81eb452ad/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/ac5d3740c2b5bbb8c384a596015f1e3b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/173f40fc369193219e6f4aad09143295/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/86ddc8e5551cbf87494fb85cdcf4b6f4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/b94527e5a45402f69489ea650235f7b0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/4bdc263ae32e2a58f14492af7816146f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/816f682694c0c9af86265c9ac417bc21/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/65d13054cb8edf8fb45b942462ba07f8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/638db178cb73c0c7b6cacd1670502595/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/e0e74ca9130adcdd37f623c7506feb2e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ba65b2d7402031440cc0f3066a398130/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b7100f858447162a3b1098178d1b42c3/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a883c1a5475cb8f8d4a45418c1b3e106/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b19689366af65bf6d594d460bbb4691f/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/3ea2ba345c70de098ff13c20a1799c91/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/d323045ab93213a35a50903c8717b66a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/793ccd830ecf7397f10554b730d1c9ca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/11930ddd91a3f47e2e942e348e82dd53/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/ea2de33e9abbdebaa468536745213ceb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/2c0790267bb950f4ad422cc3d15c41cc/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fe89d7ca3cc029266256aa63af6194f2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/03f36a1b5e48953775029fb29be186b3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/3f16a34df693191034f622fc2bb3dd8c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b8d289977212b4920a91d14dafb12f05/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1aa1f7bde14c3b0adaf4396cc90c5f88/AndroidManifest.xml:17:1-22:12
+MERGED from [com.kakao.sdk:network:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/network-1.15.1.aar/bd28d680be6ab672fb73274f3094c7f5/AndroidManifest.xml:2:1-11:12
+MERGED from [com.kakao.sdk:common:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/common-1.15.1.aar/0b9be775e4507881942d48fbca45fc07/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/63a81c52f91fa04764d8b80a48e74fea/AndroidManifest.xml:17:1-24:12
+MERGED from [com.kakao.sdk:util:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/4d6aaeefd79784edf4d0fb1e32dc3845/AndroidManifest.xml:2:1-14:12
+INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-147:12
+INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-147:12
+INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-147:12
 	package
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:3:5-38
-		INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-149:12
-		INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-147:12
+		INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-149:12
-		INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:1-147:12
+		INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:7:5-81
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:7:22-78
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:8:5-79
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:8:22-76
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:8:22-76
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:9:5-75
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:9:5-75
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:9:22-72
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:9:22-72
 uses-permission#android.permission.READ_SMS
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:10:5-67
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:10:5-67
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:10:22-64
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:10:22-64
 uses-permission#android.permission.READ_PHONE_NUMBERS
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:11:5-77
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:11:5-77
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:11:22-74
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:11:22-74
 uses-permission#android.permission.READ_CONTACTS
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:12:5-72
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:12:5-72
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:12:22-69
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:12:22-69
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:13:5-80
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:13:5-80
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:13:22-77
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:13:22-77
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:14:5-66
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:14:5-66
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:14:22-63
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:14:22-63
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:15:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:15:22-65
 application
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:16:5-147:19
-MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/536fe1f600573171681fa284abe8f911/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/536fe1f600573171681fa284abe8f911/AndroidManifest.xml:9:5-20
-MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:11:5-20:19
-MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:11:5-20:19
-MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4f13217597fd145658de86e74529e88d/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4f13217597fd145658de86e74529e88d/AndroidManifest.xml:22:5-23:19
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:17:5-145:19
+MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8ef07146d8986ffaf5e3c2e0fff3ff75/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8ef07146d8986ffaf5e3c2e0fff3ff75/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0e6bea800f012ddcbd51d4a2aa385dae/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0e6bea800f012ddcbd51d4a2aa385dae/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/556ab31e17bf2475c7826d0839f0c359/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/556ab31e17bf2475c7826d0839f0c359/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:22:5-35:19
+MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:11:5-20:19
+MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:11:5-20:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/34dd85d96bba5d1b6d68f2d975c48d31/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/34dd85d96bba5d1b6d68f2d975c48d31/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/dcfa0874cb59905b9704ad1496879b90/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/dcfa0874cb59905b9704ad1496879b90/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/f5f767043dedab649bf47f4efd694552/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/f5f767043dedab649bf47f4efd694552/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e9b358e5cc25e110a1d3fd003bb16573/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e9b358e5cc25e110a1d3fd003bb16573/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/c683e01e719605f161da8d2534134213/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/c683e01e719605f161da8d2534134213/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/4fb894ce9c5f452affe091255017d946/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/4fb894ce9c5f452affe091255017d946/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/dac41ca741ad47ecfec1aeb6a19d9dd3/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/dac41ca741ad47ecfec1aeb6a19d9dd3/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/d91091a2dcaa0702d96f975949ede0b0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/d91091a2dcaa0702d96f975949ede0b0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/77c8a070a9d3b0a64600d698ca026ee9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/77c8a070a9d3b0a64600d698ca026ee9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b7100f858447162a3b1098178d1b42c3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b7100f858447162a3b1098178d1b42c3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a883c1a5475cb8f8d4a45418c1b3e106/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a883c1a5475cb8f8d4a45418c1b3e106/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b19689366af65bf6d594d460bbb4691f/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b19689366af65bf6d594d460bbb4691f/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/63a81c52f91fa04764d8b80a48e74fea/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/63a81c52f91fa04764d8b80a48e74fea/AndroidManifest.xml:22:5-20
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a883c1a5475cb8f8d4a45418c1b3e106/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:21:9-35
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:19:9-41
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:20:9-41
 	android:roundIcon
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:20:9-54
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:21:9-54
 	android:icon
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:18:9-43
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:19:9-43
 	android:allowBackup
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:22:9-52
-meta-data#com.kakao.sdk.AppKey
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:23:9-25:64
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:23:9-52
+activity#com.picke.dishnow_owner.MenuActivity
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:24:9-59
+	android:name
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:24:19-47
+activity#com.picke.dishnow_owner.BookedActivity
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:25:9-28:61
+	android:screenOrientation
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:28:13-49
+	android:label
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:27:13-29
+	android:name
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:26:13-43
+meta-data#com.google.firebase.messaging.default_notification_channel_id
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:30:9-32:71
 	android:value
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:25:13-61
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:32:13-68
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:24:13-48
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:31:13-89
 activity#com.picke.dishnow_owner.SigninActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:27:9-36:20
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:34:9-43:20
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:30:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:36:13-49
 	android:theme
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:29:13-56
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:37:13-56
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:28:13-43
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:35:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:31:13-35:29
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:32:17-69
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:32:25-66
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:34:17-77
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:34:27-74
-activity#com.picke.dishnow_owner.MainActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:37:9-40:15
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:41:27-74
+service#com.picke.dishnow_owner.Utility.FireBaseMessagingService
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:45:9-49:19
+	android:name
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:45:18-66
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:46:13-48:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:47:17-78
+	android:name
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:47:25-75
+service#com.picke.dishnow_owner.Utility.SocketService
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:50:9-66
+	android:name
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:50:18-55
+service#com.picke.dishnow_owner.Utility.FirebaseInstanceIDService
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:51:9-55:19
+	android:name
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:51:18-67
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:52:13-54:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:53:17-80
+	android:name
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:53:25-77
+activity#com.picke.dishnow_owner.HomeActivity
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:57:9-60:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:39:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:60:13-49
+	android:label
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:59:13-29
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:38:13-41
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:58:13-41
 activity#com.picke.dishnow_owner.JoinActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:41:9-45:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:61:9-64:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:43:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:64:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:44:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:63:13-29
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:42:13-41
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:62:13-41
 activity#com.picke.dishnow_owner.JoinedActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:46:9-49:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:65:9-67:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:48:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:67:13-49
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:47:13-43
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:66:13-43
 activity#com.picke.dishnow_owner.Registration_BusinessActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:50:9-54:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:68:9-71:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:53:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:71:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:52:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:70:13-29
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:51:13-58
-activity#com.picke.dishnow_owner.PopupActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:55:9-57:15
-	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:56:13-49
-	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:55:19-48
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:69:13-58
 activity#com.picke.dishnow_owner.Utility.JusoActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:58:9-60:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:72:9-74:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:59:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:74:13-49
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:58:19-55
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:73:13-49
 activity#com.picke.dishnow_owner.VerificationActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:61:9-65:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:75:9-78:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:64:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:78:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:63:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:77:13-29
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:62:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:76:13-49
 activity#com.picke.dishnow_owner.Registration_RestaurantActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:66:9-70:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:79:9-82:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:69:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:82:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:68:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:81:13-29
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:67:13-60
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:80:13-60
 activity#com.picke.dishnow_owner.FindidpassActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:71:9-75:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:83:9-86:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:74:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:86:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:73:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:85:13-29
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:72:13-47
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:84:13-47
 activity#com.picke.dishnow_owner.FindemailActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:76:9-80:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:87:9-90:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:79:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:90:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:78:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:89:13-29
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:77:13-46
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:88:13-46
 activity#com.picke.dishnow_owner.RegisterGuideActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:81:9-84:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:91:9-93:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:83:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:93:13-49
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:82:13-50
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:92:13-50
 activity#com.picke.dishnow_owner.JudgingActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:85:9-88:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:94:9-96:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:87:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:96:13-49
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:86:13-44
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:95:13-44
 activity#com.picke.dishnow_owner.Additional_InfoActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:89:9-93:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:97:9-100:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:92:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:100:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:91:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:99:13-29
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:90:13-52
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:98:13-52
 activity#com.picke.dishnow_owner.Change_PWActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:94:9-97:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:101:9-103:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:96:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:103:13-49
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:95:13-46
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:102:13-46
 activity#com.picke.dishnow_owner.PW_FoundActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:98:9-101:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:104:9-106:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:100:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:106:13-49
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:99:13-45
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:105:13-45
 activity#com.picke.dishnow_owner.TermsActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:102:9-107:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:107:9-111:59
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:106:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:110:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:104:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:109:13-29
 	android:theme
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:105:13-56
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:111:13-56
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:103:13-42
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:108:13-42
 activity#com.picke.dishnow_owner.TermsServiceActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:108:9-113:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:112:9-116:59
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:112:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:115:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:110:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:114:13-29
 	android:theme
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:111:13-56
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:116:13-56
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:109:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:113:13-49
 activity#com.picke.dishnow_owner.TermsIndividualInfoActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:114:9-119:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:117:9-121:59
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:118:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:120:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:116:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:119:13-29
 	android:theme
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:117:13-56
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:121:13-56
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:115:13-56
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:118:13-56
 activity#com.picke.dishnow_owner.TermsLocationActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:120:9-125:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:122:9-126:59
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:124:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:125:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:122:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:124:13-29
 	android:theme
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:123:13-56
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:126:13-56
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:121:13-50
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:123:13-50
 activity#com.picke.dishnow_owner.TermsMarketingReceiveActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:126:9-131:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:127:9-131:59
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:130:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:130:13-49
 	android:label
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:128:13-29
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:129:13-29
 	android:theme
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:129:13-56
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:131:13-56
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:127:13-58
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:128:13-58
 activity#com.picke.dishnow_owner.MyActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:132:9-135:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:132:9-134:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:134:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:134:13-49
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:133:13-39
-activity#com.picke.dishnow_owner.PopupCallActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:136:9-139:15
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:133:13-39
+activity#com.picke.dishnow_owner.CallActivity
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:135:9-137:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:138:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:137:13-49
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:137:13-46
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:136:13-41
 activity#com.picke.dishnow_owner.OnWaitActivity
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:140:9-143:15
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:138:9-140:52
 	android:screenOrientation
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:142:13-49
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:140:13-49
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:141:13-43
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:139:13-43
 meta-data#com.google.android.actions
-ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:144:9-146:58
+ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:142:9-144:58
 	android:resource
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:146:13-55
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:144:13-55
 	android:name
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:145:13-54
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml:143:13-54
 uses-sdk
-INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
-INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/536fe1f600573171681fa284abe8f911/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/536fe1f600573171681fa284abe8f911/AndroidManifest.xml:5:5-7:41
-MERGED from [com.kakao.sdk:usermgmt:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/06be3be95d9df7c402cc06df2736580d/AndroidManifest.xml:10:5-12:41
-MERGED from [com.kakao.sdk:usermgmt:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/06be3be95d9df7c402cc06df2736580d/AndroidManifest.xml:10:5-12:41
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/9651072a8158813d3536ff032c598f55/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/9651072a8158813d3536ff032c598f55/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/b7592e70ba7052c21c8f791c09256096/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/b7592e70ba7052c21c8f791c09256096/AndroidManifest.xml:20:5-44
-MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3e259f41a9e01d11f1a7427d32511618/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3e259f41a9e01d11f1a7427d32511618/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/63d73872f254471417dbb1413a2de1c1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/63d73872f254471417dbb1413a2de1c1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4923e21c53e9ce55b7f061d197afa1b4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4923e21c53e9ce55b7f061d197afa1b4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/962ed279eba7e0c6cf7497fa17c4526c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/962ed279eba7e0c6cf7497fa17c4526c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/adb6c2b88269e41da919caaee5fe9f72/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/adb6c2b88269e41da919caaee5fe9f72/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0b1b9a0d0ca199bd9dc215521fa5ca6c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0b1b9a0d0ca199bd9dc215521fa5ca6c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f072d678b0f25ddba8513f85143e5c9a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f072d678b0f25ddba8513f85143e5c9a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/f36858528220da81f741406d03b7c860/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/f36858528220da81f741406d03b7c860/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/56c8dc7acb50eb6e6ced8a66b67068f4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/56c8dc7acb50eb6e6ced8a66b67068f4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/79ae86b96600486c6249a73ac79295a8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/79ae86b96600486c6249a73ac79295a8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/ced3a3f5b8b933d45d09f83f44ed8fc1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/ced3a3f5b8b933d45d09f83f44ed8fc1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6e75159cf706fbc7918a416b87e5815c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6e75159cf706fbc7918a416b87e5815c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/eb79fd531e218972057996e89d87d14b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/eb79fd531e218972057996e89d87d14b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4f13217597fd145658de86e74529e88d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4f13217597fd145658de86e74529e88d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/85f0a5d32c91407dc1434430b591a2bd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/85f0a5d32c91407dc1434430b591a2bd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/107372372d24046c44a1482e598ba08d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/107372372d24046c44a1482e598ba08d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1fe0acda323eadc77f39ff3fb0c44cca/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1fe0acda323eadc77f39ff3fb0c44cca/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/16075c79f29b67d1a429a31956ac9aba/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/16075c79f29b67d1a429a31956ac9aba/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/121f279a36b469b97777209e69021b06/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/121f279a36b469b97777209e69021b06/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/accc7de677b6655fd40c05ed2255132a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/accc7de677b6655fd40c05ed2255132a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/14af0a36bee4aa134576ce07ee1e57c2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/14af0a36bee4aa134576ce07ee1e57c2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/0fc937f4ec5210317fb4c8f531c6ace0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/0fc937f4ec5210317fb4c8f531c6ace0/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/fbc4f0eaeb5103c612ad26e7dc8cfe49/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/fbc4f0eaeb5103c612ad26e7dc8cfe49/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/3286428a710a5ff8582c850083b1ffac/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/3286428a710a5ff8582c850083b1ffac/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e5271b385e57dc71d0427a2df741b8ac/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e5271b385e57dc71d0427a2df741b8ac/AndroidManifest.xml:20:5-44
-MERGED from [com.kakao.sdk:network:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/network-1.15.1.aar/4407195218a7c1837aecf225621cb3d8/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:network:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/network-1.15.1.aar/4407195218a7c1837aecf225621cb3d8/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:common:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/common-1.15.1.aar/b3440be687dc76d953cb8a13cdbe64a5/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:common:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/common-1.15.1.aar/b3440be687dc76d953cb8a13cdbe64a5/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:util:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/aed82e16471a13b695342048313c130c/AndroidManifest.xml:10:5-12:41
-MERGED from [com.kakao.sdk:util:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/aed82e16471a13b695342048313c130c/AndroidManifest.xml:10:5-12:41
-INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
-INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8ef07146d8986ffaf5e3c2e0fff3ff75/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8ef07146d8986ffaf5e3c2e0fff3ff75/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bf85b9d391ae398864aa1b88dd2427a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bf85b9d391ae398864aa1b88dd2427a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0e6bea800f012ddcbd51d4a2aa385dae/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0e6bea800f012ddcbd51d4a2aa385dae/AndroidManifest.xml:5:5-7:41
+MERGED from [com.kakao.sdk:usermgmt:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/e2586d9ccf716890519844c46c390c09/AndroidManifest.xml:10:5-12:41
+MERGED from [com.kakao.sdk:usermgmt:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/e2586d9ccf716890519844c46c390c09/AndroidManifest.xml:10:5-12:41
+MERGED from [com.google.firebase:firebase-core:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/556ab31e17bf2475c7826d0839f0c359/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/556ab31e17bf2475c7826d0839f0c359/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:20:5-44
+MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/34dd85d96bba5d1b6d68f2d975c48d31/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/34dd85d96bba5d1b6d68f2d975c48d31/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/dcfa0874cb59905b9704ad1496879b90/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/dcfa0874cb59905b9704ad1496879b90/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/f5f767043dedab649bf47f4efd694552/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/f5f767043dedab649bf47f4efd694552/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e9b358e5cc25e110a1d3fd003bb16573/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e9b358e5cc25e110a1d3fd003bb16573/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/c683e01e719605f161da8d2534134213/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/c683e01e719605f161da8d2534134213/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/4fb894ce9c5f452affe091255017d946/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/4fb894ce9c5f452affe091255017d946/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/dac41ca741ad47ecfec1aeb6a19d9dd3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/dac41ca741ad47ecfec1aeb6a19d9dd3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/d91091a2dcaa0702d96f975949ede0b0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/d91091a2dcaa0702d96f975949ede0b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/77c8a070a9d3b0a64600d698ca026ee9/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/77c8a070a9d3b0a64600d698ca026ee9/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/2b7e9a59019858c27fe07bf56093eab5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/2b7e9a59019858c27fe07bf56093eab5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/a38204023efcaff8a5ff25f06f716f58/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/a38204023efcaff8a5ff25f06f716f58/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/f055528553ec3ac4843654235253056b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/f055528553ec3ac4843654235253056b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/18c5a114df7851ec1d9cf1d698046fbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/18c5a114df7851ec1d9cf1d698046fbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8168c0f7ea68cf29cdf8fbb81eb452ad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8168c0f7ea68cf29cdf8fbb81eb452ad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/ac5d3740c2b5bbb8c384a596015f1e3b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/ac5d3740c2b5bbb8c384a596015f1e3b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/173f40fc369193219e6f4aad09143295/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/173f40fc369193219e6f4aad09143295/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/86ddc8e5551cbf87494fb85cdcf4b6f4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/86ddc8e5551cbf87494fb85cdcf4b6f4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/b94527e5a45402f69489ea650235f7b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/b94527e5a45402f69489ea650235f7b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/4bdc263ae32e2a58f14492af7816146f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/4bdc263ae32e2a58f14492af7816146f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/816f682694c0c9af86265c9ac417bc21/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/816f682694c0c9af86265c9ac417bc21/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/65d13054cb8edf8fb45b942462ba07f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/65d13054cb8edf8fb45b942462ba07f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/638db178cb73c0c7b6cacd1670502595/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/638db178cb73c0c7b6cacd1670502595/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/e0e74ca9130adcdd37f623c7506feb2e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/e0e74ca9130adcdd37f623c7506feb2e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ba65b2d7402031440cc0f3066a398130/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ba65b2d7402031440cc0f3066a398130/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b7100f858447162a3b1098178d1b42c3/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b7100f858447162a3b1098178d1b42c3/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a883c1a5475cb8f8d4a45418c1b3e106/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a883c1a5475cb8f8d4a45418c1b3e106/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b19689366af65bf6d594d460bbb4691f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b19689366af65bf6d594d460bbb4691f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/3ea2ba345c70de098ff13c20a1799c91/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/3ea2ba345c70de098ff13c20a1799c91/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/d323045ab93213a35a50903c8717b66a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/d323045ab93213a35a50903c8717b66a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/793ccd830ecf7397f10554b730d1c9ca/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/793ccd830ecf7397f10554b730d1c9ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/11930ddd91a3f47e2e942e348e82dd53/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/11930ddd91a3f47e2e942e348e82dd53/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/ea2de33e9abbdebaa468536745213ceb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/ea2de33e9abbdebaa468536745213ceb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/2c0790267bb950f4ad422cc3d15c41cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/2c0790267bb950f4ad422cc3d15c41cc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fe89d7ca3cc029266256aa63af6194f2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fe89d7ca3cc029266256aa63af6194f2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/03f36a1b5e48953775029fb29be186b3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/03f36a1b5e48953775029fb29be186b3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/3f16a34df693191034f622fc2bb3dd8c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/3f16a34df693191034f622fc2bb3dd8c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b8d289977212b4920a91d14dafb12f05/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b8d289977212b4920a91d14dafb12f05/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1aa1f7bde14c3b0adaf4396cc90c5f88/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1aa1f7bde14c3b0adaf4396cc90c5f88/AndroidManifest.xml:20:5-44
+MERGED from [com.kakao.sdk:network:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/network-1.15.1.aar/bd28d680be6ab672fb73274f3094c7f5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:network:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/network-1.15.1.aar/bd28d680be6ab672fb73274f3094c7f5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:common:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/common-1.15.1.aar/0b9be775e4507881942d48fbca45fc07/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:common:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/common-1.15.1.aar/0b9be775e4507881942d48fbca45fc07/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/63a81c52f91fa04764d8b80a48e74fea/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/63a81c52f91fa04764d8b80a48e74fea/AndroidManifest.xml:20:5-44
+MERGED from [com.kakao.sdk:util:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/4d6aaeefd79784edf4d0fb1e32dc3845/AndroidManifest.xml:10:5-12:41
+MERGED from [com.kakao.sdk:util:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/4d6aaeefd79784edf4d0fb1e32dc3845/AndroidManifest.xml:10:5-12:41
+INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/77c8a070a9d3b0a64600d698ca026ee9/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
-		ADDED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/spark/Downloads/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
-activity#com.kakao.auth.authorization.authcode.KakaoWebViewActivity
-ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:12:9-19:20
-	android:label
-		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:16:13-59
-	android:launchMode
-		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:17:13-43
-	android:windowSoftInputMode
-		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:18:13-55
+		INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/src/main/AndroidManifest.xml
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:28:9-34:19
 	android:exported
-		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:15:13-37
-	android:configChanges
-		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:14:13-59
+		ADDED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:13:13-86
+		ADDED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:29:13-82
+activity#com.kakao.auth.authorization.authcode.KakaoWebViewActivity
+ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:12:9-19:20
+	android:label
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:16:13-59
+	android:launchMode
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:17:13-43
+	android:windowSoftInputMode
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:18:13-55
+	android:exported
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:15:13-37
+	android:configChanges
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:14:13-59
+	android:name
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:13:13-86
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:23:22-76
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:27:18-89
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/6da14d5631d1051da9d5dadfad9972a3/AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/496dea9bc2d6987b05b603fdc352d98b/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/8548c336359f4fef35969acb3addf190/AndroidManifest.xml:49:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/f67dcbcb398e2131ae31db181c80f48f/AndroidManifest.xml:51:13-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/34dd85d96bba5d1b6d68f2d975c48d31/AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/34dd85d96bba5d1b6d68f2d975c48d31/AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/34dd85d96bba5d1b6d68f2d975c48d31/AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/34dd85d96bba5d1b6d68f2d975c48d31/AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/34dd85d96bba5d1b6d68f2d975c48d31/AndroidManifest.xml:11:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/f5f767043dedab649bf47f4efd694552/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/f5f767043dedab649bf47f4efd694552/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/f5f767043dedab649bf47f4efd694552/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/f5f767043dedab649bf47f4efd694552/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/d91091a2dcaa0702d96f975949ede0b0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/d91091a2dcaa0702d96f975949ede0b0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/d91091a2dcaa0702d96f975949ede0b0/AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/77c8a070a9d3b0a64600d698ca026ee9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b7100f858447162a3b1098178d1b42c3/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b7100f858447162a3b1098178d1b42c3/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/77c8a070a9d3b0a64600d698ca026ee9/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/77c8a070a9d3b0a64600d698ca026ee9/AndroidManifest.xml:27:13-51

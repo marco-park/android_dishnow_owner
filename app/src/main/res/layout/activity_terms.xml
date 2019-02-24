@@ -179,14 +179,25 @@
                     android:text="(필수) 서비스 이용 약관 동의"
                     android:textColor="@color/color_black"
                     android:textSize="14dp" />
-                <ImageView
-                    android:id="@+id/terms_service_squarebracket"
-                    android:layout_width="9dp"
-                    android:layout_height="15dp"
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:layout_marginLeft="133dp"
-                    android:background="@drawable/ic_icon_squarebracket"
-                    android:backgroundTint="@color/color_bolder" />
+                    >
+                    <ImageView
+                        android:id="@+id/terms_service_squarebracket"
+                        android:layout_width="9dp"
+                        android:layout_height="14dp"
+
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/ic_icon_squarebracket"
+                        android:backgroundTint="@color/color_bolder" />
+                </RelativeLayout>
             </LinearLayout>
             <!--(필수) 개인정보 처리 방침 동의-->
             <LinearLayout
@@ -209,14 +220,21 @@
                     android:text="(필수) 개인정보 처리방침 동의"
                     android:textColor="@color/color_black"
                     android:textSize="14dp" />
-                <ImageView
-                    android:id="@+id/terms_individual_squarebracket"
-                    android:layout_width="9dp"
-                    android:layout_height="15dp"
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:layout_marginLeft="124dp"
-                    android:background="@drawable/ic_icon_squarebracket"
-                    android:backgroundTint="@color/color_bolder" />
+                    >
+                    <ImageView
+                        android:id="@+id/terms_individual_squarebracket"
+                        android:layout_width="9dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_icon_squarebracket"
+                        android:backgroundTint="@color/color_bolder" />
+                </RelativeLayout>
             </LinearLayout>
             <!--(필수) 위치 기반 서비스 동의-->
             <LinearLayout
@@ -239,14 +257,21 @@
                     android:text="(필수) 위치 기반 서비스 동의"
                     android:textColor="@color/color_black"
                     android:textSize="14dp" />
-                <ImageView
-                    android:id="@+id/terms_locationservice_squarebracket"
-                    android:layout_width="9dp"
-                    android:layout_height="15dp"
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:layout_marginLeft="133dp"
-                    android:background="@drawable/ic_icon_squarebracket"
-                    android:backgroundTint="@color/color_bolder" />
+                    >
+                    <ImageView
+                        android:id="@+id/terms_locationservice_squarebracket"
+                        android:layout_width="9dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_icon_squarebracket"
+                        android:backgroundTint="@color/color_bolder" />
+                </RelativeLayout>
             </LinearLayout>
             <!--(선택) 마케팅 수신 동의-->
             <LinearLayout
@@ -269,14 +294,21 @@
                     android:text="(선택) 마케팅 수신 동의"
                     android:textColor="@color/color_black"
                     android:textSize="14dp" />
-                <ImageView
-                    android:id="@+id/terms_marketingrecieve_squarebracket"
-                    android:layout_width="9dp"
-                    android:layout_height="15dp"
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:layout_marginLeft="162dp"
-                    android:background="@drawable/ic_icon_squarebracket"
-                    android:backgroundTint="@color/color_bolder" />
+                    >
+                    <ImageView
+                        android:id="@+id/terms_marketingrecieve_squarebracket"
+                        android:layout_width="9dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/ic_icon_squarebracket"
+                        android:backgroundTint="@color/color_bolder" />
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
         <!--구분선-->

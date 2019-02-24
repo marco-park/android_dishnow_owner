@@ -19,17 +19,20 @@ import android.widget.TextView;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.picke.dishnow_owner.Owner_User.ReservationArrayClass;
 import com.picke.dishnow_owner.Owner_User.ReservationClass;
 import com.picke.dishnow_owner.Owner_User.UserInfoClass;
-import com.picke.dishnow_owner.Utility.RecyclerAdapter;
+import com.picke.dishnow_owner.Utility.RecyclerAdapter_reserved;
 
 import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
 
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     String feed_url = "http://claor123.cafe24.com/Callout.php";
     private static final String TAG = "claor123";
@@ -52,16 +55,22 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayout Lmy;
     private ImageView Imy;
     private TextView Tmy;
+    private TextView Thomeshow;
     //
 
     private UserInfoClass userInfoClass;
+    private ReservationArrayClass reservationArrayClass;
+    private ArrayList<ReservationClass> res_list;
+    private ArrayList<ReservationClass> final_list;
+    private RecyclerAdapter_reserved adapter_reserved;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
         tv = findViewById(R.id.main_show);
         vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        Thomeshow = findViewById(R.id.main_show);
 
         Lreservation = findViewById(R.id.main_rescompletelayout);
         Ireservation = findViewById(R.id.main_reservation_imageview);
@@ -86,6 +95,17 @@ public class MainActivity extends AppCompatActivity {
 
         userInfoClass = UserInfoClass.getInstance(getApplicationContext());
         res_id = userInfoClass.getuId();
+        res_list = ReservationArrayClass.getInstance(getApplicationContext()).getresArray();
+        final_list = ReservationArrayClass.getInstance(getApplicationContext()).getrfinArray();
+        reservationArrayClass = ReservationArrayClass.getInstance(getApplicationContext());
+
+        RecyclerView recyclerView = findViewById(R.id.main_recyclerView);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        adapter_reserved = new RecyclerAdapter_reserved();
+        recyclerView.setAdapter(adapter_reserved);
+        getData();
 
         try {
             mSocket = IO.socket("http://ec2-18-218-206-167.us-east-2.compute.amazonaws.com:3000");
@@ -107,14 +127,34 @@ public class MainActivity extends AppCompatActivity {
 
                 JsonParser jsonParsers = new JsonParser();
                 JsonObject jsonObject = (JsonObject) jsonParsers.parse(objects[0].toString());
-                runOnUiThread(()->{
-                        Intent intent = new Intent(MainActivity.this, PopupCallActivity.class);
-                        intent.putExtra("user_numbers", jsonObject.get("user_numbers").toString());
-                        intent.putExtra("user_time", jsonObject.get("user_time").toString());
-                        intent.putExtra("user_id", jsonObject.get("user_id").toString());
-                        startActivity(intent);
-                        finish();
+                runOnUiThread(()-> {
+                            Intent intent = new Intent(HomeActivity.this, CallActivity.class);
+                            String people = jsonObject.get("user_people").toString();
+                            people = people.substring(1, people.length() - 1);
+                            String time = jsonObject.get("user_time").toString();
+                            time = time.substring(1, time.length() - 1);
+                            String uid = jsonObject.get("user_id").toString();
+                            uid = uid.substring(1, uid.length() - 1);
+                            intent.putExtra("user_people", people);
+                            intent.putExtra("user_time", time);
+                            intent.putExtra("user_id", uid);
+                            startActivity(intent);
+                            finish();
                 });
+            }).on("final_call",(Object... objects)-> {
+                vibrator.vibrate(2000);
+                Uri uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                Ringtone ringtone = RingtoneManager.getRingtone(getApplicationContext(), uri);
+                ringtone.play();
+                JsonParser jsonParser = new JsonParser();
+                JsonObject jsonObject = (JsonObject) jsonParser.parse(objects[0].toString());
+                String uid = jsonObject.get("user_id").toString();
+                uid = uid.substring(1,uid.length()-1);
+                reservationArrayClass.fin_add(reservationArrayClass.get_resclass(uid));
+                reservationArrayClass.res_delete(uid);
+                Intent intent1 = new Intent(HomeActivity.this,BookedActivity.class);
+                startActivity(intent1);
+                finish();
             });
             mSocket.connect();
         } catch (Exception e) {
@@ -124,25 +164,42 @@ public class MainActivity extends AppCompatActivity {
         Lwaitmatching.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,OnWaitActivity.class);
+                Intent intent = new Intent(HomeActivity.this,OnWaitActivity.class);
                 startActivity(intent);
-                overridePendingTransition(R.xml.anim_slide_in_right, R.xml.anim_slide_out_left);
-                finish();
                 overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
+                finish();
+                overridePendingTransition(R.xml.anim_slide_in_right, R.xml.anim_slide_out_left);
 
             }
         });
         Lmy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MyActivity.class);
+                Intent intent = new Intent(HomeActivity.this,MyActivity.class);
                 startActivity(intent);
-                overridePendingTransition(R.xml.anim_slide_in_right ,R.xml.anim_slide_out_left);
-                finish();
                 overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
-
+                finish();
+                overridePendingTransition(R.xml.anim_slide_in_right ,R.xml.anim_slide_out_left);
             }
         });
+    }
+
+
+    public void getData(){
+        for(int i=0;i<final_list.size();i++){
+            ReservationClass reservationClass = new ReservationClass();
+            reservationClass.setTime(final_list.get(i).getTime());
+            reservationClass.setPeople(final_list.get(i).getPeople());
+            reservationClass.setUid(final_list.get(i).getUid());
+            reservationClass.setNowtime(final_list.get(i).getNowtime());
+            adapter_reserved.addItem(reservationClass);
+        }
+        if(adapter_reserved.getItemCount()!=0){
+            Thomeshow.setText("");
+        }else{
+            Thomeshow.setText("내역이 없습니다.");
+        }
+        adapter_reserved.notifyDataSetChanged();
     }
 
     @Override
@@ -165,5 +222,4 @@ public class MainActivity extends AppCompatActivity {
         mSocket.emit("res_id", jsonObject_id);
         mSocket.connect();
     }
-
 }

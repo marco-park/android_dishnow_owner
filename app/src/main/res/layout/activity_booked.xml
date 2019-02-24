@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookedActivity">
+
+    <!--예약완료-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="49dp"
+        >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_icon_logo"
+            android:layout_marginRight="18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="42dp"
+            android:text="예약 완료"
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:textColor="@color/color_violet"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약 시간에 맞춰 꼭 방문해주세요."
+                android:textColor="@color/color_black"
+                android:fontFamily="@font/nanumsquareotfregular"
+                android:textSize="16sp"
+                android:layout_marginBottom="78dp"/>
+            <LinearLayout
+                android:layout_width="262dp"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:outlineSpotShadowColor="@color/color_bolder">
+
+                <TextView
+                    android:id="@+id/booked_place_txtview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nanumsquareotfbold"
+                    android:textColor="@color/color_black"
+                    android:text="아웃치킨 홍대점"
+                    android:layout_marginBottom="19dp"/>
+
+                <View
+                    android:layout_width="194dp"
+                    android:layout_height="1dp"
+                    android:background="@color/color_bolder"
+                    android:layout_marginBottom="19dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="인원"
+                        android:textColor="@color/color_black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:layout_marginRight="15dp"/>
+
+                    <TextView
+                        android:id="@+id/booked_people_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/nanumsquareotfbold"
+                        android:text="30"
+                        android:textColor="@color/color_black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/nanumsquareotfbold"
+                        android:text="명"
+                        android:textColor="@color/color_black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="도착 예정 시간"
+                        android:textColor="@color/color_black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:layout_marginRight="15dp"/>
+
+                    <TextView
+                        android:id="@+id/booked_arrive_time_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/nanumsquareotfbold"
+                        android:text="12"
+                        android:textColor="@color/color_black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/nanumsquareotfbold"
+                        android:text="분 후"
+                        android:textColor="@color/color_black"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dip"
+                    android:background="@drawable/shadow" >
+                </View>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/booked_confirmbutton"
+        android:layout_width="262dp"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:textColor="@color/color_violet"
+        android:background="@drawable/auth_phone_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:fontFamily="@font/nanumsquareotfregular"
+        android:text="확인" />
+
+</RelativeLayout>
+

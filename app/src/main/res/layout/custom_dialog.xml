@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- 타이틀바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@color/color_violet"
+                android:gravity="center"
+                android:text="로그아웃을 하시겠습니까?"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <!-- //end 타이틀바 -->
+
+        <!-- Notice -->
+
+
+
+
+        <!-- Notice -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#66bdbdbd" />
+
+        <!-- 닫기 버튼 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/custom_logout_ok_button"
+                android:layout_width="150sp"
+                android:layout_height="53dp"
+                android:background="#00000000"
+                android:gravity="center"
+                android:onClick="mOnClose"
+                android:padding="16dp"
+                android:text="예"
+                android:textColor="@color/color_violet"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_bolder"
+                >
+            </View>
+
+            <Button
+                android:id="@+id/custom_logout_cancle_button"
+                android:layout_width="150sp"
+                android:layout_height="53dp"
+                android:background="#00000000"
+                android:gravity="center"
+                android:onClick="mOnClose"
+                android:padding="16dp"
+                android:text="아니오"
+                android:textColor="@color/color_violet"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!--// 닫기 버튼 -->
+    </LinearLayout>
+</LinearLayout>

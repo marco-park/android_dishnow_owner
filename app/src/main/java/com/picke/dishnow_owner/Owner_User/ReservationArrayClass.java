@@ -38,6 +38,15 @@ public class ReservationArrayClass {
         }
    }
 
+   public ReservationClass get_resclass(String uid){
+        for(int i=0;i<ReservationArray.size();i++){
+            if(uid.equals(ReservationArray.get(i).getUid())){
+                return ReservationArray.get(i);
+            }
+        }
+        return null;
+   }
+
    public void fin_add(ReservationClass reservationClass){
         FinishedArray.add(reservationClass);
    }
@@ -48,5 +57,14 @@ public class ReservationArrayClass {
                 ReservationArray.remove(i);
             }
         }
+   }
+
+   public ReservationClass get_finclass(String uid){
+        for(int i=0;i<FinishedArray.size();i++){
+            if(uid.equals(FinishedArray.get(i).getUid())){
+                return FinishedArray.get(i);
+            }
+        }
+        return null;
    }
 }
