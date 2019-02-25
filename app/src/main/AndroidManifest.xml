@@ -143,5 +143,4 @@
             android:name="com.google.android.actions"
             android:resource="@xml/anim_slide_in_left" />
     </application>
-
 </manifest>
