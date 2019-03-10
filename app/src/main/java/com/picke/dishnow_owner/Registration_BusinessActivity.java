@@ -65,7 +65,6 @@ public class Registration_BusinessActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
         textresnum.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
         textownername.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
         Eimagelocal.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
@@ -150,7 +149,6 @@ public class Registration_BusinessActivity extends AppCompatActivity {
             super.onPostExecute(aBoolean);
             if(progressDialog!=null)progressDialog.dismiss();
             Eimagelocal.setText(JSONParser.get_url());
-
         }
     }
 

@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:allowBackup="true"
@@ -22,14 +22,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".MenuActivity"></activity>
-        <activity
-            android:name=".BookedActivity"
-            android:label=""
-            android:screenOrientation="portrait"></activity>
+        <!--
 
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_channel_id"
-            android:value="@string/default_notification_channel_id" />
+        <service android:name=".Utility.FireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            < /intent-filter>
+        </service>
+        !-->
 
         <activity
             android:name=".SigninActivity"
@@ -42,17 +42,35 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".Utility.FireBaseMessagingService">
+        <activity
+            android:name=".BookedActivity"
+            android:label=""
+            android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </service>
-        <service android:name=".Utility.SocketService"></service>
-        <service android:name=".Utility.FirebaseInstanceIDService">
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_icon_logo" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+
+        <activity android:name=".CallActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            <action android:name="OPEN_CALLACTIVITY" />
+            <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </service>
+        </activity>
+
+
 
         <activity
             android:name=".HomeActivity"
@@ -132,9 +150,7 @@
         <activity
             android:name=".MyActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".CallActivity"
-            android:screenOrientation="portrait" />
+
         <activity
             android:name=".OnWaitActivity"
             android:screenOrientation="portrait" />

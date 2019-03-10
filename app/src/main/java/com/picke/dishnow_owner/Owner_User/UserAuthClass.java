@@ -21,6 +21,7 @@ public class UserAuthClass {
     private String ownerphone;
     private String ownersex;
     private String ownerbirth;
+    private String ownertoken;
 
     public String getUid() {
         return uid;
@@ -32,6 +33,10 @@ public class UserAuthClass {
         this.ownerbirth = ownerbirth.substring(0,4)+
                 "-"+ownerbirth.substring(4,6)+"-"+ownerbirth.substring(6,8);
     }
+
+    public String getOwnertoken(){return ownertoken;}
+
+    public void setOwnertoken(String ownertoken){this.ownertoken=ownertoken;}
 
     public String getOwnersex(){return ownersex;}
 

@@ -1089,6 +1089,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable icon_onwait_purple
+drawable item_notarrive_reserved
 drawable item_reserved
 drawable kakao_account_button_background
 drawable kakao_account_logo
@@ -1186,6 +1187,7 @@ id booked_people_textview
 id booked_place_txtview
 id bottom
 id buttonPanel
+id call_button_layout
 id cancel_action
 id center
 id center_horizontal
@@ -1207,6 +1209,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id custom_dialog_textView
 id custom_logout_cancle_button
 id custom_logout_ok_button
 id dark
@@ -1351,6 +1354,10 @@ id progress_horizontal
 id qres_reg_header
 id qres_reg_shop
 id radio
+id recycle_item_arrive_button
+id recycle_item_noarrive_button
+id recycle_item_noarrive_txtview
+id recycle_item_reserved_arrive_button
 id repass2_gobackbutton
 id repass_button
 id repass_pass1
@@ -1587,6 +1594,7 @@ layout activity_terms_location_service
 layout activity_terms_marketing_receive
 layout activity_terms_service
 layout activity_verification
+layout call_button_layout
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1623,6 +1631,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout recycle_item
+layout recycle_item_noarrive_reserved
 layout recycle_item_reserved
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

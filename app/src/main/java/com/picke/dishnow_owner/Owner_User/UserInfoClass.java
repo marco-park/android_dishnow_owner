@@ -27,6 +27,10 @@ public class UserInfoClass {
     private String lon;
     private String ownerphone;
     private String respassword;
+    private String ownertoken;
+
+    public String getOwnertoken(){return ownertoken;}
+
 
     public String getResadd_num(){return resadd_num;}
 
@@ -79,6 +83,8 @@ public class UserInfoClass {
     public String getEndtime() {
         return endtime;
     }
+
+    public void setOwnertoken(String ownertoken){this.ownertoken=ownertoken;}
 
     public void setuId(String uid){
         this.uid = uid;

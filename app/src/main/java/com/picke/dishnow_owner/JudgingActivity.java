@@ -1,6 +1,8 @@
 package com.picke.dishnow_owner;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +26,7 @@ public class JudgingActivity extends AppCompatActivity {
     private UserInfoClass userInfoClass;
     final String feed_url = "http://claor123.cafe24.com/Judging.php";
     private Button Bokaybutton;
+    private String res_id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,8 @@ public class JudgingActivity extends AppCompatActivity {
         userInfoClass = UserInfoClass.getInstance(getApplicationContext());
 
         Bokaybutton = findViewById(R.id.judging_okaybutton);
+        SharedPreferences shared_id = getSharedPreferences("shared_id", Activity.MODE_PRIVATE);
+        res_id = shared_id.getString("id",null);
 
         final StringRequest stringRequest = new StringRequest(Request.Method.POST, feed_url, new Response.Listener<String>() {
             @Override
@@ -49,7 +54,7 @@ public class JudgingActivity extends AppCompatActivity {
         }){
             protected Map<String,String> getParams() throws AuthFailureError{
                 Map<String,String> params = new HashMap<>();
-                params.put("m_id",userInfoClass.getuId());
+                params.put("m_id",res_id);
                 return params;
             }
         };

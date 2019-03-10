@@ -37,6 +37,12 @@ public class RecyclerAdapter_onwait extends RecyclerView.Adapter<RecyclerAdapter
         listData.add(data);
     }
 
+    public void removeItem(int i){listData.remove(i);}
+
+    public void clearItem(){
+        listData.clear();
+    }
+
     class ItemViewHolder extends RecyclerView.ViewHolder {
 
         private TextView Trestime;

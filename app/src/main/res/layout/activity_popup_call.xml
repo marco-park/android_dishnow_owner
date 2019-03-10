@@ -79,8 +79,11 @@
             android:orientation="horizontal"
             >
             <ImageView
-                android:layout_width="26dp"
+                android:layout_width="25dp"
                 android:layout_height="25dp"
+                android:background="@drawable/ic_icon_logo"
+                android:backgroundTint="#FFFFFF"
+                android:layout_marginRight="8dp"
                 />
             <TextView
                 android:gravity="center"
@@ -138,7 +141,7 @@
             />
         
         <LinearLayout
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="4dp"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:orientation="horizontal"
@@ -196,8 +199,8 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal"
             >
             <TextView

@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">dishnow_owner</string>
+    <string name="app_name">디쉬나우</string>
     <string name="title_activity_juso">JusoActivity</string>
     <string name="signup_actionbar">회원가입</string>
     <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
     <string name="default_notification_channel_name" translatable="false">fcm_default_name</string>
-
 </resources>

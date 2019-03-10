@@ -63,14 +63,14 @@
                     android:layout_gravity="center"
                     >
                     <ImageView
+                        android:layout_marginLeft="15dp"
                         android:id="@+id/main_reservation_imageview"
-                        android:layout_width="69dp"
-                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="-15dp"
-                        android:layout_marginRight="-15dp"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/ic_icon_reservation"
+                        android:background="@drawable/ic_icon_logo"
                         android:backgroundTint="@color/color_bolder" />
                     <TextView
                         android:id="@+id/main_reservation_txtview"
@@ -118,7 +118,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/icon_onwait_purple"
+                        android:background="@drawable/ic_icon_logo"
                         android:backgroundTint="@color/color_bolder" />
                     <TextView
                         android:id="@+id/main_wait_matching_txtview"

@@ -26,6 +26,9 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 import com.picke.dishnow_owner.Owner_User.UserAuthClass;
 import com.picke.dishnow_owner.Owner_User.UserInfoClass;
 import com.picke.dishnow_owner.Utility.VolleySingleton;
@@ -79,6 +82,8 @@ public class SigninActivity extends AppCompatActivity {
                 !=PackageManager.PERMISSION_GRANTED
                 ||ContextCompat.checkSelfPermission(this,Manifest.permission.READ_EXTERNAL_STORAGE)
                 !=PackageManager.PERMISSION_GRANTED
+                ||ContextCompat.checkSelfPermission(this,Manifest.permission.WAKE_LOCK)
+                !=PackageManager.PERMISSION_GRANTED
                 )
         {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_PHONE_NUMBERS,
@@ -87,61 +92,67 @@ public class SigninActivity extends AppCompatActivity {
                     Manifest.permission.READ_CONTACTS,
                     Manifest.permission.READ_PHONE_STATE,
                     Manifest.permission.READ_SMS,
-                    Manifest.permission.READ_EXTERNAL_STORAGE
+                    Manifest.permission.READ_EXTERNAL_STORAGE,
+                    Manifest.permission.WAKE_LOCK
             }, PERMISSION);
         }
 
+        FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(
+                SigninActivity.this, instanceIdResult -> {
+                    String newToken = instanceIdResult.getToken();
+                    userAuthClass.setOwnertoken(newToken);
+                    userInfoClass.setOwnertoken(newToken);
+                });
+
         SharedPreferences auto =  getSharedPreferences("auto",Activity.MODE_PRIVATE);
+        SharedPreferences shared_id = getSharedPreferences("shared_id",Activity.MODE_PRIVATE);
         String loginid,loginpassword,id,name,resauth;
         loginid = auto.getString("o_id",null);
         loginpassword = auto.getString("o_password",null);
 
-        final StringRequest StringRequest2 = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                try {
-                    JSONObject jsonObject = new JSONObject(response);
-                    boolean success = jsonObject.getBoolean("success");
-                    String resauth = jsonObject.getString("owner_resauth");
-                    String id = jsonObject.getString("uid");
+        final StringRequest StringRequest2 = new StringRequest(Request.Method.POST, login_url, response -> {
+            try {
+                JSONObject jsonObject = new JSONObject(response);
+                boolean success = jsonObject.getBoolean("success");
+                String resauth1 = jsonObject.getString("owner_resauth");
+                String id1 = jsonObject.getString("uid");
 
-                    if(success==true){
-                        userAuthClass.setOwnerid(Eidinput.getText().toString());
-                        userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
-                        userAuthClass.setUid(id);
-                        userInfoClass.setuId(id);
-                        Intent intent2 = new Intent(SigninActivity.this, HomeActivity.class);
-                        Intent intent1 = new Intent(SigninActivity.this,JudgingActivity.class);
-                        Intent intent0 = new Intent(SigninActivity.this,RegisterGuideActivity.class);
+                if(success==true){
+                    userAuthClass.setOwnerid(Eidinput.getText().toString());
+                    userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
+                    userAuthClass.setUid(id1);
+                    userInfoClass.setuId(id1);
+                    Intent intent2 = new Intent(SigninActivity.this, HomeActivity.class);
+                    Intent intent1 = new Intent(SigninActivity.this,JudgingActivity.class);
+                    Intent intent0 = new Intent(SigninActivity.this,RegisterGuideActivity.class);
 
-                        if(resauth.equals("2")){
-                            SharedPreferences.Editor autologin = auto.edit();
-                            autologin.putString("o_resauth",resauth);
-                            autologin.commit();
-                            startActivity(intent2);
-                            finish();
-                        }
-                        else if(resauth.equals("1")){
-                            SharedPreferences.Editor autologin = auto.edit();
-                            autologin.putString("o_resauth",resauth);
-                            autologin.commit();
-                            startActivity(intent1);
-                            finish();
-                        }
-                        else{
-                            SharedPreferences.Editor autologin = auto.edit();
-                            autologin.putString("o_resauth",resauth);
-                            autologin.commit();
-                            startActivity(intent0);
-                            finish();
-                        }
-                    }else{
-                        wronginput.setText("이메일 또는 비밀번호가 일치하지 않습니다.");
+                    if(resauth1.equals("2")){
+                        SharedPreferences.Editor autologin = auto.edit();
+                        autologin.putString("o_resauth", resauth1);
+                        autologin.commit();
+                        startActivity(intent2);
+                        finish();
                     }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    Log.d("spark123","errorj");
+                    else if(resauth1.equals("1")){
+                        SharedPreferences.Editor autologin = auto.edit();
+                        autologin.putString("o_resauth", resauth1);
+                        autologin.commit();
+                        startActivity(intent1);
+                        finish();
+                    }
+                    else{
+                        SharedPreferences.Editor autologin = auto.edit();
+                        autologin.putString("o_resauth", resauth1);
+                        autologin.commit();
+                        startActivity(intent0);
+                        finish();
+                    }
+                }else{
+                    wronginput.setText("이메일 또는 비밀번호가 일치하지 않습니다.");
                 }
+            } catch (JSONException e) {
+                e.printStackTrace();
+                Log.d("spark123","errorj");
             }
         }, new Response.ErrorListener() {
             @Override
@@ -159,7 +170,7 @@ public class SigninActivity extends AppCompatActivity {
         };
 
         if(loginid!=null&&loginpassword!=null){
-           requestQueue.add(StringRequest2);
+           requestQueue.add(StringRequest2);        //TODO: auto login
         }
 
         signupbutton = findViewById(R.id.signin_signupButton);
@@ -193,6 +204,9 @@ public class SigninActivity extends AppCompatActivity {
                         Intent intent1 = new Intent(SigninActivity.this,JudgingActivity.class);
                         Intent intent0 = new Intent(SigninActivity.this,RegisterGuideActivity.class);
 
+                        SharedPreferences.Editor uid = shared_id.edit();
+                        uid.putString("id",userAuthClass.getUid());
+                        uid.commit();
                         SharedPreferences.Editor autologin = auto.edit();
                         autologin.putString("o_resauth", resauth);
                         autologin.putString("o_id", idinput);

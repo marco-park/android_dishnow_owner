@@ -34,6 +34,7 @@ public class ReservationArrayClass {
         for(int i=0;i<ReservationArray.size();i++){
             if(uid.equals(ReservationArray.get(i).getUid())){
                 ReservationArray.remove(i);
+                break;
             }
         }
    }
@@ -55,6 +56,7 @@ public class ReservationArrayClass {
         for(int i=0;i<ReservationArray.size();i++){
             if(uid.equals(ReservationArray.get(i).getUid())){
                 ReservationArray.remove(i);
+                break;
             }
         }
    }

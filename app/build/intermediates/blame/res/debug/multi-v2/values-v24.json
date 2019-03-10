@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b7100f858447162a3b1098178d1b42c3/res/values-v24/values-v24.xml",

@@ -23,6 +23,7 @@
                 android:layout_height="53dp"
                 android:background="@color/color_violet"
                 android:gravity="center"
+                android:id="@+id/custom_dialog_textView"
                 android:text="로그아웃을 하시겠습니까?"
                 android:textColor="#fff"
                 android:textSize="20sp" />
@@ -30,8 +31,6 @@
         <!-- //end 타이틀바 -->
 
         <!-- Notice -->
-
-
 
 
         <!-- Notice -->

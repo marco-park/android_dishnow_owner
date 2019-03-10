@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
+            "outputFile": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/e2586d9ccf716890519844c46c390c09/res/values-ko/values-ko.xml",

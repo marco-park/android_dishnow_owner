@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml",
+            "outputFile": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml",
             "map": [
                 {
                     "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/d91091a2dcaa0702d96f975949ede0b0/res/values-lo/values.xml",

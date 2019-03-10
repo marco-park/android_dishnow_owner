@@ -1,20 +1,26 @@
 package com.picke.dishnow_owner;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Handler;
+import android.os.Parcelable;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -26,6 +32,8 @@ import com.picke.dishnow_owner.Utility.RecyclerAdapter_onwait;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
@@ -52,6 +60,7 @@ public class OnWaitActivity extends AppCompatActivity {
     private UserInfoClass userInfoClass;
     private ReservationArrayClass reservationArrayClass;
     private TextView Tonwaitshow;
+    Handler handler = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,19 +89,25 @@ public class OnWaitActivity extends AppCompatActivity {
         Imy.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
         Tmy.setTextColor(getResources().getColor(R.color.color_bolder));
 
+        handler = new Handler();
+
         vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
         userInfoClass = UserInfoClass.getInstance(getApplicationContext());
-        res_id = userInfoClass.getuId();
+        SharedPreferences shared_id = getSharedPreferences("shared_id", Activity.MODE_PRIVATE);
+        res_id = shared_id.getString("id",null);
+
         RecyclerView recyclerView = findViewById(R.id.onwait_recyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         reservationArrayClass = ReservationArrayClass.getInstance(getApplicationContext());
+        arrayList = ReservationArrayClass.getInstance(getApplicationContext()).getresArray();
 
         try {
             mSocket = IO.socket("http://ec2-18-218-206-167.us-east-2.compute.amazonaws.com:3000");
             mSocket.on(Socket.EVENT_CONNECT, (Object... objects) -> {
                 JsonObject prejsonobject = new JsonObject();
                 prejsonobject.addProperty("res_id",res_id);
+                prejsonobject.addProperty("res_token",userInfoClass.getOwnertoken());
                 JSONObject jsonObject_id = null;
                 try{
                     jsonObject_id = new JSONObject(prejsonobject.toString());
@@ -119,6 +134,8 @@ public class OnWaitActivity extends AppCompatActivity {
                     intent.putExtra("user_people", people);
                     intent.putExtra("user_time", time);
                     intent.putExtra("user_id", uid);
+                    intent.putExtra("user_sec", jsonObject.get("user_sec").toString());
+                    intent.putExtra("user_arrive_sec",jsonObject.get("user_arrive_sec").toString());
                     startActivity(intent);
                     finish();
                 });
@@ -132,7 +149,12 @@ public class OnWaitActivity extends AppCompatActivity {
                     String uid = jsonObject.get("user_id").toString();
                     uid = uid.substring(1, uid.length() - 1);
                     reservationArrayClass.fin_add(reservationArrayClass.get_resclass(uid));
-                    reservationArrayClass.res_delete(uid);
+                    try{
+                        reservationArrayClass.res_delete(uid);
+
+                    }catch(Exception e){
+                        e.printStackTrace();
+                    }
                     Intent intent1 = new Intent(OnWaitActivity.this, BookedActivity.class);
                     startActivity(intent1);
                     finish();
@@ -144,29 +166,68 @@ public class OnWaitActivity extends AppCompatActivity {
 
         adapter = new RecyclerAdapter_onwait();
         recyclerView.setAdapter(adapter);
-        getData();
 
-        Lmy.setOnClickListener(new View.OnClickListener() {
+        TimerTask timerTask= new TimerTask() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(OnWaitActivity.this,MyActivity.class);
-                startActivity(intent);
-                overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
-                finish();
-                overridePendingTransition(R.xml.anim_slide_in_right, R.xml.anim_slide_out_left);
-
+            public void run() {
+                runOnUiThread(()-> {
+                    adapter.clearItem();
+                    getData();
+                    arrayList = ReservationArrayClass.getInstance(getApplicationContext()).getresArray();
+                    long now = System.currentTimeMillis()/1000;
+                    for(int i=0;i<arrayList.size();i++){
+                        if((now-arrayList.get(i).getNowsecond())>=60*10){
+                            reservationArrayClass.res_delete(arrayList.get(i).getUid());
+                            adapter.removeItem(i);
+                        }
+                    }
+                    adapter.notifyDataSetChanged();
+                    if(adapter.getItemCount()!=0){
+                        Tonwaitshow.setText("");
+                    }else{
+                        Tonwaitshow.setText("내역이 없습니다.");
+                    }
+                });
             }
+        };
+        Timer timer = new Timer();
+        timer.schedule(timerTask,10,1000);
+
+        /*
+        Thread thread = new Thread(() -> handler.post(() -> {
+            try {
+                long now = System.currentTimeMillis()/1000;
+                for(int i=0;i<arrayList.size();i++){
+                    if(now-arrayList.get(i).getNowsecond()>=2){
+                        reservationArrayClass.res_delete(arrayList.get(i).getUid());
+                    }
+                }
+                getData();
+                Thread.sleep(1000);
+
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }));
+
+
+        thread.start()
+        */
+
+        Lmy.setOnClickListener(v -> {
+            Intent intent = new Intent(OnWaitActivity.this,MyActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
+            finish();
+            overridePendingTransition(R.xml.anim_slide_in_right, R.xml.anim_slide_out_left);
+
         });
-        Lreservation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(OnWaitActivity.this, HomeActivity.class);
-                startActivity(intent);
-                overridePendingTransition(R.xml.anim_slide_in_right, R.xml.anim_slide_out_left);
-                finish();
-                overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
-
-            }
+        Lreservation.setOnClickListener(v -> {
+            Intent intent = new Intent(OnWaitActivity.this, HomeActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.xml.anim_slide_in_right, R.xml.anim_slide_out_left);
+            finish();
+            overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
         });
     }
     private void getData() {
@@ -177,14 +238,15 @@ public class OnWaitActivity extends AppCompatActivity {
             reservationClass.setPeople(arrayList.get(i).getPeople());
             reservationClass.setUid(arrayList.get(i).getUid());
             reservationClass.setNowtime(arrayList.get(i).getNowtime());
+            reservationClass.setNowsecond(arrayList.get(i).getNowsecond());
             adapter.addItem(reservationClass);
         }
+        adapter.notifyDataSetChanged();
         if(adapter.getItemCount()!=0){
             Tonwaitshow.setText("");
         }else{
             Tonwaitshow.setText("내역이 없습니다.");
         }
-        adapter.notifyDataSetChanged();
     }
 
     @Override
@@ -198,6 +260,7 @@ public class OnWaitActivity extends AppCompatActivity {
         super.onResume();
         JsonObject prejsonobject = new JsonObject();
         prejsonobject.addProperty("res_id", res_id);
+        prejsonobject.addProperty("res_token",userInfoClass.getOwnertoken());
         JSONObject jsonObject_id = null;
         try {
             jsonObject_id = new JSONObject(prejsonobject.toString());

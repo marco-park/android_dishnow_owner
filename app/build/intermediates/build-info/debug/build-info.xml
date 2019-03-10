@@ -2,13 +2,13 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="26"
-    build-mode="COLD"
+    build-mode="FULL"
     density="xxxhdpi"
     format="10"
     plugin-version="3.3.1"
-    timestamp="1551024530687"
+    timestamp="1551101737366"
     token="91183353958305090"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -24,42 +24,105 @@
         duration="0" />
 
     <artifact
-        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1551023236162"
+        timestamp="1551101737366"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
             location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -68,39 +131,46 @@
             location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1551023652267"
-        verifier="COLD_SWAP_REQUESTED" >
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1551023990991"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1551024530687"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/Users/spark/Downloads/android_dishnow_owner 2/android_dishnow_owner (1)/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
     </build>
 
