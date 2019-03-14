@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -31,6 +32,7 @@ import com.picke.dishnow_owner.Utility.VolleySingleton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -41,7 +43,7 @@ public class Registration_BusinessActivity extends AppCompatActivity {
     private Button nextbutton;
     private EditText textresnum;
     private EditText textownername;
-    private EditText Eimagelocal;
+    private TextView Eimagelocal;
     private String sresnum;
     private String sownername;
 

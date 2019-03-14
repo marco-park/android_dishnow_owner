@@ -114,7 +114,6 @@ public class OnWaitActivity extends AppCompatActivity {
                 }
                 mSocket.emit("res_id", jsonObject_id);
             }).on("user_call", (Object... objects) -> {
-                vibrator.vibrate(2000);
                 Uri uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
                 Ringtone ringtone = RingtoneManager.getRingtone(getApplicationContext(), uri);
                 ringtone.play();
