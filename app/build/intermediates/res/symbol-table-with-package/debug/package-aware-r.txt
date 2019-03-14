@@ -1390,7 +1390,7 @@ id res_info_register
 id res_info_res_name
 id res_info_resphone
 id res_info_search_address_btn
-id res_info_toolbar
+id res_res_toolbar
 id ressignup_imagebutton
 id ressignup_imagefile
 id ressignup_name

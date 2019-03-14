@@ -70,42 +70,34 @@ public class Registration_BusinessActivity extends AppCompatActivity {
 
         textresnum.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
         textownername.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
-        Eimagelocal.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
 
         requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
         userInfoClass = UserInfoClass.getInstance(getApplicationContext());
-        final Geocoder geocoder = new Geocoder(this);
 
         id = userInfoClass.getuId();
 
-        imageuploadbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getGallery();
+        imageuploadbutton.setOnClickListener(v -> getGallery());
+
+        nextbutton.setOnClickListener(v -> {
+
+            sresnum = textresnum.getText().toString();
+            sownername = textownername.getText().toString();
+
+            if(sresnum.length()==0){
+                Toast.makeText(getApplicationContext(),"사업자 번호를 입력해주세요",Toast.LENGTH_SHORT).show();
             }
-        });
-
-        nextbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                sresnum = textresnum.getText().toString();
-                sownername = textownername.getText().toString();
-
-                if(sresnum.length()==0){
-                    Toast.makeText(getApplicationContext(),"사업자 번호를 입력해주세요",Toast.LENGTH_SHORT).show();
-                }
-                else if(sownername.length()==0){
-                    Toast.makeText(getApplicationContext(),"사업주명을 입력해주세요",Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    requestQueue.add(stringRequest);
-                    userInfoClass.setOwnername(textownername.getText().toString());
-                    userInfoClass.setResid(textresnum.getText().toString());
-                    Intent intent = new Intent(Registration_BusinessActivity.this, Registration_RestaurantActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
+            else if(sownername.length()==0){
+                Toast.makeText(getApplicationContext(),"사업주명을 입력해주세요",Toast.LENGTH_SHORT).show();
+            }
+            else if(Eimagelocal.getText().toString().length()==0){
+                Toast.makeText(getApplicationContext(),"사진을 첨부해주세요",Toast.LENGTH_SHORT).show();
+            }
+            else{
+                requestQueue.add(stringRequest);
+                userInfoClass.setOwnername(textownername.getText().toString());
+                userInfoClass.setResid(textresnum.getText().toString());
+                Intent intent = new Intent(Registration_BusinessActivity.this, Registration_RestaurantActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -114,12 +106,7 @@ public class Registration_BusinessActivity extends AppCompatActivity {
         @Override
         public void onResponse(String response) {
         }
-    }, new Response.ErrorListener() {
-        @Override
-        public void onErrorResponse(VolleyError error) {
-            Log.d("spark123","errorv");
-        }
-    }) {
+    }, error -> Log.d("spark123","errorv")) {
         @Override
         protected Map<String, String> getParams() throws AuthFailureError {
             Map<String, String> params = new HashMap<>();

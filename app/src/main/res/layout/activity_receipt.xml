@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu.ReceiptActivity">
-
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:background="@drawable/tabbar_baground"
@@ -25,6 +24,7 @@
     </android.support.v7.widget.Toolbar>
 
     <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="75dp"
         android:layout_below="@+id/ressignup_toolbar"
         android:id="@+id/receipt_recyclerView"
         android:layout_width="match_parent"

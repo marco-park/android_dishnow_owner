@@ -17,47 +17,57 @@
             android:layout_width="match_parent"
             android:layout_height="96dp"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
             android:orientation="horizontal"
             >
+
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 >
-
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/hollow_button"
-                    android:fontFamily="@font/nanumsquareotfbold"
-                    android:textSize="24sp"
-                    android:id="@+id/popup_call_rejectbutton"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="150dp"
-                    android:layout_height="70dp"
-                    android:text="거절"
-                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/hollow_button"
+                        android:fontFamily="@font/nanumsquareotfbold"
+                        android:textSize="24sp"
+                        android:id="@+id/popup_call_rejectbutton"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:text="거절"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="right"
                 >
-
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:background="@drawable/signin_button"
-                    android:fontFamily="@font/nanumsquareotfbold"
-                    android:textColor="@color/color_violet"
-                    android:textSize="24sp"
-                    android:text="수락"
-                    android:id="@+id/popup_call_acceptbutton"
-                    android:layout_marginRight="15dp"
-                    android:layout_width="150dp"
-                    android:layout_height="70dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:background="@drawable/signin_button"
+                        android:fontFamily="@font/nanumsquareotfbold"
+                        android:textColor="@color/color_violet"
+                        android:textSize="24sp"
+                        android:text="수락"
+                        android:id="@+id/popup_call_acceptbutton"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
 
             </LinearLayout>
         </LinearLayout>
@@ -78,13 +88,13 @@
             android:layout_height="25dp"
             android:orientation="horizontal"
             >
+
             <ImageView
                 android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/ic_bubble"
-                android:backgroundTint="#FFFFFF"
+                android:layout_height="match_parent"
                 android:layout_marginRight="8dp"
-                />
+                android:background="@drawable/ic_icon_call"
+                android:backgroundTint="#FFFFFF" />
             <TextView
                 android:gravity="center"
                 android:layout_width="wrap_content"
@@ -104,7 +114,7 @@
             android:background="#FFFFFF"
             android:layout_marginTop="10.5dp"
             />
-        
+
         <LinearLayout
             android:layout_marginTop="10.5dp"
             android:layout_width="wrap_content"
@@ -139,7 +149,7 @@
             android:textColor="#FFFFFF"
             android:fontFamily="@font/nanumsquareotfbold"
             />
-        
+
         <LinearLayout
             android:layout_marginTop="4dp"
             android:layout_width="wrap_content"
@@ -184,7 +194,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="36sp"
                 />
-            
+
         </LinearLayout>
 
         <TextView
@@ -212,7 +222,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="36sp"
                 />
-            
+
             <TextView
                 android:layout_marginLeft="9dp"
                 android:layout_width="wrap_content"

@@ -21,9 +21,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Menu.FAQActivity"></activity>
-        <activity android:name=".Menu.ReceiptActivity" />
-        <activity android:name=".Menu.MenuActivity" />
+        <activity android:name=".Menu.FAQActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+        <activity android:name=".Menu.ReceiptActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Menu.MenuActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            />
 
         <service android:name=".Utility.FireBaseMessagingService">
             <intent-filter>

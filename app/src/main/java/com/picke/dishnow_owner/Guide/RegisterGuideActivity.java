@@ -23,7 +23,6 @@ public class RegisterGuideActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(RegisterGuideActivity.this, Registration_BusinessActivity.class));
-                finish();
             }
         });
     }

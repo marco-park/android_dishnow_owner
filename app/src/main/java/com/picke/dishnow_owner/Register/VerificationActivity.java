@@ -19,6 +19,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
+import android.widget.Toast;
 
 
 import com.android.volley.AuthFailureError;
@@ -38,6 +39,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.regex.Pattern;
 
 public class VerificationActivity extends AppCompatActivity {
 
@@ -52,13 +54,15 @@ public class VerificationActivity extends AppCompatActivity {
     private UserAuthClass userAuthClass;
     private UserInfoClass userInfoClass;
     private String uid;
-    private Boolean flag=true;
+    private Boolean flag = false;
+    private Boolean flag2 = false;
     private final Context context =this;
     private TimerTask second;
     private TextView Ttimer;
     private final Handler handler = new Handler();
-    private Integer timer_minute=3;
-    private Integer timer_second=0;
+    private Integer timer_minute = 3;
+    private Integer timer_second = 0;
+    private int count=0;
 
     final String feed_url_signup = "http://claor123.cafe24.com/Owner_Signup.php";
     final String feed_url_phone = "http://claor123.cafe24.com/smspush.php";
@@ -108,6 +112,7 @@ public class VerificationActivity extends AppCompatActivity {
                     Ephoneauth.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
                     Ephoneauth.setCompoundDrawablesWithIntrinsicBounds(null,null,null,null);
                     tverrorphoneauth.setText("인증번호를 확인해주세요.");
+                    flag=false;
                 }
             }
 
@@ -128,6 +133,7 @@ public class VerificationActivity extends AppCompatActivity {
                 AlertDialog alert = builder.create();
                 //alert.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
                 alert.show();
+                count++;
 
                 Button positiveButton = alert.getButton(AlertDialog.BUTTON_POSITIVE);
                 LinearLayout parent = (LinearLayout) positiveButton.getParent();
@@ -182,35 +188,54 @@ public class VerificationActivity extends AppCompatActivity {
             }
         };
 
-        phoneauthbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Random random = new Random();
-                Authnumber = "";
-                for(int i=0;i<4;i++) {
-                    Authnumber += Integer.toString(random.nextInt(10));
-                }
-                requestQueue.add(stringRequest_phone);
-
-
+        phoneauthbutton.setOnClickListener(v -> {
+            Random random = new Random();
+            Authnumber = "";
+            for(int i=0;i<4;i++) {
+                Authnumber += Integer.toString(random.nextInt(10));
             }
+            requestQueue.add(stringRequest_phone);
         });
 
+        signupbutton.setOnClickListener(v -> {
+            if(Eonwername.getText().toString().length()==0||(!Pattern.matches("^[가-힣a-zA-Z]+$", Eonwername.getText().toString()))){
+                flag2=false;
+                Toast.makeText(getApplicationContext(),"이름을 확인해주세요.", Toast.LENGTH_LONG).show();
+            }
+            else{
+                flag2=true;
+            }
+            if(flag==true&&flag2==true&&count<=10) {
+                userAuthClass.setOwnername(Eonwername.getText().toString());
+                userAuthClass.setOwnerphone(Eownerphone.getText().toString());
+                requestQueue.add(StringRequest_signup);
 
-        signupbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(flag) {
-                    userAuthClass.setOwnername(Eonwername.getText().toString());
-                    userAuthClass.setOwnerphone(Eownerphone.getText().toString());
-                    requestQueue.add(StringRequest_signup);
+                Intent intent = new Intent(VerificationActivity.this, JoinedActivity.class);
+                startActivity(intent);
+                JoinActivity joinActivity = (JoinActivity) JoinActivity._Signup_Activity;
+                joinActivity.finish();
+                finish();
+            }else if(flag==false){
+                Toast.makeText(getApplicationContext(),"인증번호를 입력해 주세요.", Toast.LENGTH_LONG).show();
+            }else if(count>10){
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder
+                        .setMessage("인증번호 전송 횟수를 초과하였습니다. 고객센터로 연락해 주세요.")
+                        .setPositiveButton("확인",null)
+                        .setCancelable(false);
+                AlertDialog alert = builder.create();
+                //alert.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+                alert.show();
+                count++;
 
-                    Intent intent = new Intent(VerificationActivity.this, JoinedActivity.class);
-                    startActivity(intent);
-                    JoinActivity joinActivity = (JoinActivity)JoinActivity._Signup_Activity;
-                    joinActivity.finish();
-                    finish();
-                }
+                Button positiveButton = alert.getButton(AlertDialog.BUTTON_POSITIVE);
+                LinearLayout parent = (LinearLayout) positiveButton.getParent();
+                parent.setGravity(Gravity.CENTER_HORIZONTAL);
+                View leftSpacer = parent.getChildAt(1);
+                leftSpacer.setVisibility(View.GONE);
+
+                TextView message = (TextView)alert.findViewById(android.R.id.message);
+                message.setGravity(Gravity.CENTER);
             }
         });
     }
@@ -234,6 +259,11 @@ public class VerificationActivity extends AppCompatActivity {
                 if(timer_second<0){
                     timer_second=59;
                     timer_minute--;
+                }
+                if(timer_second==0&&timer_minute==0){
+                    timer_second=0;
+                    timer_minute=3;
+                    Toast.makeText(getApplicationContext(),"인증번호를 다시 받아주세요",Toast.LENGTH_LONG).show();
                 }
             }
         };

@@ -154,7 +154,8 @@
             android:id="@+id/additional_info__ownerbirth"
             android:hint="생년월일을 입력하세요.ex)19901231"
             android:fontFamily="@font/nanumsquareotfregular"
-            android:textSize="16sp"
+            android:nextFocusForward="@+id/input"
+            android:singleLine="true"
             />
         <TextView
             android:id="@+id/join_birtherror_textview"

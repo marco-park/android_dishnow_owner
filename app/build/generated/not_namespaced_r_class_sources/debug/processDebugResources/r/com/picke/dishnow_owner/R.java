@@ -5098,7 +5098,7 @@ public final class R {
     public static final int res_info_res_name=0x7f0a00fd;
     public static final int res_info_resphone=0x7f0a00fe;
     public static final int res_info_search_address_btn=0x7f0a00ff;
-    public static final int res_info_toolbar=0x7f0a0100;
+    public static final int res_res_toolbar=0x7f0a0100;
     public static final int ressignup_imagebutton=0x7f0a0101;
     public static final int ressignup_imagefile=0x7f0a0102;
     public static final int ressignup_name=0x7f0a0103;

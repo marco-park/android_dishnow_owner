@@ -46,7 +46,7 @@ public class JoinActivity extends AppCompatActivity {
     private TextView errorpassword;
     private TextView errorpassword2;
 
-    private Boolean flag1=false,flag2=false,flag3=false;
+    private Boolean flag1=false,flag2=false,flag3=false,flag0=false;
     private String ownerid;
     private String uid;
 
@@ -177,7 +177,7 @@ public class JoinActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                if(!Pattern.matches("^(?=.*[a-zA-Z]+)(?=.*[!@#$%^*+=-]|.*[0-9]+).{8,20}$", Eownerpassword.getText().toString())){
+                if(!Pattern.matches("^(?=.*[A-Za-z])(?=.*[0-9])[A-Za-z0-9]{8,20}$", Eownerpassword.getText().toString())){
                     errorpassword.setText("영문, 숫자 8~20자의 비밀번호를 설정하세요.");
                     Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
                     Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null,null,image_no,null);

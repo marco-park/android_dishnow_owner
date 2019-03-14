@@ -19,6 +19,8 @@ import android.widget.TextView;
 import com.picke.dishnow_owner.Owner_User.UserAuthClass;
 import com.picke.dishnow_owner.R;
 
+import java.util.regex.Pattern;
+
 public class Additional_InfoActivity extends AppCompatActivity {
 
     private UserAuthClass userAuthClass;
@@ -85,7 +87,7 @@ public class Additional_InfoActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                if(Eownerbirth.getText().toString().length()!=8){
+                if(Eownerbirth.getText().toString().length()!=8||(!Pattern.matches("^[0-9]+$", Eownerbirth.getText().toString()))){
                     flag=false;
                     Eownerbirth.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
                     Eownerbirth.setCompoundDrawablesWithIntrinsicBounds(null, null, image_no, null);
