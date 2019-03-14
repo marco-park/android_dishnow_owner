@@ -64,19 +64,19 @@ public class OnWaitActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_on_wait);
-        Tonwaitshow = findViewById(R.id.main_show);
+        Tonwaitshow = findViewById(R.id.onwait_show);
 
         Lreservation = findViewById(R.id.onwait_rescompletelayout);
-        Ireservation = findViewById(R.id.main_reservation_imageview);
-        Treservation = findViewById(R.id.main_reservation_txtview);
+        Ireservation = findViewById(R.id.onwait_reservation_imageview);
+        Treservation = findViewById(R.id.onwait_reservation_txtview);
 
         Lwaitmatching = findViewById(R.id.onwait_waitmatchinglayout);
-        Iwaitmatching = findViewById(R.id.main_wait_matching_imageview);
-        Twaitmatching = findViewById(R.id.main_wait_matching_txtview);
+        Iwaitmatching = findViewById(R.id.onwiat_matching_imageview);
+        Twaitmatching = findViewById(R.id.onwait_matching_txtview);
 
         Lmy = findViewById(R.id.onwait_mymenulayout);
-        Imy = findViewById(R.id.main_my_imageview);
-        Tmy = findViewById(R.id.main_my_txtview);
+        Imy = findViewById(R.id.onwait_my_imageview);
+        Tmy = findViewById(R.id.onwait_my_txtview);
 
         Ireservation.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
         Treservation.setTextColor(getResources().getColor(R.color.color_bolder));

@@ -8,7 +8,7 @@
 
     <TextView
         android:fontFamily="@font/nanumsquareotfregular"
-        android:id="@+id/main_show"
+        android:id="@+id/onwait_show"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -19,7 +19,7 @@
         />
 
     <android.support.v7.widget.RecyclerView
-        android:layout_above="@+id/main_bottom"
+        android:layout_above="@+id/onwait_bottom"
         android:id="@+id/onwait_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,7 +27,7 @@
         />
 
     <RelativeLayout
-        android:id="@+id/main_bottom"
+        android:id="@+id/onwait_bottom"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -59,18 +59,20 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     >
+
                     <ImageView
                         android:layout_marginLeft="15dp"
-                        android:id="@+id/main_reservation_imageview"
+                        android:id="@+id/onwait_reservation_imageview"
                         android:layout_centerVertical="true"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/ic_icon_logo"
+                        android:background="@drawable/ic_bubble"
                         android:backgroundTint="@color/color_bolder" />
+
                     <TextView
-                        android:id="@+id/main_reservation_txtview"
+                        android:id="@+id/onwait_reservation_txtview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
@@ -92,9 +94,6 @@
 
                 </RelativeLayout>
 
-
-
-
             </LinearLayout>
 
             <LinearLayout
@@ -109,16 +108,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
+
                     <ImageView
                         android:layout_marginLeft="15dp"
-                        android:id="@+id/main_wait_matching_imageview"
+                        android:id="@+id/onwiat_matching_imageview"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/ic_icon_logo"
+                        android:background="@drawable/kakaoaccount_icon"
                         android:backgroundTint="@color/color_bolder" />
+
                     <TextView
-                        android:id="@+id/main_wait_matching_txtview"
+                        android:id="@+id/onwait_matching_txtview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
@@ -156,8 +157,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true">
+
                         <ImageView
-                            android:id="@+id/main_my_imageview"
+                            android:id="@+id/onwait_my_imageview"
                             android:layout_width="19dp"
                             android:layout_height="20dp"
                             android:layout_centerHorizontal="true"
@@ -165,14 +167,15 @@
                             android:layout_marginRight="8dp"
                             android:background="@drawable/ic_icon_shop"
                             android:backgroundTint="@color/color_bolder" />
+
                         <TextView
-                            android:id="@+id/main_my_txtview"
+                            android:id="@+id/onwait_my_txtview"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:fontFamily="@font/nanumsquareotfregular"
                             android:layout_centerVertical="true"
-                            android:layout_toRightOf="@+id/main_my_imageview"
+                            android:layout_toRightOf="@+id/onwait_my_imageview"
                             android:text="My"
                             android:textColor="@color/color_bolder"
                             android:textSize="15sp" />

@@ -19,7 +19,7 @@
         <ImageView
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:background="@drawable/ic_icon_logo"
+            android:background="@drawable/ic_icon_call"
             android:layout_marginRight="18dp"/>
         <TextView
             android:layout_width="wrap_content"
