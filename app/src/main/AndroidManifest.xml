@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -21,15 +21,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".MenuActivity"></activity>
-        <!--
+        <activity android:name=".Menu.FAQActivity"></activity>
+        <activity android:name=".Menu.ReceiptActivity" />
+        <activity android:name=".Menu.MenuActivity" />
 
         <service android:name=".Utility.FireBaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            < /intent-filter>
+            </intent-filter>
         </service>
-        !-->
 
         <activity
             android:name=".SigninActivity"
@@ -41,116 +41,113 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".BookedActivity"
+            android:name=".Call.BookedActivity"
             android:label=""
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="OPEN_BOOKACTIVITY"
+                    />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_icon_logo" />
-
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />
 
-
-        <activity android:name=".CallActivity"
+        <activity
+            android:name=".Call.CallActivity"
             android:screenOrientation="portrait">
             <intent-filter>
-            <action android:name="OPEN_CALLACTIVITY" />
-            <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="OPEN_CALLACTIVITY"
+                    />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
-
         <activity
             android:name=".HomeActivity"
             android:label=""
             android:screenOrientation="portrait" />
         <activity
-            android:name=".JoinActivity"
+            android:name=".Register.JoinActivity"
             android:label=""
             android:screenOrientation="portrait" />
         <activity
-            android:name=".JoinedActivity"
+            android:name=".Guide.JoinedActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Registration_BusinessActivity"
+            android:name=".Register.Registration_BusinessActivity"
             android:label=""
             android:screenOrientation="portrait" />
         <activity
             android:name=".Utility.JusoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".VerificationActivity"
+            android:name=".Register.VerificationActivity"
             android:label=""
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Registration_RestaurantActivity"
+            android:name=".Register.Registration_RestaurantActivity"
             android:label=""
             android:screenOrientation="portrait" />
         <activity
-            android:name=".FindidpassActivity"
+            android:name=".Register.FindidpassActivity"
             android:label=""
             android:screenOrientation="portrait" />
         <activity
-            android:name=".FindemailActivity"
+            android:name=".Register.FindemailActivity"
             android:label=""
             android:screenOrientation="portrait" />
         <activity
-            android:name=".RegisterGuideActivity"
+            android:name=".Guide.RegisterGuideActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".JudgingActivity"
+            android:name=".Guide.JudgingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Additional_InfoActivity"
+            android:name=".Register.Additional_InfoActivity"
             android:label=""
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Change_PWActivity"
+            android:name=".Register.Change_PWActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".PW_FoundActivity"
+            android:name=".Register.PW_FoundActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TermsActivity"
-            android:label=""
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TermsServiceActivity"
+            android:name=".Guide.TermsActivity"
             android:label=""
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TermsIndividualInfoActivity"
+            android:name=".Utility.TermsServiceActivity"
             android:label=""
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TermsLocationActivity"
+            android:name=".Utility.TermsIndividualInfoActivity"
             android:label=""
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TermsMarketingReceiveActivity"
+            android:name=".Utility.TermsLocationActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Utility.TermsMarketingReceiveActivity"
             android:label=""
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MyActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".OnWaitActivity"
             android:screenOrientation="portrait" />
@@ -159,4 +156,5 @@
             android:name="com.google.android.actions"
             android:resource="@xml/anim_slide_in_left" />
     </application>
+
 </manifest>

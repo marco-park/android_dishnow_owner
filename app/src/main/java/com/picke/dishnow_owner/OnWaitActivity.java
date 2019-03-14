@@ -9,21 +9,19 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Handler;
-import android.os.Parcelable;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.picke.dishnow_owner.Call.BookedActivity;
+import com.picke.dishnow_owner.Call.CallActivity;
 import com.picke.dishnow_owner.Owner_User.ReservationArrayClass;
 import com.picke.dishnow_owner.Owner_User.ReservationClass;
 import com.picke.dishnow_owner.Owner_User.UserInfoClass;
@@ -155,7 +153,14 @@ public class OnWaitActivity extends AppCompatActivity {
                     }catch(Exception e){
                         e.printStackTrace();
                     }
+                    String user_people = jsonObject.get("user_people").toString();
+                    user_people = user_people.substring(1,user_people.length()-1);
+                    String user_arrive_sec = jsonObject.get("user_arrive_sec").toString();
+                    user_arrive_sec = user_arrive_sec.substring(1,user_arrive_sec.length()-1);
+
                     Intent intent1 = new Intent(OnWaitActivity.this, BookedActivity.class);
+                    intent1.putExtra("user_people",user_people);
+                    intent1.putExtra("user_arrive_sec",user_arrive_sec);
                     startActivity(intent1);
                     finish();
             });
@@ -176,7 +181,7 @@ public class OnWaitActivity extends AppCompatActivity {
                     arrayList = ReservationArrayClass.getInstance(getApplicationContext()).getresArray();
                     long now = System.currentTimeMillis()/1000;
                     for(int i=0;i<arrayList.size();i++){
-                        if((now-arrayList.get(i).getNowsecond())>=60*10){
+                        if((now-arrayList.get(i).getNowsecond())>=30){
                             reservationArrayClass.res_delete(arrayList.get(i).getUid());
                             adapter.removeItem(i);
                         }
@@ -193,26 +198,6 @@ public class OnWaitActivity extends AppCompatActivity {
         Timer timer = new Timer();
         timer.schedule(timerTask,10,1000);
 
-        /*
-        Thread thread = new Thread(() -> handler.post(() -> {
-            try {
-                long now = System.currentTimeMillis()/1000;
-                for(int i=0;i<arrayList.size();i++){
-                    if(now-arrayList.get(i).getNowsecond()>=2){
-                        reservationArrayClass.res_delete(arrayList.get(i).getUid());
-                    }
-                }
-                getData();
-                Thread.sleep(1000);
-
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }));
-
-
-        thread.start()
-        */
 
         Lmy.setOnClickListener(v -> {
             Intent intent = new Intent(OnWaitActivity.this,MyActivity.class);

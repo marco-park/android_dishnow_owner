@@ -6,7 +6,7 @@
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
     android:background="@color/color_white"
-    tools:context=".JudgingActivity">
+    tools:context=".Guide.JudgingActivity">
     <ImageView
         android:layout_marginTop="64dp"
         android:layout_centerHorizontal="true"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:textSize="18dp"
             android:textColor="@color/color_black"
-            android:text="심사 후 카카오톡으로 안내가 발송됩니다."
+            android:text="심사 후 문자로 안내가 발송됩니다."
             android:id="@+id/res_auth1_text"/>
         <ImageView
             android:layout_gravity="center"

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-162:12
-INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-162:12
-INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-162:12
-INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-162:12
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-160:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-160:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-160:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-160:12
 MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8ef07146d8986ffaf5e3c2e0fff3ff75/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bf85b9d391ae398864aa1b88dd2427a7/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0e6bea800f012ddcbd51d4a2aa385dae/AndroidManifest.xml:2:1-11:12
@@ -58,20 +58,20 @@ MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transf
 MERGED from [com.kakao.sdk:network:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/network-1.15.1.aar/bd28d680be6ab672fb73274f3094c7f5/AndroidManifest.xml:2:1-11:12
 MERGED from [com.kakao.sdk:common:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/common-1.15.1.aar/0b9be775e4507881942d48fbca45fc07/AndroidManifest.xml:2:1-11:12
 MERGED from [com.kakao.sdk:util:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/4d6aaeefd79784edf4d0fb1e32dc3845/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-162:12
-INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-162:12
-INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-162:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-160:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-160:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-160:12
 	package
 		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-162:12
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-160:12
 		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-162:12
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-160:12
 		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:11-69
@@ -124,7 +124,7 @@ ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/Android
 	android:name
 		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:14:22-63
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:15:5-67
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:15:5-68
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/c2fea8dc48e79d5631f65be4916ad507/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/c2fea8dc48e79d5631f65be4916ad507/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/70c9368272d5ee4c24e969bc64836f7c/AndroidManifest.xml:25:5-68
@@ -136,7 +136,7 @@ MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/spark/.gradle/cache
 	android:name
 		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:15:22-65
 application
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:17:5-161:19
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:17:5-158:19
 MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8ef07146d8986ffaf5e3c2e0fff3ff75/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/8ef07146d8986ffaf5e3c2e0fff3ff75/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0e6bea800f012ddcbd51d4a2aa385dae/AndroidManifest.xml:9:5-20
@@ -197,10 +197,28 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradl
 		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:18:9-35
 	android:theme
 		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:23:9-52
-activity#com.picke.dishnow_owner.MenuActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:24:9-59
+activity#com.picke.dishnow_owner.Menu.FAQActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:24:9-63
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:24:19-47
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:24:19-51
+activity#com.picke.dishnow_owner.Menu.ReceiptActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:25:9-58
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:25:19-55
+activity#com.picke.dishnow_owner.Menu.MenuActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:26:9-55
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:26:19-52
+service#com.picke.dishnow_owner.Utility.FireBaseMessagingService
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:28:9-32:19
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:28:18-66
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:29:13-31:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:30:17-78
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:30:25-75
 activity#com.picke.dishnow_owner.SigninActivity
 ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:34:9-43:20
 	android:screenOrientation
@@ -219,14 +237,24 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:41:17-77
 	android:name
 		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:41:27-74
-activity#com.picke.dishnow_owner.BookedActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:45:9-54:20
+activity#com.picke.dishnow_owner.Call.BookedActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:44:9-54:20
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:48:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:47:13-49
 	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:47:13-29
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:46:13-29
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:46:13-43
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:45:13-48
+intent-filter#action:name:OPEN_BOOKACTIVITY+category:name:android.intent.category.DEFAULT
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:48:13-53:29
+action#OPEN_BOOKACTIVITY
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:49:17-50:23
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:49:25-57
+category#android.intent.category.DEFAULT
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:52:17-76
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:52:27-73
 meta-data#com.google.firebase.messaging.default_notification_icon
 ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:56:9-58:57
 	android:resource
@@ -234,195 +262,191 @@ ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/Android
 	android:name
 		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:57:13-83
 meta-data#com.google.firebase.messaging.default_notification_channel_id
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:60:9-62:71
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:59:9-61:71
 	android:value
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:62:13-68
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:61:13-68
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:61:13-89
-activity#com.picke.dishnow_owner.CallActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:65:9-71:20
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:60:13-89
+activity#com.picke.dishnow_owner.Call.CallActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:63:9-72:20
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:66:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:65:13-49
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:65:19-47
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:64:13-46
 intent-filter#action:name:OPEN_CALLACTIVITY+category:name:android.intent.category.DEFAULT
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:67:13-70:29
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:66:13-71:29
 action#OPEN_CALLACTIVITY
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:68:13-56
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:67:17-68:23
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:68:21-53
-category#android.intent.category.DEFAULT
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:69:13-72
-	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:69:23-69
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:67:25-57
 activity#com.picke.dishnow_owner.HomeActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:75:9-78:52
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:73:9-76:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:78:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:76:13-49
 	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:77:13-29
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:75:13-29
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:76:13-41
-activity#com.picke.dishnow_owner.JoinActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:79:9-82:52
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:74:13-41
+activity#com.picke.dishnow_owner.Register.JoinActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:77:9-80:52
 	android:screenOrientation
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:80:13-49
+	android:label
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:79:13-29
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:78:13-50
+activity#com.picke.dishnow_owner.Guide.JoinedActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:81:9-83:52
+	android:screenOrientation
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:83:13-49
+	android:name
 		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:82:13-49
-	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:81:13-29
-	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:80:13-41
-activity#com.picke.dishnow_owner.JoinedActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:83:9-85:52
+activity#com.picke.dishnow_owner.Register.Registration_BusinessActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:84:9-87:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:85:13-49
-	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:84:13-43
-activity#com.picke.dishnow_owner.Registration_BusinessActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:86:9-89:52
-	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:89:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:87:13-49
 	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:88:13-29
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:86:13-29
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:87:13-58
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:85:13-67
 activity#com.picke.dishnow_owner.Utility.JusoActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:90:9-92:52
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:88:9-90:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:92:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:90:13-49
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:91:13-49
-activity#com.picke.dishnow_owner.VerificationActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:93:9-96:52
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:89:13-49
+activity#com.picke.dishnow_owner.Register.VerificationActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:91:9-94:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:96:13-49
-	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:95:13-29
-	android:name
 		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:94:13-49
-activity#com.picke.dishnow_owner.Registration_RestaurantActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:97:9-100:52
-	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:100:13-49
 	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:99:13-29
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:93:13-29
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:98:13-60
-activity#com.picke.dishnow_owner.FindidpassActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:101:9-104:52
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:92:13-58
+activity#com.picke.dishnow_owner.Register.Registration_RestaurantActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:95:9-98:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:104:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:98:13-49
 	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:103:13-29
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:97:13-29
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:102:13-47
-activity#com.picke.dishnow_owner.FindemailActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:105:9-108:52
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:96:13-69
+activity#com.picke.dishnow_owner.Register.FindidpassActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:99:9-102:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:108:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:102:13-49
 	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:107:13-29
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:101:13-29
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:106:13-46
-activity#com.picke.dishnow_owner.RegisterGuideActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:109:9-111:52
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:100:13-56
+activity#com.picke.dishnow_owner.Register.FindemailActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:103:9-106:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:111:13-49
-	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:110:13-50
-activity#com.picke.dishnow_owner.JudgingActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:112:9-114:52
-	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:114:13-49
-	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:113:13-44
-activity#com.picke.dishnow_owner.Additional_InfoActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:115:9-118:52
-	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:118:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:106:13-49
 	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:117:13-29
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:105:13-29
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:116:13-52
-activity#com.picke.dishnow_owner.Change_PWActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:119:9-121:52
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:104:13-55
+activity#com.picke.dishnow_owner.Guide.RegisterGuideActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:107:9-109:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:121:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:109:13-49
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:120:13-46
-activity#com.picke.dishnow_owner.PW_FoundActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:122:9-124:52
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:108:13-56
+activity#com.picke.dishnow_owner.Guide.JudgingActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:110:9-112:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:124:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:112:13-49
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:123:13-45
-activity#com.picke.dishnow_owner.TermsActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:125:9-129:59
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:111:13-50
+activity#com.picke.dishnow_owner.Register.Additional_InfoActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:113:9-116:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:128:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:116:13-49
 	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:127:13-29
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:115:13-29
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:114:13-61
+activity#com.picke.dishnow_owner.Register.Change_PWActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:117:9-119:52
+	android:screenOrientation
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:119:13-49
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:118:13-55
+activity#com.picke.dishnow_owner.Register.PW_FoundActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:120:9-122:52
+	android:screenOrientation
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:122:13-49
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:121:13-54
+activity#com.picke.dishnow_owner.Guide.TermsActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:123:9-127:59
+	android:screenOrientation
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:126:13-49
+	android:label
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:125:13-29
 	android:theme
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:129:13-56
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:127:13-56
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:126:13-42
-activity#com.picke.dishnow_owner.TermsServiceActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:130:9-134:59
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:124:13-48
+activity#com.picke.dishnow_owner.Utility.TermsServiceActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:128:9-132:59
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:133:13-49
-	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:132:13-29
-	android:theme
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:134:13-56
-	android:name
 		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:131:13-49
-activity#com.picke.dishnow_owner.TermsIndividualInfoActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:135:9-139:59
-	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:138:13-49
 	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:137:13-29
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:130:13-29
 	android:theme
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:139:13-56
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:132:13-56
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:136:13-56
-activity#com.picke.dishnow_owner.TermsLocationActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:140:9-144:59
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:129:13-57
+activity#com.picke.dishnow_owner.Utility.TermsIndividualInfoActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:133:9-137:59
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:143:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:136:13-49
 	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:142:13-29
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:135:13-29
 	android:theme
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:144:13-56
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:137:13-56
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:141:13-50
-activity#com.picke.dishnow_owner.TermsMarketingReceiveActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:145:9-149:59
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:134:13-64
+activity#com.picke.dishnow_owner.Utility.TermsLocationActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:138:9-142:59
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:148:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:141:13-49
 	android:label
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:147:13-29
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:140:13-29
 	android:theme
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:149:13-56
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:142:13-56
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:146:13-58
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:139:13-58
+activity#com.picke.dishnow_owner.Utility.TermsMarketingReceiveActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:143:9-147:59
+	android:screenOrientation
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:146:13-49
+	android:label
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:145:13-29
+	android:theme
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:147:13-56
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:144:13-66
 activity#com.picke.dishnow_owner.MyActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:150:9-152:52
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:148:9-150:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:152:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:150:13-49
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:151:13-39
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:149:13-39
 activity#com.picke.dishnow_owner.OnWaitActivity
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:154:9-156:52
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:151:9-153:52
 	android:screenOrientation
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:156:13-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:153:13-49
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:155:13-43
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:152:13-43
 meta-data#com.google.android.actions
-ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:158:9-160:58
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:155:9-157:58
 	android:resource
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:160:13-55
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:157:13-55
 	android:name
-		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:159:13-54
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:156:13-54
 uses-sdk
 INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
@@ -553,14 +577,6 @@ ADDED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/
 		ADDED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:30:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:29:13-82
-intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:31:13-33:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:31:28-51
-action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:32:17-78
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:17.3.4] /Users/spark/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/88c056a41a1b0079468cd86c8df90b99/AndroidManifest.xml:32:25-75
 activity#com.kakao.auth.authorization.authcode.KakaoWebViewActivity
 ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/414c862edeec897ba2aa416fc2487430/AndroidManifest.xml:12:9-19:20
 	android:label

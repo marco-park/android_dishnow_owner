@@ -10,9 +10,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.picke.dishnow_owner.Menu.ReceiptActivity;
 import com.picke.dishnow_owner.Utility.CustomDialog;
 
 public class MyActivity extends AppCompatActivity {
+
+    private LinearLayout Lreceipt;
 
     private LinearLayout Lreservation;
     private ImageView Ireservation;
@@ -32,6 +35,8 @@ public class MyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+
+        Lreceipt = findViewById(R.id.my_receipt_layout);
 
         Lreservation = findViewById(R.id.my_rescompletelayout);
         Ireservation = findViewById(R.id.main_reservation_imageview);
@@ -77,7 +82,6 @@ public class MyActivity extends AppCompatActivity {
                 finish();
                 overridePendingTransition(R.xml.anim_slide_in_right, R.xml.anim_slide_out_left);
 
-
             }
         });
 
@@ -87,6 +91,15 @@ public class MyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 CustomDialog customDialog = new CustomDialog(MyActivity.this);
                 customDialog.callFunction();
+            }
+        });
+
+        Lreceipt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyActivity.this, ReceiptActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 

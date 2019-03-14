@@ -11,7 +11,7 @@ import android.webkit.WebView;
 
 import com.picke.dishnow_owner.Owner_User.UserInfoClass;
 import com.picke.dishnow_owner.R;
-import com.picke.dishnow_owner.Registration_RestaurantActivity;
+import com.picke.dishnow_owner.Register.Registration_RestaurantActivity;
 
 
 public class JusoActivity extends AppCompatActivity {

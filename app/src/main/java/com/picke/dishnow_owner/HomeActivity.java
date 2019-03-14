@@ -22,13 +22,14 @@ import android.widget.TextView;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.picke.dishnow_owner.Call.BookedActivity;
+import com.picke.dishnow_owner.Call.CallActivity;
 import com.picke.dishnow_owner.Owner_User.ReservationArrayClass;
 import com.picke.dishnow_owner.Owner_User.ReservationClass;
 import com.picke.dishnow_owner.Owner_User.UserAuthClass;
 import com.picke.dishnow_owner.Owner_User.UserInfoClass;
 import com.picke.dishnow_owner.Utility.RecyclerAdapter_reserved;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -123,7 +124,6 @@ public class HomeActivity extends AppCompatActivity {
                     userInfoClass.setOwnertoken(newToken);
                 });
 
-
         adapter_reserved = new RecyclerAdapter_reserved();
         recyclerView.setAdapter(adapter_reserved);
 
@@ -180,7 +180,13 @@ public class HomeActivity extends AppCompatActivity {
                 }catch (Exception e){
                     e.printStackTrace();
                 }
-                Intent intent1 = new Intent(HomeActivity.this,BookedActivity.class);
+                String user_people = jsonObject.get("user_people").toString();
+                user_people = user_people.substring(1,user_people.length()-1);
+                String user_arrive_sec = jsonObject.get("user_arrive_sec").toString();
+                user_arrive_sec = user_arrive_sec.substring(1,user_arrive_sec.length()-1);
+                Intent intent1 = new Intent(HomeActivity.this, BookedActivity.class);
+                intent1.putExtra("user_people",user_people);
+                intent1.putExtra("user_arrive_sec",user_arrive_sec);
                 startActivity(intent1);
                 finish();
             });
@@ -225,7 +231,7 @@ public class HomeActivity extends AppCompatActivity {
                             long now = System.currentTimeMillis() / 1000; //현재시간 저장
                             long arrivetime = Long.valueOf(final_list.get( i ).getArriveSec() );
 
-                            if (now - arrivetime >= 60*5) {
+                            if (now - arrivetime >= 30) {
                                 try {
                                     final_list.get(i).setItemViewBType();
                                     adapter_reserved.setItemViewBType( i );
@@ -242,7 +248,6 @@ public class HomeActivity extends AppCompatActivity {
         Timer timer = new Timer();
         timer.schedule(timerTask, 1, 500);
     }
-
 
     private void getData() {
 
@@ -261,11 +266,9 @@ public class HomeActivity extends AppCompatActivity {
 
             adapter_reserved.addItem( reservationClass );
         }
-        if(adapter_reserved.getItemCount()!=0){
-            Thomeshow.setText("");
-        }else{
-            Thomeshow.setText("내역이 없습니다.");
-        }
+        if(adapter_reserved.getItemCount()!=0) Thomeshow.setText("");
+        else Thomeshow.setText("내역이 없습니다.");
+
     }
 
     @Override

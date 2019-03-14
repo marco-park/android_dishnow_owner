@@ -15,7 +15,6 @@ import android.text.Html;
 import android.text.InputType;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -26,11 +25,13 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.InstanceIdResult;
+import com.picke.dishnow_owner.Guide.JudgingActivity;
+import com.picke.dishnow_owner.Guide.RegisterGuideActivity;
+import com.picke.dishnow_owner.Guide.TermsActivity;
 import com.picke.dishnow_owner.Owner_User.UserAuthClass;
 import com.picke.dishnow_owner.Owner_User.UserInfoClass;
+import com.picke.dishnow_owner.Register.FindidpassActivity;
 import com.picke.dishnow_owner.Utility.VolleySingleton;
 
 import org.json.JSONException;
@@ -116,15 +117,18 @@ public class SigninActivity extends AppCompatActivity {
                 boolean success = jsonObject.getBoolean("success");
                 String resauth1 = jsonObject.getString("owner_resauth");
                 String id1 = jsonObject.getString("uid");
+                String resname = jsonObject.getString("res_name");
 
                 if(success==true){
                     userAuthClass.setOwnerid(Eidinput.getText().toString());
                     userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
                     userAuthClass.setUid(id1);
                     userInfoClass.setuId(id1);
+                    userInfoClass.setResname(resname);
+
                     Intent intent2 = new Intent(SigninActivity.this, HomeActivity.class);
-                    Intent intent1 = new Intent(SigninActivity.this,JudgingActivity.class);
-                    Intent intent0 = new Intent(SigninActivity.this,RegisterGuideActivity.class);
+                    Intent intent1 = new Intent(SigninActivity.this, JudgingActivity.class);
+                    Intent intent0 = new Intent(SigninActivity.this, RegisterGuideActivity.class);
 
                     if(resauth1.equals("2")){
                         SharedPreferences.Editor autologin = auto.edit();
@@ -194,12 +198,14 @@ public class SigninActivity extends AppCompatActivity {
                     boolean success = jsonObject.getBoolean("success");
                     String resauth = jsonObject.getString("owner_resauth");
                     String id = jsonObject.getString("uid");
+                    String resname = jsonObject.getString("res_name");
 
                     if(success==true){
                         userAuthClass.setOwnerid(Eidinput.getText().toString());
                         userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
                         userAuthClass.setUid(id);
                         userInfoClass.setuId(id);
+                        userInfoClass.setResname(resname);
                         Intent intent2 = new Intent(SigninActivity.this, HomeActivity.class);
                         Intent intent1 = new Intent(SigninActivity.this,JudgingActivity.class);
                         Intent intent0 = new Intent(SigninActivity.this,RegisterGuideActivity.class);
@@ -240,12 +246,7 @@ public class SigninActivity extends AppCompatActivity {
                     Log.d("spark123","errorj");
                 }
             }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.d("spark123",error.getLocalizedMessage());
-            }
-        }) {
+        }, error -> Log.d("spark123",error.getLocalizedMessage())) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
@@ -255,31 +256,22 @@ public class SigninActivity extends AppCompatActivity {
             }
         };
 
-        signinbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                idinput = Eidinput.getText().toString();
-                passwordinput = Epasswordinput.getText().toString();
-                requestQueue.add(StringRequest);
-            }
+        signinbutton.setOnClickListener(v -> {
+            idinput = Eidinput.getText().toString();
+            passwordinput = Epasswordinput.getText().toString();
+            requestQueue.add(StringRequest);
         });
 
-        Bfindidpassword.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SigninActivity.this,FindidpassActivity.class));
-                finish();
-            }
+        Bfindidpassword.setOnClickListener(v -> {
+            startActivity(new Intent(SigninActivity.this, FindidpassActivity.class));
+            finish();
         });
 
-        signupbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                userAuthClass.setOwnerid(Eidinput.getText().toString());
-                userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
-                Intent intent = new Intent(SigninActivity.this,TermsActivity.class);
-                startActivity(intent);
-            }
+        signupbutton.setOnClickListener(v -> {
+            userAuthClass.setOwnerid(Eidinput.getText().toString());
+            userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
+            Intent intent = new Intent(SigninActivity.this, TermsActivity.class);
+            startActivity(intent);
         });
     }
 }

@@ -1231,6 +1231,8 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id faq_kakao_txtview
+id faq_toolbar
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1313,12 +1315,10 @@ id multiply
 id my_account_layout
 id my_customer_center_layout
 id my_logout_layout
-id my_menu_care_button
 id my_mymenulayout
 id my_pushalram_layout
-id my_res_care_button
+id my_receipt_layout
 id my_rescompletelayout
-id my_review_care_button
 id my_uplayout
 id my_waitmatchinglayout
 id navigation_header_container
@@ -1354,10 +1354,16 @@ id progress_horizontal
 id qres_reg_header
 id qres_reg_shop
 id radio
+id receipt_recyclerView
+id receipt_toolbar
 id recycle_item_arrive_button
 id recycle_item_noarrive_button
 id recycle_item_noarrive_txtview
 id recycle_item_reserved_arrive_button
+id recycle_receipt_userarriveday
+id recycle_receipt_userarrivetime
+id recycle_receipt_userid
+id recycle_receipt_usernumber
 id repass2_gobackbutton
 id repass_button
 id repass_pass1
@@ -1571,6 +1577,7 @@ layout abc_tooltip
 layout activity_additional__info
 layout activity_booked
 layout activity_change__pw
+layout activity_faq
 layout activity_findemail
 layout activity_findidpass
 layout activity_home
@@ -1584,6 +1591,7 @@ layout activity_my
 layout activity_on_wait
 layout activity_popup_call
 layout activity_pw__found
+layout activity_receipt
 layout activity_registerguide
 layout activity_registration_business
 layout activity_registration_restuarant
@@ -1633,6 +1641,7 @@ layout notification_template_part_time
 layout recycle_item
 layout recycle_item_noarrive_reserved
 layout recycle_item_reserved
+layout recycle_receipt
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

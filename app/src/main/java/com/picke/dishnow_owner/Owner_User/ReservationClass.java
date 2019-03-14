@@ -51,7 +51,6 @@ public class ReservationClass {
         return itemViewType;
     }
 
-
     private String time;
     private String people;
     private String uid;
@@ -60,7 +59,11 @@ public class ReservationClass {
     private int itemViewType;
     private String arriveSec;
     private long nowsecond;
+    private String date;
 
+    public void setDate(String date){this.date = date;}
+
+    public String getDate(){return date;}
 
     public long getNowsecond() {
         return nowsecond;

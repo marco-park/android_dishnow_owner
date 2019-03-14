@@ -2,6 +2,7 @@ package com.picke.dishnow_owner.Utility;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -11,6 +12,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -20,10 +22,15 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.picke.dishnow_owner.Owner_User.ReservationArrayClass;
 import com.picke.dishnow_owner.Owner_User.ReservationClass;
+import com.picke.dishnow_owner.Owner_User.UserInfoClass;
 import com.picke.dishnow_owner.R;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -33,7 +40,10 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
     private RequestQueue requestQueue;
     private Context context;
     private NotArrivedDialog notArrivedDialog;
+    private UserInfoClass userInfoClass;
 
+    private long time;
+    private Date date;
 
     public Context getContext() {
         return context;
@@ -56,10 +66,11 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
         //포지션에 따른 viewtype 지정
     }
 
-
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
         //늦었다면 바꿔줘야함 setViewBTyoe 호출 ->1로
+
+        userInfoClass = UserInfoClass.getInstance(getContext());
 
         switch (viewHolder.getItemViewType()) {
             case 0:
@@ -68,17 +79,71 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
                 ((AHolder) viewHolder).Aarrive.setOnClickListener( new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        reservationClassArrayList.remove( i );
+                        String day;
+                        day = GetDay();
+                        final StringRequest StringRequest1 = new StringRequest( Request.Method.POST, "http://dishnow.kr/ResHistoryPush.php", new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+
+                            }
+                        }, new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+                                Log.d( "meenseek", error.getLocalizedMessage() );
+                            }
+                        } ) {
+                            @Override
+                            protected Map<String, String> getParams() throws AuthFailureError {
+                                Map<String, String> params = new HashMap<>();
+                                params.put( "m_res_id", userInfoClass.getuId() );
+                                params.put( "m_user_id",listData.get(i).getUid() );
+                                params.put( "m_user_name", "하위" );
+                                params.put("m_res_name", userInfoClass.getResname());
+                                params.put("m_res_people", listData.get(i).getPeople());
+                                params.put("m_res_date", day);
+                                params.put("m_res_time", listData.get(i).getTime());
+                                return params;
+                            }
+                        };
+                        reservationClassArrayList.remove(i);
+                        requestQueue.add(StringRequest1);
                     }
                 } );
                 break;
             case 1:
                 BHolder bHolder = (BHolder) viewHolder;
-                bHolder.onBind( listData.get( i ) );
+                bHolder.onBind( listData.get(i));
                 ((BHolder) viewHolder).Barrive.setOnClickListener( new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        String day;
+                        day = GetDay();
+                        final StringRequest StringRequest2 = new StringRequest( Request.Method.POST, "http://dishnow.kr/ResHistoryPush.php", new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+
+                            }
+                        }, new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+                                Log.d( "meenseek", error.getLocalizedMessage() );
+                            }
+                        } ) {
+                            @Override
+                            protected Map<String, String> getParams() throws AuthFailureError {
+                                Map<String, String> params = new HashMap<>();
+                                params.put( "m_res_id", userInfoClass.getuId() );
+                                params.put( "m_user_id",listData.get(i).getUid() );
+                                params.put( "m_user_name", "하위" );
+                                params.put("m_res_name", userInfoClass.getResname());
+                                params.put("m_res_people", listData.get(i).getPeople());
+                                params.put("m_res_date", day);
+                                params.put("m_res_time", listData.get(i).getTime());
+                                return params;
+                            }
+                        };
                         reservationClassArrayList.remove( i );
+                        requestQueue.add(StringRequest2);
                     }
                 } );
 
@@ -102,7 +167,6 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
         }
 
     }
-
 
     @Override
     public int getItemViewType(int position) {
@@ -176,7 +240,6 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
         }
 
     }
-
 
     public void addItem(ReservationClass data) {
         listData.add( data );
@@ -286,4 +349,23 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
         }
     }
 
+    public String GetDay(){
+        long now = System.currentTimeMillis();
+        date = new Date(now);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String Sgettime = sdf.format(date);
+        String Smonth = Sgettime.substring(5,7);
+        String Sday = Sgettime.substring(8);
+        if(Smonth.substring(0,1).equals("0"))Smonth = Smonth.substring(1,2);
+        if(Sday.substring(0,1).equals("0"))Sday=Sday.substring(1,2);
+
+        String weekDay;
+        // SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE", Locale.US); // 특정 언어로 출력하고 싶은 경우
+        SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE", Locale.KOREA);
+        Calendar calendar = Calendar.getInstance();
+        weekDay = dayFormat.format(calendar.getTime());
+
+        Sgettime = Smonth + "/" + Sday + " (" + weekDay + ")";
+        return Sgettime;
+    }
 }

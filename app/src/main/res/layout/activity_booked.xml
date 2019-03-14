@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookedActivity">
+    tools:context=".Call.BookedActivity">
 
     <!--예약완료-->
     <LinearLayout
@@ -47,7 +47,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="예약 시간에 맞춰 꼭 방문해주세요."
+                android:text="손님 맞을 준비를 해볼까요?"
                 android:textColor="@color/color_black"
                 android:fontFamily="@font/nanumsquareotfregular"
                 android:textSize="16sp"
@@ -149,7 +149,6 @@
         </LinearLayout>
     </LinearLayout>
 
-
     <Button
         android:layout_marginBottom="44dp"
         android:layout_alignParentBottom="true"
@@ -163,6 +162,5 @@
         style="?android:attr/borderlessButtonStyle"
         android:fontFamily="@font/nanumsquareotfregular"
         android:text="확인" />
-
 </RelativeLayout>
 

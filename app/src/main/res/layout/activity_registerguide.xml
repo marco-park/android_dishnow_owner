@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
-    tools:context=".RegisterGuideActivity">
+    tools:context=".Guide.RegisterGuideActivity">
     <ImageView
         android:layout_marginTop="64dp"
         android:layout_centerHorizontal="true"
