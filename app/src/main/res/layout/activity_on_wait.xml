@@ -37,7 +37,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/color_bolder"
+            android:background="@color/color_light_bolder"
             android:layout_alignParentTop="true"
             />
 
@@ -68,7 +68,7 @@
                         android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/ic_bubble"
+                        android:background="@drawable/ic_icon_call"
                         android:backgroundTint="@color/color_bolder" />
 
                     <TextView
@@ -89,7 +89,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_width="1dp"
                         android:layout_height="60dp"
-                        android:background="@color/color_bolder"
+                        android:background="@color/color_light_bolder"
                         />
 
                 </RelativeLayout>
@@ -110,12 +110,12 @@
                     android:layout_gravity="center">
 
                     <ImageView
-                        android:layout_marginLeft="15dp"
                         android:id="@+id/onwiat_matching_imageview"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
+                        android:layout_marginLeft="15dp"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/kakaoaccount_icon"
+                        android:background="@drawable/icon_onwait_purple"
                         android:backgroundTint="@color/color_bolder" />
 
                     <TextView
@@ -135,7 +135,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_width="1dp"
                         android:layout_height="60dp"
-                        android:background="@color/color_bolder"
+                        android:background="@color/color_light_bolder"
                         />
                 </RelativeLayout>
 

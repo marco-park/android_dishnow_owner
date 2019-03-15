@@ -36,7 +36,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/color_bolder"
+            android:background="@color/color_light_bolder"
             android:layout_alignParentTop="true"
             />
 
@@ -58,16 +58,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     >
+
                     <ImageView
                         android:id="@+id/main_reservation_imageview"
-                        android:layout_width="69dp"
-                        android:layout_height="60dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="-15dp"
-                        android:layout_marginRight="-15dp"
-                        android:adjustViewBounds="true"
-                        android:background="@drawable/ic_icon_reservation"
-                        android:backgroundTint="@color/color_bolder" />
+                        android:background="@drawable/ic_icon_call"
+                        android:backgroundTint="@color/color_bolder"
+                        android:layout_marginLeft="15dp"
+                        android:layout_centerVertical="true"/>
                     <TextView
                         android:id="@+id/main_reservation_txtview"
                         android:layout_width="wrap_content"
@@ -86,7 +86,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_width="1dp"
                         android:layout_height="60dp"
-                        android:background="@color/color_bolder"
+                        android:background="@color/color_light_bolder"
                         />
                 </RelativeLayout>
 
@@ -132,7 +132,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_width="1dp"
                         android:layout_height="60dp"
-                        android:background="@color/color_bolder"
+                        android:background="@color/color_light_bolder"
                         />
                 </RelativeLayout>
 
@@ -152,15 +152,17 @@
                     android:layout_weight="1"
                     android:layout_height="match_parent"
                     >
+
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="134dp"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        >
+                        android:layout_gravity="center">
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true">
+
                             <ImageView
                                 android:id="@+id/main_my_imageview"
                                 android:layout_width="19dp"
@@ -170,14 +172,15 @@
                                 android:layout_marginRight="8dp"
                                 android:background="@drawable/ic_icon_shop"
                                 android:backgroundTint="@color/color_bolder" />
+
                             <TextView
                                 android:id="@+id/main_my_txtview"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:fontFamily="@font/nanumsquareotfregular"
                                 android:layout_centerVertical="true"
                                 android:layout_toRightOf="@+id/main_my_imageview"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/nanumsquareotfregular"
                                 android:text="My"
                                 android:textColor="@color/color_bolder"
                                 android:textSize="15sp" />
