@@ -620,6 +620,8 @@ color colorPrimaryDark
 color color_black
 color color_bolder
 color color_green
+color color_grey
+color color_light_bolder
 color color_red
 color color_violet
 color color_white
@@ -1060,10 +1062,14 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable dishnow_logo_purple
 drawable dishnow_logo_white
+drawable dlg_radius
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable header_background
 drawable hollow_button
+drawable hollow_button_light_bolder
+drawable hollow_button_soft_violet
+drawable hollow_buuton_white
 drawable ic_bubble
 drawable ic_dot
 drawable ic_icon_call
@@ -1090,6 +1096,8 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable icon_onwait_purple
 drawable item_notarrive_reserved
+drawable item_now_arrived2_reserved
+drawable item_nowtime
 drawable item_reserved
 drawable kakao_account_button_background
 drawable kakao_account_logo
@@ -1223,6 +1231,9 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id dlg_not_arrived_cancle_button
+id dlg_not_arrived_ok_button
+id dlg_not_arrived_textView
 id edit_query
 id end
 id end_padder
@@ -1267,6 +1278,8 @@ id info
 id input
 id invisible
 id italic
+id item_call_layout
+id item_reserved_prefixtime
 id item_touch_helper_previous_elevation
 id item_user_arrivetime
 id item_user_calltime
@@ -1312,11 +1325,9 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id my_account_layout
 id my_customer_center_layout
 id my_logout_layout
 id my_mymenulayout
-id my_pushalram_layout
 id my_receipt_layout
 id my_rescompletelayout
 id my_uplayout
@@ -1366,7 +1377,6 @@ id receipt_recyclerView
 id receipt_toolbar
 id recycle_item_arrive_button
 id recycle_item_noarrive_button
-id recycle_item_noarrive_txtview
 id recycle_item_reserved_arrive_button
 id recycle_receipt_userarriveday
 id recycle_receipt_userarrivetime
@@ -1391,6 +1401,7 @@ id res_info_res_name
 id res_info_resphone
 id res_info_search_address_btn
 id res_res_toolbar
+id reserved_linearlayout
 id ressignup_imagebutton
 id ressignup_imagefile
 id ressignup_name
@@ -1626,6 +1637,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dlg_not_arrived
 layout kakao_login_layout
 layout layout_login_dialog
 layout layout_login_item

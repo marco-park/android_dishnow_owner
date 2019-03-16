@@ -231,7 +231,7 @@ public class HomeActivity extends AppCompatActivity {
                             long now = System.currentTimeMillis() / 1000; //현재시간 저장
                             long arrivetime = Long.valueOf(final_list.get( i ).getArriveSec() );
 
-                            if (now - arrivetime >= 30) {
+                            if (now - arrivetime >= 40) {
                                 try {
                                     final_list.get(i).setItemViewBType();
                                     adapter_reserved.setItemViewBType( i );

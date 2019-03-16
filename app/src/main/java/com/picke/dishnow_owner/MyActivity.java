@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.picke.dishnow_owner.Menu.FAQActivity;
 import com.picke.dishnow_owner.Menu.ReceiptActivity;
 import com.picke.dishnow_owner.Utility.CustomDialog;
 
@@ -22,6 +23,7 @@ public class MyActivity extends AppCompatActivity {
     private TextView Treservation;
 
     private LinearLayout Lwaitmatching;
+    private LinearLayout LFAQ;
     private ImageView Iwaitmatching;
     private TextView Twaitmatching;
     private LinearLayout Lmy;
@@ -41,6 +43,7 @@ public class MyActivity extends AppCompatActivity {
         Lreservation = findViewById(R.id.my_rescompletelayout);
         Ireservation = findViewById(R.id.main_reservation_imageview);
         Treservation = findViewById(R.id.main_reservation_txtview);
+        LFAQ = findViewById(R.id.my_customer_center_layout);
 
         Lwaitmatching = findViewById(R.id.my_waitmatchinglayout);
         Iwaitmatching = findViewById(R.id.main_wait_matching_imageview);
@@ -99,10 +102,13 @@ public class MyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MyActivity.this, ReceiptActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
-
-
+        LFAQ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MyActivity.this, FAQActivity.class));
+            }
+        });
     }
 }

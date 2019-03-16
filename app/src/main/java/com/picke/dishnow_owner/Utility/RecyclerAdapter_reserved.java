@@ -3,7 +3,9 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +28,8 @@ import com.picke.dishnow_owner.Owner_User.ReservationArrayClass;
 import com.picke.dishnow_owner.Owner_User.ReservationClass;
 import com.picke.dishnow_owner.Owner_User.UserInfoClass;
 import com.picke.dishnow_owner.R;
+
+import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -175,12 +181,13 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
 
     //안늦었을때
     public class AHolder extends RecyclerView.ViewHolder {
-
         private TextView Trestime;
         private TextView Tcurrenttime;
         private TextView Tpeople;
         private TextView Tuid;
         private Button Aarrive;
+        private RelativeLayout Llayout;
+        private TextView Tprefixtime;
 
         //안늦었을때
         public AHolder(View view) {
@@ -190,6 +197,8 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
             Tpeople = itemView.findViewById( R.id.item_user_number );
             Tuid = itemView.findViewById( R.id.item_userid );
             Aarrive = itemView.findViewById( R.id.recycle_item_reserved_arrive_button );
+            Llayout = itemView.findViewById(R.id.reserved_linearlayout);
+            Tprefixtime = itemView.findViewById(R.id.item_reserved_prefixtime);
         }
 
         void onBind(ReservationClass data) {
@@ -201,6 +210,19 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
             Tcurrenttime.setText( nowtimehour + ":" + nowtimemin );
             Tpeople.setText( data.getPeople() + "명" );
             Tuid.setText( data.getUid() );
+            long diff = System.currentTimeMillis()/1000-Long.valueOf(data.getArriveSec());
+            if(diff>=10 && diff< 10*60){
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                    Llayout.setBackground(ContextCompat.getDrawable(context,R.drawable.item_nowtime));
+                    Aarrive.setBackground(ContextCompat.getDrawable(context,R.drawable.hollow_button_light_bolder));
+                }else{
+                    Llayout.setBackgroundDrawable(ContextCompat.getDrawable(context,R.drawable.item_nowtime));
+                    Aarrive.setBackgroundDrawable(ContextCompat.getDrawable(context,R.drawable.hollow_button_light_bolder));
+
+                }
+                Tcurrenttime.setTextColor(ContextCompat.getColor(context,R.color.color_grey));
+                Tprefixtime.setTextColor(ContextCompat.getColor(context,R.color.color_grey));
+            }
         }
     }
 
@@ -210,7 +232,6 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
         private TextView Tcurrenttime;
         private TextView Tpeople;
         private TextView Tuid;
-        private TextView Tnoarrive;
         private Button Barrive;
         private Button Bnoarrive;
 
@@ -221,7 +242,6 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
             Tpeople = itemView.findViewById( R.id.item_user_number );
             Tuid = itemView.findViewById( R.id.item_userid );
 
-            Tnoarrive = itemView.findViewById( R.id.recycle_item_noarrive_txtview );
             Barrive = itemView.findViewById( R.id.recycle_item_arrive_button );
             Bnoarrive = itemView.findViewById( R.id.recycle_item_noarrive_button );
         }
@@ -258,6 +278,7 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
         return listData.size();
     }
 
+
     //늦었을때 B로바뀜 도착 A 안도착 B
     public void setItemViewAType(int i) {
         listData.get( i ).setItemViewAType();
@@ -269,7 +290,6 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
 
 
     public class NotArrivedDialog {
-
         private Context mContext;
         int cklogoutok = 0;
         int position = 0;
@@ -294,16 +314,14 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
             dlg.requestWindowFeature( Window.FEATURE_NO_TITLE );
 
             // 커스텀 다이얼로그의 레이아웃을 설정한다.
-            dlg.setContentView( R.layout.custom_dialog );
+            dlg.setContentView( R.layout.dlg_not_arrived );
 
             // 커스텀 다이얼로그를 노출한다.
             dlg.show();
 
             // 커스텀 다이얼로그의 각 위젯들을 정의한다.
-            final Button Bok = (Button) dlg.findViewById( R.id.custom_logout_ok_button );
-            final Button Bcancle = (Button) dlg.findViewById( R.id.custom_logout_cancle_button );
-            final TextView TnotArrived = (TextView) dlg.findViewById( R.id.custom_dialog_textView );
-            TnotArrived.setText( "미도착 했습니까?" );
+            final Button Bok = (Button) dlg.findViewById( R.id.dlg_not_arrived_ok_button);
+            final Button Bcancle = (Button) dlg.findViewById( R.id.dlg_not_arrived_cancle_button);
 
             //미도착했으면 DB에 미도착 내역 저장
             Bok.setOnClickListener( new View.OnClickListener() {
@@ -325,9 +343,9 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
                         @Override
                         protected Map<String, String> getParams() throws AuthFailureError {
                             Map<String, String> params = new HashMap<>();
-                            params.put( "m_res_id", listData.get( getPosition()).getUid() );
-                            params.put( "m_user_id", "1" );
-                            params.put( "m_user_name", "하위" );
+                            params.put( "m_res_id", userInfoClass.getuId() );
+                            params.put( "m_user_id",  listData.get(position).getUid());
+                            params.put( "m_user_name", "prototype" );
                             return params;
                         }
                     };

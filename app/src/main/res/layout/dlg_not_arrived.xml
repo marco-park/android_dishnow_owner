@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dlg_radius"
+    >
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="181dp"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <!-- 타이틀바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/nanumsquareotfbold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/dlg_not_arrived_textView"
+                android:text="혹시 손님이 도착하지 않으셨나요?"
+                android:textColor="@color/color_black"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="미도착을 누를 시 예약이 취소되며,
+손님에게 패널티가 발생합니다."
+                android:textSize="14sp"
+                android:textColor="@color/color_black"
+                android:fontFamily="@font/nanumsquareotfregular"
+                android:layout_marginBottom="39dp"/>
+        </LinearLayout>
+        <!-- //end 타이틀바 -->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_light_bolder" />
+
+        <!-- 닫기 버튼 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:fontFamily="@font/nanumsquareotfregular"
+                android:id="@+id/dlg_not_arrived_cancle_button"
+                android:layout_width="165dp"
+                android:layout_height="39dp"
+                android:background="#00000000"
+                android:gravity="center"
+                android:onClick="mOnClose"
+                android:text="취소"
+                android:textColor="@color/color_black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_light_bolder"
+                >
+            </View>
+
+            <Button
+                android:fontFamily="@font/nanumsquareotfregular"
+                android:id="@+id/dlg_not_arrived_ok_button"
+                android:layout_width="165dp"
+                android:layout_height="39dp"
+                android:background="#00000000"
+                android:gravity="center"
+                android:onClick="mOnClose"
+                android:text="미도착"
+                android:textColor="@color/color_red"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--// 닫기 버튼 -->
+    </LinearLayout>
+</LinearLayout>

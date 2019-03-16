@@ -28,7 +28,7 @@ public class FAQActivity extends AppCompatActivity {
 
 
         Linkify.TransformFilter mTransform = (match, url) -> "";
-        Pattern pattern = Pattern.compile("사장님");
+        Pattern pattern = Pattern.compile("클릭");
         Linkify.addLinks(Tkakaolink, pattern, "http://pf.kakao.com/_exdxdvj",null,mTransform);
 
     }

@@ -150,7 +150,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/color_bolder"
-            android:paddingTop="1dp"
+            android:paddingTop="1.5dp"
             android:id="@+id/additional_info__ownerbirth"
             android:hint="생년월일을 입력하세요.ex)19901231"
             android:fontFamily="@font/nanumsquareotfregular"

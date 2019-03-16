@@ -112,7 +112,7 @@
             android:textColor="#555555"
             android:fontFamily="@font/nanumsquareotfregular"
             android:text="이메일"/>
-        <android.support.v7.widget.AppCompatEditText
+        <EditText
             android:layout_marginTop="9dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

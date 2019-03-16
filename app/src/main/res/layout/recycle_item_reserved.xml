@@ -1,140 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="120dp"
-    android:gravity="center_vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="144dp"
     android:background="@drawable/item_reserved"
     android:layout_marginLeft="15dp"
-    android:padding="8dp"
     android:layout_marginRight="15dp"
     android:layout_marginTop="20dp"
+    android:id="@+id/reserved_linearlayout"
     >
 
+    <!--요청시간-->
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="18dp"
-        android:layout_gravity="center"
-        android:orientation="vertical"
+        android:layout_height="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/item_call_layout"
         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="12sp"
+            android:id="@+id/item_reserved_prefixtime"
+            android:text="요청시간 : 오늘  "
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:textColor="#431AB2"
+            />
+        <TextView
+            android:id="@+id/item_user_calltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="19:30"
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:textColor="#431AB2"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/item_call_layout"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/item_userid"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="17dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginRight="100dp"
             android:fontFamily="@font/nanumsquareotfregular"
-            android:gravity="top"
             android:text="_userid_"
             android:textColor="@color/color_black"
-            android:textSize="15sp" />
+            android:textSize="18sp"
+            />
 
         <TextView
-            android:text="19시 30분"
-            android:id="@+id/item_user_arrivetime"
-            android:textSize="18sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/nanumsquareotfbold"
-            android:textColor="@color/color_black"
-            android:layout_marginBottom="10dp"
-            />
-        <TextView
-            android:gravity="left"
-            android:text="8명"
             android:id="@+id/item_user_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="21dp"
+            android:fontFamily="@font/nanumsquareotfbold"
+            android:text="8명"
+            android:textColor="@color/color_black"
             android:textSize="18sp"
+            android:layout_toRightOf="@id/item_userid"/>
+
+        <TextView
+            android:id="@+id/item_user_arrivetime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nanumsquareotfbold"
+            android:gravity="end"
+            android:text="19시 30분"
             android:textColor="@color/color_black"
-            />
-    </LinearLayout>
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/item_user_number"/>
 
-    <LinearLayout
+    </RelativeLayout>
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="right"
-        >
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="16dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="18dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="12sp"
-                android:textColor="@color/color_black"
-                android:text="요청시간 : 오늘  "
-                android:fontFamily="@font/nanumsquareotfregular"
-                />
-            <TextView
-                android:id="@+id/item_user_calltime"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="12sp"
-                android:text="19:30"
-                android:fontFamily="@font/nanumsquareotfregular"
-                android:textColor="@color/color_black"
-                />
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
 
 
-        </LinearLayout>
+        <Button
+            android:id="@+id/recycle_item_reserved_arrive_button"
+            android:layout_width="126dp"
+            android:layout_height="34dp"
+            android:background="@drawable/hollow_button_soft_violet"
+            android:fontFamily="@font/nanumsquareotfbold"
+            android:gravity="center"
+            android:text="도착"
+            android:textColor="@color/color_violet"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:layout_width="126dp"
+            android:layout_height="34dp"
+            android:text="미도착"
+            android:textColor="@color/color_light_bolder"
+            android:textSize="13sp"
+            android:fontFamily="@font/nanumsquareotfbold"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="18dp"
-                android:gravity="end">
-
-
-                <Button
-                    android:id="@+id/recycle_item_reserved_arrive_button"
-                    android:layout_width="62dp"
-                    android:layout_height="32dp"
-                    android:background="@drawable/signin_button"
-                    android:fontFamily="@font/nanumsquareotfbold"
-                    android:gravity="center"
-                    android:text="도착"
-                    android:textAllCaps="false"
-                    android:textColor="@color/color_violet"
-                    android:textSize="11dp"
-                    />
-
-
-
-
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="6dp"
-            android:layout_width="wrap_content"
-            android:layout_height="23dp"
-            android:layout_marginRight="18dp"
-            >
-
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>

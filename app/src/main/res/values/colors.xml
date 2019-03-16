@@ -10,5 +10,6 @@
     <color name="color_bolder">#CCCCCC</color>
     <color name="color_green">#3EFF8C</color>
     <color name="color_light_bolder">#EEEEEE</color>
+    <color name ="color_grey">#555555</color>
 </resources>
 
