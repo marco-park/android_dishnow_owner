@@ -28,14 +28,14 @@
                 android:id="@+id/dlg_not_arrived_textView"
                 android:text="혹시 손님이 도착하지 않으셨나요?"
                 android:textColor="@color/color_black"
-                android:textSize="18sp" />
+                android:textSize="18dp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="미도착을 누를 시 예약이 취소되며,
 손님에게 패널티가 발생합니다."
-                android:textSize="14sp"
+                android:textSize="14dp"
                 android:textColor="@color/color_black"
                 android:fontFamily="@font/nanumsquareotfregular"
                 android:layout_marginBottom="39dp"/>
@@ -65,7 +65,7 @@
                 android:onClick="mOnClose"
                 android:text="취소"
                 android:textColor="@color/color_black"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
 
             <View
                 android:layout_width="1dp"
@@ -84,7 +84,7 @@
                 android:onClick="mOnClose"
                 android:text="미도착"
                 android:textColor="@color/color_red"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
         </LinearLayout>
         <!--// 닫기 버튼 -->
     </LinearLayout>

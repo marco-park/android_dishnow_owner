@@ -24,7 +24,7 @@
     </android.support.v7.widget.Toolbar>
 
     <android.support.v7.widget.RecyclerView
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="60dp"
         android:layout_below="@+id/ressignup_toolbar"
         android:id="@+id/receipt_recyclerView"
         android:layout_width="match_parent"

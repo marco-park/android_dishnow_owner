@@ -107,6 +107,7 @@
         <android.support.v7.widget.AppCompatEditText
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
+            android:inputType="number"
             android:layout_height="wrap_content"
             android:textColorHint="@color/color_bolder"
             android:fontFamily="@font/nanumsquareotfregular"
@@ -178,6 +179,7 @@
             android:layout_height="wrap_content"
             android:textColorHint="@color/color_bolder"
             android:id="@+id/ressignup_name"
+            android:privateImeOptions="defaultInputmode=korean"
             android:fontFamily="@font/nanumsquareotfregular"
             android:hint="사업주명을 입력하세요."
             android:textSize="16sp"

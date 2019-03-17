@@ -55,11 +55,11 @@
             android:id="@+id/item_userid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="100dp"
+            android:layout_marginRight="67dp"
             android:fontFamily="@font/nanumsquareotfregular"
             android:text="_userid_"
             android:textColor="@color/color_black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             />
 
         <TextView
@@ -70,7 +70,7 @@
             android:fontFamily="@font/nanumsquareotfbold"
             android:text="8명"
             android:textColor="@color/color_black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:layout_toRightOf="@id/item_userid"/>
 
         <TextView
@@ -81,7 +81,7 @@
             android:gravity="end"
             android:text="19시 30분"
             android:textColor="@color/color_black"
-            android:textSize="18sp"
+            android:textSize="18dp"
             android:layout_toRightOf="@id/item_user_number"/>
 
     </RelativeLayout>
@@ -106,14 +106,14 @@
             android:gravity="center"
             android:text="도착"
             android:textColor="@color/color_violet"
-            android:textSize="13sp"
+            android:textSize="13dp"
             />
         <TextView
             android:layout_width="126dp"
             android:layout_height="34dp"
             android:text="미도착"
             android:textColor="@color/color_light_bolder"
-            android:textSize="13sp"
+            android:textSize="13dp"
             android:fontFamily="@font/nanumsquareotfbold"
             android:gravity="center"
             android:layout_alignParentEnd="true"

@@ -68,7 +68,7 @@
                         android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/ic_icon_call"
+                        android:background="@drawable/ic_icon_logo"
                         android:backgroundTint="@color/color_bolder" />
 
                     <TextView

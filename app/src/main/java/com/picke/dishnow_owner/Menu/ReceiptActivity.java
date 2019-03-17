@@ -19,6 +19,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.kakao.usermgmt.response.model.User;
+import com.picke.dishnow_owner.Owner_User.ReceiptClass;
 import com.picke.dishnow_owner.Owner_User.ReservationClass;
 import com.picke.dishnow_owner.Owner_User.UserAuthClass;
 import com.picke.dishnow_owner.R;
@@ -54,6 +55,8 @@ public class ReceiptActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.receipt_recyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
+        linearLayoutManager.setReverseLayout(true);
+        linearLayoutManager.setStackFromEnd(true);
 
         adapter = new RecyclerAdapter_receipt();
         recyclerView.setAdapter(adapter);
@@ -62,14 +65,24 @@ public class ReceiptActivity extends AppCompatActivity {
             try {
                 JSONArray jsonArray = new JSONArray(response);
                 for(int i=0;i<jsonArray.length();i++) {
-                    ReservationClass reservationClass = new ReservationClass();
+                    ReceiptClass receiptClass = new ReceiptClass();
                     JSONObject jsonObject = jsonArray.getJSONObject(i);
+                    receiptClass.setUser_id(jsonObject.getString("user_id"));
+                    receiptClass.setRes_people(jsonObject.getString("res_people"));
+                    receiptClass.setRes_date(jsonObject.getString("res_date"));
+                    receiptClass.setRes_time(jsonObject.getString("res_time"));
+                    receiptClass.setFlag(jsonObject.getString("flag"));
 
-                    reservationClass.setUid(jsonObject.getString("user_id"));
-                    reservationClass.setPeople(jsonObject.getString("res_people"));
-                    reservationClass.setDate(jsonObject.getString("res_date"));
-                    reservationClass.setTime(jsonObject.getString("res_time"));
-                    adapter.addItem(reservationClass);
+                    if(receiptClass.getFlag().equals("1")){
+                        ReceiptClass receiptClass2 = new ReceiptClass();
+                        receiptClass2.setUser_id(receiptClass.getUser_id());
+                        receiptClass2.setRes_people(receiptClass.getRes_people());
+                        receiptClass2.setRes_date(receiptClass.getRes_date());
+                        receiptClass2.setRes_time(receiptClass.getRes_time());
+                        receiptClass2.setFlag("0");
+                        adapter.addItem(receiptClass2);
+                    }
+                    adapter.addItem(receiptClass);  //date 포함
                 }
                 adapter.notifyDataSetChanged();
 

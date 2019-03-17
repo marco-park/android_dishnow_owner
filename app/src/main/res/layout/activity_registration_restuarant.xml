@@ -100,6 +100,7 @@
             android:textSize="14sp"
             android:fontFamily="@font/nanumsquareotfregular"
             android:textColor="#555555"
+            android:privateImeOptions="defaultInputmode=korean"
             android:text="음식점 이름"/>
         <android.support.v7.widget.AppCompatEditText
             android:layout_marginTop="11dp"
@@ -129,6 +130,7 @@
             android:orientation="vertical">
 
             <EditText
+                android:inputType="phone"
                 android:layout_marginTop="9dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

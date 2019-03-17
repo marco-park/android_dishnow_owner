@@ -70,9 +70,9 @@ public class FireBaseMessagingService extends FirebaseMessagingService {
         }
 
         SharedPreferences push =  getSharedPreferences("push", Activity.MODE_PRIVATE);
-        if(push.getString("first",null)==null) {
+        if(push.getString("v1.0",null)==null) {
             SharedPreferences.Editor epush = push.edit();
-            epush.putString("first", "true");
+            epush.putString("v1.0", "true");
             epush.commit();
             notificationManager.notify(0, notificationBuilder.build());
         }

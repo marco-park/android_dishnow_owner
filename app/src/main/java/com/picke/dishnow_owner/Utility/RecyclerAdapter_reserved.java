@@ -81,7 +81,9 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
         switch (viewHolder.getItemViewType()) {
             case 0:
                 AHolder aHolder = (AHolder) viewHolder;
-                aHolder.onBind( listData.get( i ) );
+                long diff =System.currentTimeMillis()/1000-Long.valueOf(listData.get(i).getArriveSec());
+                aHolder.onBind(listData.get(i));
+
                 ((AHolder) viewHolder).Aarrive.setOnClickListener( new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -103,7 +105,7 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
                                 Map<String, String> params = new HashMap<>();
                                 params.put( "m_res_id", userInfoClass.getuId() );
                                 params.put( "m_user_id",listData.get(i).getUid() );
-                                params.put( "m_user_name", "하위" );
+                                params.put( "m_user_name", "prototype" );
                                 params.put("m_res_name", userInfoClass.getResname());
                                 params.put("m_res_people", listData.get(i).getPeople());
                                 params.put("m_res_date", day);
@@ -140,7 +142,7 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
                                 Map<String, String> params = new HashMap<>();
                                 params.put( "m_res_id", userInfoClass.getuId() );
                                 params.put( "m_user_id",listData.get(i).getUid() );
-                                params.put( "m_user_name", "하위" );
+                                params.put( "m_user_name", "prototype" );
                                 params.put("m_res_name", userInfoClass.getResname());
                                 params.put("m_res_people", listData.get(i).getPeople());
                                 params.put("m_res_date", day);
@@ -210,8 +212,18 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
             Tcurrenttime.setText( nowtimehour + ":" + nowtimemin );
             Tpeople.setText( data.getPeople() + "명" );
             Tuid.setText( data.getUid() );
-            long diff = System.currentTimeMillis()/1000-Long.valueOf(data.getArriveSec());
-            if(diff>=10 && diff< 10*60){
+        }
+
+        void onBind2(ReservationClass data){
+            String restimehour = data.getTime().substring( 0, 2 );
+            String restimemin = data.getTime().substring( 3, 5 );
+            String nowtimehour = data.getNowtime().substring( 0, 2 );
+            String nowtimemin = data.getNowtime().substring( 3, 5 );
+            Trestime.setText( restimehour + "시 " + restimemin + "분" );
+            Tcurrenttime.setText( nowtimehour + ":" + nowtimemin );
+            Tpeople.setText( data.getPeople() + "명" );
+            Tuid.setText( data.getUid() );
+
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                     Llayout.setBackground(ContextCompat.getDrawable(context,R.drawable.item_nowtime));
                     Aarrive.setBackground(ContextCompat.getDrawable(context,R.drawable.hollow_button_light_bolder));
@@ -222,7 +234,7 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
                 }
                 Tcurrenttime.setTextColor(ContextCompat.getColor(context,R.color.color_grey));
                 Tprefixtime.setTextColor(ContextCompat.getColor(context,R.color.color_grey));
-            }
+
         }
     }
 
@@ -372,18 +384,20 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
         date = new Date(now);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String Sgettime = sdf.format(date);
+        String Syear = Sgettime.substring(0,4);
         String Smonth = Sgettime.substring(5,7);
         String Sday = Sgettime.substring(8);
-        if(Smonth.substring(0,1).equals("0"))Smonth = Smonth.substring(1,2);
-        if(Sday.substring(0,1).equals("0"))Sday=Sday.substring(1,2);
 
+        /*
         String weekDay;
         // SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE", Locale.US); // 특정 언어로 출력하고 싶은 경우
         SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE", Locale.KOREA);
         Calendar calendar = Calendar.getInstance();
         weekDay = dayFormat.format(calendar.getTime());
 
+
         Sgettime = Smonth + "/" + Sday + " (" + weekDay + ")";
-        return Sgettime;
+        */
+        return Syear+"."+Smonth+"."+Sday;
     }
 }

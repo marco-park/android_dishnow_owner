@@ -91,14 +91,11 @@ public class CallActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-
-
         String resTimehour = resTime.substring(0,2);
         String resTimemin = resTime.substring(3,5);
         Ttimehour.setText(resTimehour);
         Ttimemin.setText(resTimemin);
         arrayList = ReservationArrayClass.getInstance(getApplicationContext()).getresArray();
-
 
         userInfoClass = UserInfoClass.getInstance(getApplicationContext());
         SharedPreferences shared_id = getSharedPreferences("shared_id", Activity.MODE_PRIVATE);
@@ -139,7 +136,7 @@ public class CallActivity extends AppCompatActivity {
             JsonObject prejsonobject = new JsonObject();
             prejsonobject.addProperty("res_id",res_id);
             prejsonobject.addProperty("user_id",intent.getStringExtra("user_id"));
-            prejsonobject.addProperty("res_name","향차이 중화비빔밥");
+            prejsonobject.addProperty("res_name",userInfoClass.getResname());
 
             JSONObject jsonObject_id = null;
             try {

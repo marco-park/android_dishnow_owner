@@ -117,6 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/signup_ownerid"
+            android:inputType="textEmailAddress"
             android:textColorHint="@color/color_bolder"
             android:hint="이메일을 입력하세요."
             android:fontFamily="@font/nanumsquareotfregular"

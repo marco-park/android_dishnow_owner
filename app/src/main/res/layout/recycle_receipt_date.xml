@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/color_light_bolder">
+    <TextView
+        android:id="@+id/receipt_date_txtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2019.03.02"
+        android:layout_marginLeft="15dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/nanumsquareotfregular"
+        android:textColor="#555555"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

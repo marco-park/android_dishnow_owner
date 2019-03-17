@@ -26,6 +26,7 @@
         android:textColor="#FFFFFF"
         android:text="for 사장님" />
     <EditText
+        android:inputType="textEmailAddress"
         android:imeOptions="actionNext"
         android:nextFocusForward="@+id/input"
         android:singleLine="true"

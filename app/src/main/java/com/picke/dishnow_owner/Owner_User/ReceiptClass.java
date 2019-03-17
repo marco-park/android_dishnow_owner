@@ -6,43 +6,81 @@ import java.util.ArrayList;
 
 public class ReceiptClass {
 
-    private static ReceiptClass reciptClass = null;
-    private ArrayList<ReservationClass> ReciptArray;
 
-    public ReceiptClass(Context context){
-        ReciptArray = new ArrayList<>();
+    private String res_id;
+    private String res_name;
+    private String user_id;
+    private String user_name;
+    private String res_people;
+    private String res_date;
+    private String res_time;
+    private String flag;
+
+
+    public void setRes_id(String res_id) {
+        this.res_id = res_id;
     }
 
-    public static ReceiptClass getInstance(Context context){
-        if(reciptClass==null){
-            reciptClass = new ReceiptClass(context);
-        }
-        return reciptClass;
+    public void setRes_name(String res_name) {
+        this.res_name = res_name;
     }
 
-    public ArrayList<ReservationClass> getresArray(){
-        return ReciptArray;
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 
-    public void res_add(ReservationClass reservationClass){
-        ReciptArray.add(reservationClass);
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
-    public void res_delete(String uid){
-        for(int i=0;i<ReciptArray.size();i++){
-            if(uid.equals(ReciptArray.get(i).getUid())){
-                ReciptArray.remove(i);
-                break;
-            }
-        }
+    public void setRes_people(String res_people) {
+        this.res_people = res_people;
     }
 
-    public ReservationClass get_resclass(String uid){
-        for(int i=0;i<ReciptArray.size();i++){
-            if(uid.equals(ReciptArray.get(i).getUid())){
-                return ReciptArray.get(i);
-            }
-        }
-        return null;
+    public void setRes_date(String res_date) {
+        this.res_date = res_date;
     }
+
+    public void setRes_time(String res_time) {
+        this.res_time = res_time;
+    }
+
+    public void setFlag(String flag) {
+        this.flag = flag;
+    }
+
+
+    public String getRes_id() {
+        return res_id;
+    }
+
+    public String getRes_name() {
+        return res_name;
+    }
+
+    public String getUser_id() {
+        return user_id;
+    }
+
+    public String getUser_name() {
+        return user_name;
+    }
+
+    public String getRes_people() {
+        return res_people;
+    }
+
+    public String getRes_date() {
+        return res_date;
+    }
+
+    public String getRes_time() {
+        return res_time;
+    }
+
+    public String getFlag() {
+        return flag;
+    }
+
+
 }

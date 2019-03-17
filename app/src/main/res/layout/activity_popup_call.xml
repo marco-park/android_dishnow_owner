@@ -93,7 +93,7 @@
                 android:layout_width="25dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="8dp"
-                android:background="@drawable/ic_icon_call"
+                android:background="@drawable/ic_icon_logo"
                 android:backgroundTint="#FFFFFF" />
             <TextView
                 android:gravity="center"
