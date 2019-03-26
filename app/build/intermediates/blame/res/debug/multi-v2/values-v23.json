@@ -4,7 +4,7 @@
             "outputFile": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bf85b9d391ae398864aa1b88dd2427a7/res/values-v23/values-v23.xml",
+                    "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c2ea1b2d883441138c54efd3d691831d/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/d323045ab93213a35a50903c8717b66a/res/values-v23/values-v23.xml",
+                    "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/8574a0594a57ebc485740f6b8b203260/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

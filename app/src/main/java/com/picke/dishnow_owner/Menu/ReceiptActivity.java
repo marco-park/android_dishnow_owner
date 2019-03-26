@@ -18,12 +18,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
-import com.kakao.usermgmt.response.model.User;
 import com.picke.dishnow_owner.Owner_User.ReceiptClass;
-import com.picke.dishnow_owner.Owner_User.ReservationClass;
 import com.picke.dishnow_owner.Owner_User.UserAuthClass;
 import com.picke.dishnow_owner.R;
-import com.picke.dishnow_owner.Utility.RecyclerAdapter_onwait;
 import com.picke.dishnow_owner.Utility.RecyclerAdapter_receipt;
 import com.picke.dishnow_owner.Utility.VolleySingleton;
 

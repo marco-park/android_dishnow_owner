@@ -21,8 +21,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
         android:layout_below="@+id/signin_title"
-        android:layout_alignEnd="@+id/signin_title"
         android:textColor="#FFFFFF"
         android:text="for 사장님" />
     <EditText

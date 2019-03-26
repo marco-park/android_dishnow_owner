@@ -62,7 +62,6 @@ public class VerificationActivity extends AppCompatActivity {
     private final Handler handler = new Handler();
     private Integer timer_minute = 3;
     private Integer timer_second = 0;
-    private int count=0;
 
     final String feed_url_signup = "http://claor123.cafe24.com/Owner_Signup.php";
     final String feed_url_phone = "http://claor123.cafe24.com/smspush.php";
@@ -133,7 +132,6 @@ public class VerificationActivity extends AppCompatActivity {
                 AlertDialog alert = builder.create();
                 //alert.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
                 alert.show();
-                count++;
 
                 Button positiveButton = alert.getButton(AlertDialog.BUTTON_POSITIVE);
                 LinearLayout parent = (LinearLayout) positiveButton.getParent();
@@ -205,7 +203,7 @@ public class VerificationActivity extends AppCompatActivity {
             else{
                 flag2=true;
             }
-            if(flag==true&&flag2==true&&count<=10) {
+            if(flag==true&&flag2==true) {
                 userAuthClass.setOwnername(Eonwername.getText().toString());
                 userAuthClass.setOwnerphone(Eownerphone.getText().toString());
                 requestQueue.add(StringRequest_signup);
@@ -217,25 +215,6 @@ public class VerificationActivity extends AppCompatActivity {
                 finish();
             }else if(flag==false){
                 Toast.makeText(getApplicationContext(),"인증번호를 입력해 주세요.", Toast.LENGTH_LONG).show();
-            }else if(count>10){
-                AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder
-                        .setMessage("인증번호 전송 횟수를 초과하였습니다. 고객센터로 연락해 주세요.")
-                        .setPositiveButton("확인",null)
-                        .setCancelable(false);
-                AlertDialog alert = builder.create();
-                //alert.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
-                alert.show();
-                count++;
-
-                Button positiveButton = alert.getButton(AlertDialog.BUTTON_POSITIVE);
-                LinearLayout parent = (LinearLayout) positiveButton.getParent();
-                parent.setGravity(Gravity.CENTER_HORIZONTAL);
-                View leftSpacer = parent.getChildAt(1);
-                leftSpacer.setVisibility(View.GONE);
-
-                TextView message = (TextView)alert.findViewById(android.R.id.message);
-                message.setGravity(Gravity.CENTER);
             }
         });
     }
