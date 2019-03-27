@@ -195,7 +195,7 @@ public class OnWaitActivity extends AppCompatActivity {
             }
         };
         Timer timer = new Timer();
-        timer.schedule(timerTask,10,1000);
+        timer.schedule(timerTask,10,1000*30);
 
 
         Lmy.setOnClickListener(v -> {

@@ -144,8 +144,14 @@ public class Registration_RestaurantActivity extends AppCompatActivity {
             Map<String, String> params = new HashMap<>();
             params.put("m_id",userInfoClass.getuId());
             params.put("m_ownername",userInfoClass.getOwnername());
+            if(userInfoClass.getLat().length()==0){params.put("m_lat","0");}
+            else{
             params.put("m_lat",userInfoClass.getLat());
-            params.put("m_lon",userInfoClass.getLon());
+            }
+            if(userInfoClass.getLon().length()==0){params.put("m_lon","0");}
+            else {
+                params.put("m_lon", userInfoClass.getLon());
+            }
             params.put("m_address",userInfoClass.getResaddress()+" "+userInfoClass.getResadd_detail());
             params.put("m_resname",userInfoClass.getResname());
             params.put("m_resnum",userInfoClass.getResid());

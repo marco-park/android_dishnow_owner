@@ -246,7 +246,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         };
         Timer timer = new Timer();
-        timer.schedule(timerTask, 1, 500);
+        timer.schedule(timerTask, 1, 1000*30);
     }
 
     private void getData() {

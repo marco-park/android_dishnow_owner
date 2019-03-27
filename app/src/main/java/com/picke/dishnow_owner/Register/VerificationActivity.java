@@ -60,8 +60,6 @@ public class VerificationActivity extends AppCompatActivity {
     private TimerTask second;
     private TextView Ttimer;
     private final Handler handler = new Handler();
-    private Integer timer_minute = 3;
-    private Integer timer_second = 0;
 
     final String feed_url_signup = "http://claor123.cafe24.com/Owner_Signup.php";
     final String feed_url_phone = "http://claor123.cafe24.com/smspush.php";
@@ -142,7 +140,6 @@ public class VerificationActivity extends AppCompatActivity {
                 TextView message = (TextView)alert.findViewById(android.R.id.message);
                 message.setGravity(Gravity.CENTER);
 
-                testStart();
             }
         }, new Response.ErrorListener() {
             @Override
@@ -227,39 +224,5 @@ public class VerificationActivity extends AppCompatActivity {
             }
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void testStart(){
-        second = new TimerTask() {
-            @Override
-            public void run() {
-                Update();
-                timer_second--;
-                if(timer_second<0){
-                    timer_second=59;
-                    timer_minute--;
-                }
-                if(timer_second==0&&timer_minute==0){
-                    timer_second=0;
-                    timer_minute=3;
-                    Toast.makeText(getApplicationContext(),"인증번호를 다시 받아주세요",Toast.LENGTH_LONG).show();
-                }
-            }
-        };
-        Timer timer = new Timer();
-        timer.schedule(second, 0, 1000);
-    }
-
-    protected void Update() {
-        Runnable updater = new Runnable() {
-            public void run() {
-                String second_show=Integer.toString(timer_second);
-                if(second_show.length()==1){
-                    second_show="0"+second_show;
-                }
-                Ttimer.setText(Integer.toString(timer_minute)+":"+second_show);
-            }
-        };
-        handler.post(updater);
     }
 }
