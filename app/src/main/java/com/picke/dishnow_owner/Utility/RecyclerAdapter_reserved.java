@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Build;
+import android.os.SystemClock;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
@@ -84,9 +85,9 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
                 long diff =System.currentTimeMillis()/1000-Long.valueOf(listData.get(i).getArriveSec());
                 aHolder.onBind(listData.get(i));
 
-                ((AHolder) viewHolder).Aarrive.setOnClickListener( new View.OnClickListener() {
+                ((AHolder) viewHolder).Aarrive.setOnClickListener(new OnSingleClickListener() {
                     @Override
-                    public void onClick(View v) {
+                    public void onSingleClick(View v) {
                         String day;
                         day = GetDay();
                         final StringRequest StringRequest1 = new StringRequest( Request.Method.POST, "http://dishnow.kr/ResHistoryPush.php", new Response.Listener<String>() {
@@ -116,14 +117,14 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
                         reservationClassArrayList.remove(i);
                         requestQueue.add(StringRequest1);
                     }
-                } );
+                });
                 break;
             case 1:
                 BHolder bHolder = (BHolder) viewHolder;
                 bHolder.onBind( listData.get(i));
-                ((BHolder) viewHolder).Barrive.setOnClickListener( new View.OnClickListener() {
+                ((BHolder) viewHolder).Barrive.setOnClickListener(new OnSingleClickListener() {
                     @Override
-                    public void onClick(View v) {
+                    public void onSingleClick(View v) {
                         String day;
                         day = GetDay();
                         final StringRequest StringRequest2 = new StringRequest( Request.Method.POST, "http://dishnow.kr/ResHistoryPush.php", new Response.Listener<String>() {
@@ -153,27 +154,26 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
                         reservationClassArrayList.remove( i );
                         requestQueue.add(StringRequest2);
                     }
-                } );
+                });
 
-                ((BHolder)viewHolder).Bnoarrive.setOnClickListener( new View.OnClickListener() {
+                ((BHolder)viewHolder).Bnoarrive.setOnClickListener(new OnSingleClickListener() {
                     private Context mContext;
                     private DialogInterface dlg;
 
                     @Override
-                    public void onClick(View v) {
-                        // 호출할 다이얼로그 함수를 정의한다.
+                    public void onSingleClick(View v) {
                         NotArrivedDialog notArrivedDialog  = new NotArrivedDialog( getContext() );
                         notArrivedDialog.setPosition( i );
                         notArrivedDialog.callFunction();
                     }
-                } );
+                });
+
                 break;
             default:
                 Log.d("asd","default");
                 break;
 
         }
-
     }
 
     @Override
@@ -399,5 +399,26 @@ public class RecyclerAdapter_reserved extends RecyclerView.Adapter<RecyclerView.
         Sgettime = Smonth + "/" + Sday + " (" + weekDay + ")";
         */
         return Syear+"."+Smonth+"."+Sday;
+    }
+
+    public abstract class OnSingleClickListener implements View.OnClickListener{
+        private static final long MIN_CLICK_INTERVAL=1000;
+        private long mLastClickTime;
+        public abstract void onSingleClick(View v);
+
+        @Override
+        public final void onClick(View v) {
+            long currentClickTime= SystemClock.uptimeMillis();
+            long elapsedTime=currentClickTime-mLastClickTime;
+            mLastClickTime=currentClickTime;
+
+            // 중복 클릭인 경우
+            if(elapsedTime<=MIN_CLICK_INTERVAL){
+                return;
+            }
+
+            // 중복 클릭아 아니라면 추상함수 호출
+            onSingleClick(v);
+        }
     }
 }

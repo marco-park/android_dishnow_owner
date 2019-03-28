@@ -39,7 +39,7 @@ import java.util.regex.Pattern;
 
 public class JoinActivity extends AppCompatActivity {
     private Button buttonsignup;
-    private AppCompatEditText Eownerid;
+    private EditText Eownerid;
     private EditText Eownerpassword;
     private EditText Eownerpassword2;
     private TextView errorid;

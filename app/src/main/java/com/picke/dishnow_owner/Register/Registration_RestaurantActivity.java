@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -37,8 +38,8 @@ public class Registration_RestaurantActivity extends AppCompatActivity {
 
     private EditText Eresname;
     private EditText Eresphone;
-    private EditText Eresaddress;
-    private EditText Eresadd_num;
+    private TextView Eresaddress;
+    private TextView Eresadd_num;
     private EditText Eresadd_detail;
     private Button Btfindaddress;
     private Button Btressignup;
@@ -55,9 +56,11 @@ public class Registration_RestaurantActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registration_restuarant);
 
         Eresname = findViewById(R.id.res_info_res_name);
+
         Eresphone = findViewById(R.id.res_info_resphone);
         Eresaddress = findViewById(R.id.res_info_address_edt);
         Eresadd_num = findViewById(R.id.res_info_address_num_edt);
+
         Eresadd_detail = findViewById(R.id.res_info_detail_address_edt);
         Btfindaddress = findViewById(R.id.res_info_search_address_btn);
         Btressignup = findViewById(R.id.res_info_register);
@@ -98,7 +101,10 @@ public class Registration_RestaurantActivity extends AppCompatActivity {
         });
 
         Btressignup.setOnClickListener(v -> {
-            if(Eresaddress.getText().toString().length()!=0 && Eresphone.getText().toString().length()!=0) {
+            if(Eresname.getText().toString().length()!=0 && Eresadd_detail.getText().toString().length()!=0 &&
+                    Eresadd_num.getText().toString().length()!=0 &&
+                    Eresaddress.getText().toString().length()!=0 && Eresphone.getText().toString().length()!=0) {
+
                 userInfoClass.setResphone(Eresphone.getText().toString());
                 userInfoClass.setResname(Eresname.getText().toString());
                 userInfoClass.setResadd_detail(Eresadd_detail.getText().toString());
@@ -119,15 +125,21 @@ public class Registration_RestaurantActivity extends AppCompatActivity {
                         userInfoClass.setLon(lon);
                     }
                 }
+
                 requestQueue.add(stringRequest2);
                 Intent intent = new Intent(Registration_RestaurantActivity.this, JudgingActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }else if(Eresaddress.getText().toString().length()==0){
                 Toast.makeText(getApplicationContext(), "주소를 입력해 주세요.", Toast.LENGTH_LONG).show();
-            }else{
+            }else if(Eresadd_num.getText().toString().length()==0) {
+                Toast.makeText(getApplicationContext(), "우편번호를 입력해 주세요.", Toast.LENGTH_LONG).show();
+            }else if(Eresadd_detail.getText().toString().length()==0) {
+                Toast.makeText(getApplicationContext(), "상세주소를 입력해 주세요.", Toast.LENGTH_LONG).show();
+            }else if(Eresname.getText().toString().length()==0) {
+                Toast.makeText(getApplicationContext(), "음식점 이름을 입력해 주세요.", Toast.LENGTH_LONG).show();
+            } else {
                 Toast.makeText(getApplicationContext(), "음식점 전화번호를 입력해 주세요.", Toast.LENGTH_LONG).show();
-
             }
             //TODO ALL PAGE MUST BE FINISHED
 
@@ -146,7 +158,7 @@ public class Registration_RestaurantActivity extends AppCompatActivity {
             params.put("m_ownername",userInfoClass.getOwnername());
             if(userInfoClass.getLat().length()==0){params.put("m_lat","0");}
             else{
-            params.put("m_lat",userInfoClass.getLat());
+                params.put("m_lat",userInfoClass.getLat());
             }
             if(userInfoClass.getLon().length()==0){params.put("m_lon","0");}
             else {

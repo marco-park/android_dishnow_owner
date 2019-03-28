@@ -148,7 +148,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/signup_ownerpassword"
-            android:hint="영문,숫자 8~20자를 입력하세요."
+            android:hint="영문,숫자 8~35자를 입력하세요."
             android:textSize="16sp"
             android:textColorHint="@color/color_bolder"
             android:inputType="textPassword"

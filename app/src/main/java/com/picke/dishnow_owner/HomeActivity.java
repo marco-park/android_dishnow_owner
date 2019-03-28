@@ -39,17 +39,11 @@ import java.util.TimerTask;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 
-
 public class HomeActivity extends AppCompatActivity {
 
-    String feed_url = "http://claor123.cafe24.com/Callout.php";
     private static final String TAG = "claor123";
-    public String start;
-    boolean Start = false;
     public Intent intent;
-    private TextView tv;
     static public Socket mSocket;
-    Handler handler = null;
     String res_id;
     private Vibrator vibrator;
     private LinearLayout Lreservation;
@@ -65,7 +59,7 @@ public class HomeActivity extends AppCompatActivity {
     private TextView Tmy;
     private TextView Thomeshow;
     private TimerTask timerTask;
-    //
+    private Timer timer;
 
     private UserInfoClass userInfoClass;
     private ReservationArrayClass reservationArrayClass;
@@ -78,7 +72,6 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        tv = findViewById(R.id.main_show);
         vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
         Thomeshow = findViewById(R.id.main_show);
 
@@ -126,7 +119,6 @@ public class HomeActivity extends AppCompatActivity {
 
         adapter_reserved = new RecyclerAdapter_reserved();
         recyclerView.setAdapter(adapter_reserved);
-
 
         try {
             mSocket = IO.socket("http://ec2-18-218-206-167.us-east-2.compute.amazonaws.com:3000");
@@ -195,26 +187,20 @@ public class HomeActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        Lwaitmatching.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this,OnWaitActivity.class);
-                startActivity(intent);
-                overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
-                finish();
-                overridePendingTransition(R.xml.anim_slide_in_right, R.xml.anim_slide_out_left);
+        Lwaitmatching.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this,OnWaitActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
+            finish();
+            overridePendingTransition(R.xml.anim_slide_in_right, R.xml.anim_slide_out_left);
 
-            }
         });
-        Lmy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this,MyActivity.class);
-                startActivity(intent);
-                overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
-                finish();
-                overridePendingTransition(R.xml.anim_slide_in_right ,R.xml.anim_slide_out_left);
-            }
+        Lmy.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this,MyActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.xml.anim_slide_in_left, R.xml.anim_slide_out_right);
+            finish();
+            overridePendingTransition(R.xml.anim_slide_in_right ,R.xml.anim_slide_out_left);
         });
 
         timerTask = new TimerTask() {
@@ -242,15 +228,14 @@ public class HomeActivity extends AppCompatActivity {
                         }
                     }
                     adapter_reserved.notifyDataSetChanged();
-                } );
+                });
             }
         };
-        Timer timer = new Timer();
-        timer.schedule(timerTask, 1, 1000*30);
+        timer = new Timer();
+        timer.schedule(timerTask, 100, 1000*2);
     }
 
     private void getData() {
-
         for(int i=0;i<final_list.size();i++){
             ReservationClass reservationClass = new ReservationClass();
             reservationClass.setTime( final_list.get( i ).getTime() );
@@ -274,12 +259,46 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public void onPause(){
         super.onPause();
+        timerTask.cancel();
+        timer.cancel();
         mSocket.disconnect();
     }
 
     @Override
     public void onResume(){
         super.onResume();
+        /*
+        timerTask = new TimerTask() {
+            @Override
+            public void run() {
+                runOnUiThread( () -> {
+                    //adapter비워주기
+                    try{adapter_reserved.clearItem();}
+                    catch (Exception e ){e.printStackTrace();}
+                    getData();
+                    //리스팅
+                    if (final_list.size() != 0) {
+                        for (int i = 0; i < final_list.size(); i++) {
+                            long now = System.currentTimeMillis() / 1000; //현재시간 저장
+                            long arrivetime = Long.valueOf(final_list.get( i ).getArriveSec() );
+
+                            if (now - arrivetime >= 10*60) {
+                                try {
+                                    final_list.get(i).setItemViewBType();
+                                    adapter_reserved.setItemViewBType( i );
+                                }catch (Exception e){
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    }
+                    adapter_reserved.notifyDataSetChanged();
+                });
+            }
+        };
+        timer = new Timer();
+        timer.schedule(timerTask, 1, 1000*10);
+        */
         JsonObject prejsonobject = new JsonObject();
         prejsonobject.addProperty("res_id", res_id);
         prejsonobject.addProperty("res_token",userInfoClass.getOwnertoken());

@@ -141,7 +141,7 @@ public class SigninActivity extends AppCompatActivity {
                         finish();
                     }
                 }else{
-                    wronginput.setText("이메일 또는 비밀번호가 일치하지 않습니다.");
+                    runOnUiThread(() -> wronginput.setText("이메일 또는 비밀번호가 일치하지 않습니다."));
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -228,7 +228,12 @@ public class SigninActivity extends AppCompatActivity {
                         }
 
                     }else{
-                        wronginput.setText("이메일 또는 비밀번호가 일치하지 않습니다.");
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                wronginput.setText("이메일 또는 비밀번호가 일치하지 않습니다.");
+                            }
+                        });
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

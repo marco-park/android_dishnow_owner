@@ -1242,6 +1242,7 @@ id group_divider
 id groups
 id home
 id homeAsUp
+id home_fab
 id icon
 id icon_group
 id icon_only

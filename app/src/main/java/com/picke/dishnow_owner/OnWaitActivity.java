@@ -58,6 +58,8 @@ public class OnWaitActivity extends AppCompatActivity {
     private UserInfoClass userInfoClass;
     private ReservationArrayClass reservationArrayClass;
     private TextView Tonwaitshow;
+    private Timer timer;
+    private TimerTask timerTask;
     Handler handler = null;
 
     @Override
@@ -87,7 +89,6 @@ public class OnWaitActivity extends AppCompatActivity {
         Imy.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
         Tmy.setTextColor(getResources().getColor(R.color.color_bolder));
 
-        handler = new Handler();
 
         vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
         userInfoClass = UserInfoClass.getInstance(getApplicationContext());
@@ -171,7 +172,7 @@ public class OnWaitActivity extends AppCompatActivity {
         adapter = new RecyclerAdapter_onwait();
         recyclerView.setAdapter(adapter);
 
-        TimerTask timerTask= new TimerTask() {
+        timerTask= new TimerTask() {
             @Override
             public void run() {
                 runOnUiThread(()-> {
@@ -194,8 +195,8 @@ public class OnWaitActivity extends AppCompatActivity {
                 });
             }
         };
-        Timer timer = new Timer();
-        timer.schedule(timerTask,10,1000*30);
+        timer = new Timer();
+        timer.schedule(timerTask,100,1000*2);
 
 
         Lmy.setOnClickListener(v -> {
@@ -237,6 +238,8 @@ public class OnWaitActivity extends AppCompatActivity {
     public void onPause(){
         super.onPause();
         mSocket.disconnect();
+        timer.cancel();
+        timerTask.cancel();
     }
 
     @Override
@@ -251,6 +254,33 @@ public class OnWaitActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        /*
+        timerTask= new TimerTask() {
+            @Override
+            public void run() {
+                runOnUiThread(()-> {
+                    adapter.clearItem();
+                    getData();
+                    arrayList = ReservationArrayClass.getInstance(getApplicationContext()).getresArray();
+                    long now = System.currentTimeMillis()/1000;
+                    for(int i=0;i<arrayList.size();i++){
+                        if((now-arrayList.get(i).getNowsecond())>=30){
+                            reservationArrayClass.res_delete(arrayList.get(i).getUid());
+                            adapter.removeItem(i);
+                        }
+                    }
+                    adapter.notifyDataSetChanged();
+                    if(adapter.getItemCount()!=0){
+                        Tonwaitshow.setText("");
+                    }else{
+                        Tonwaitshow.setText("내역이 없습니다.");
+                    }
+                });
+            }
+        };
+        timer = new Timer();
+        timer.schedule(timerTask,10,1000*10);
+        */
         mSocket.emit("res_id", jsonObject_id);
         mSocket.connect();
     }
