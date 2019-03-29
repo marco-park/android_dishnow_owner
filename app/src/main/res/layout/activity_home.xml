@@ -24,17 +24,7 @@
         android:layout_height="match_parent"
         android:background="#00ff0000"
         />
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/home_fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="15dp"
-        android:layout_marginRight="20dp"
-        android:backgroundTint="#ffffff"
-        android:background="@drawable/ic_icon_call"
-        android:visibility="visible"
-        />
+
 
     <RelativeLayout
         android:id="@+id/main_bottom"
