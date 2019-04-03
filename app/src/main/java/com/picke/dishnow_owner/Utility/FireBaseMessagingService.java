@@ -17,6 +17,7 @@ import android.util.Log;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.picke.dishnow_owner.HomeActivity;
+import com.picke.dishnow_owner.Owner_User.UserAuthClass;
 import com.picke.dishnow_owner.R;
 
 public class FireBaseMessagingService extends FirebaseMessagingService {
@@ -70,7 +71,7 @@ public class FireBaseMessagingService extends FirebaseMessagingService {
         }
 
         SharedPreferences push =  getSharedPreferences("push", Activity.MODE_PRIVATE);
-        if(push.getString("v1.0",null)==null) {
+        if(push.getString("v1.0",null)==null){
             SharedPreferences.Editor epush = push.edit();
             epush.putString("v1.0", "true");
             epush.commit();

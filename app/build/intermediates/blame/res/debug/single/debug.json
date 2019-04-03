@@ -960,6 +960,10 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c2ea1b2d883441138c54efd3d691831d/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_ic_icon_call_white.xml.flat",
+        "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/drawable/ic_icon_call_white.xml"
+    },
+    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c2ea1b2d883441138c54efd3d691831d/res/anim/abc_popup_exit.xml"
     },

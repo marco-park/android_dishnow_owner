@@ -126,6 +126,7 @@ public class HomeActivity extends AppCompatActivity {
                 JsonObject prejsonobject = new JsonObject();
                 prejsonobject.addProperty("res_id",res_id);
                 prejsonobject.addProperty("res_token",userInfoClass.getOwnertoken());
+                prejsonobject.addProperty("is_call","true");
                 JSONObject jsonObject_id = null;
                 try{
                     jsonObject_id = new JSONObject(prejsonobject.toString());
@@ -232,7 +233,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         };
         timer = new Timer();
-        timer.schedule(timerTask, 100, 1000*2);
+        timer.schedule(timerTask, 100, 500);
     }
 
     private void getData() {
@@ -267,41 +268,11 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public void onResume(){
         super.onResume();
-        /*
-        timerTask = new TimerTask() {
-            @Override
-            public void run() {
-                runOnUiThread( () -> {
-                    //adapter비워주기
-                    try{adapter_reserved.clearItem();}
-                    catch (Exception e ){e.printStackTrace();}
-                    getData();
-                    //리스팅
-                    if (final_list.size() != 0) {
-                        for (int i = 0; i < final_list.size(); i++) {
-                            long now = System.currentTimeMillis() / 1000; //현재시간 저장
-                            long arrivetime = Long.valueOf(final_list.get( i ).getArriveSec() );
-
-                            if (now - arrivetime >= 10*60) {
-                                try {
-                                    final_list.get(i).setItemViewBType();
-                                    adapter_reserved.setItemViewBType( i );
-                                }catch (Exception e){
-                                    e.printStackTrace();
-                                }
-                            }
-                        }
-                    }
-                    adapter_reserved.notifyDataSetChanged();
-                });
-            }
-        };
-        timer = new Timer();
-        timer.schedule(timerTask, 1, 1000*10);
-        */
         JsonObject prejsonobject = new JsonObject();
         prejsonobject.addProperty("res_id", res_id);
         prejsonobject.addProperty("res_token",userInfoClass.getOwnertoken());
+        prejsonobject.addProperty("is_call","true");
+
         JSONObject jsonObject_id = null;
         try {
             jsonObject_id = new JSONObject(prejsonobject.toString());

@@ -10,13 +10,16 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Vibrator;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -60,7 +63,7 @@ public class OnWaitActivity extends AppCompatActivity {
     private TextView Tonwaitshow;
     private Timer timer;
     private TimerTask timerTask;
-    Handler handler = null;
+    private FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +79,8 @@ public class OnWaitActivity extends AppCompatActivity {
         Iwaitmatching = findViewById(R.id.onwiat_matching_imageview);
         Twaitmatching = findViewById(R.id.onwait_matching_txtview);
 
+        floatingActionButton = findViewById(R.id.on_wait_floating_btn_call);
+
         Lmy = findViewById(R.id.onwait_mymenulayout);
         Imy = findViewById(R.id.onwait_my_imageview);
         Tmy = findViewById(R.id.onwait_my_txtview);
@@ -89,7 +94,6 @@ public class OnWaitActivity extends AppCompatActivity {
         Imy.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder),PorterDuff.Mode.SRC_ATOP);
         Tmy.setTextColor(getResources().getColor(R.color.color_bolder));
 
-
         vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
         userInfoClass = UserInfoClass.getInstance(getApplicationContext());
         SharedPreferences shared_id = getSharedPreferences("shared_id", Activity.MODE_PRIVATE);
@@ -100,6 +104,57 @@ public class OnWaitActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
         reservationArrayClass = ReservationArrayClass.getInstance(getApplicationContext());
         arrayList = ReservationArrayClass.getInstance(getApplicationContext()).getresArray();
+        SharedPreferences push = getSharedPreferences("v1.0", Activity.MODE_PRIVATE);
+
+        if(push.getString("background","true").equals("true")) {
+            floatingActionButton.getBackground().setColorFilter(getResources().getColor(R.color.color_violet),PorterDuff.Mode.SRC_ATOP);
+            floatingActionButton.setBackgroundDrawable( getResources().getDrawable(R.drawable.ic_icon_call_white));
+        }else {
+            floatingActionButton.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
+            floatingActionButton.setBackgroundDrawable( getResources().getDrawable(R.drawable.ic_icon_call_white) );
+        }
+
+        floatingActionButton.setOnClickListener(v -> {
+            floatingActionButton.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
+            floatingActionButton.setBackgroundDrawable( getResources().getDrawable(R.drawable.ic_icon_call_white));
+            if(push.getString("background","true").equals("true")) {
+                SharedPreferences.Editor epush1 = push.edit();
+                epush1.putString("background", "false");
+                epush1.commit();
+                JsonObject prejsonobject = new JsonObject();
+                prejsonobject.addProperty("res_id", res_id);
+                prejsonobject.addProperty("res_token",userInfoClass.getOwnertoken());
+                prejsonobject.addProperty("is_call",push.getString("background","false"));
+                JSONObject jsonObject_id = null;
+                try {
+                    jsonObject_id = new JSONObject(prejsonobject.toString());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                mSocket.emit("res_id", jsonObject_id);
+                mSocket.connect();
+                Toast.makeText(getApplicationContext(),"콜을 중지합니다.",Toast.LENGTH_SHORT).show();
+            }else {
+                floatingActionButton.getBackground().setColorFilter(getResources().getColor(R.color.color_violet),PorterDuff.Mode.SRC_ATOP);
+                floatingActionButton.setBackgroundDrawable( getResources().getDrawable(R.drawable.ic_icon_call_white) );
+                SharedPreferences.Editor epush2 = push.edit();
+                epush2.putString("background", "true");
+                epush2.commit();
+                JsonObject prejsonobject = new JsonObject();
+                prejsonobject.addProperty("res_id", res_id);
+                prejsonobject.addProperty("res_token",userInfoClass.getOwnertoken());
+                prejsonobject.addProperty("is_call",push.getString("background","true"));
+                JSONObject jsonObject_id = null;
+                try {
+                    jsonObject_id = new JSONObject(prejsonobject.toString());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                mSocket.emit("res_id", jsonObject_id);
+                mSocket.connect();
+                Toast.makeText(getApplicationContext(),"콜을 재개합니다.",Toast.LENGTH_SHORT).show();
+            }
+        });
 
         try {
             mSocket = IO.socket("http://ec2-18-218-206-167.us-east-2.compute.amazonaws.com:3000");
@@ -107,6 +162,7 @@ public class OnWaitActivity extends AppCompatActivity {
                 JsonObject prejsonobject = new JsonObject();
                 prejsonobject.addProperty("res_id",res_id);
                 prejsonobject.addProperty("res_token",userInfoClass.getOwnertoken());
+                prejsonobject.addProperty("is_call",push.getString("background","true"));
                 JSONObject jsonObject_id = null;
                 try{
                     jsonObject_id = new JSONObject(prejsonobject.toString());
@@ -181,7 +237,7 @@ public class OnWaitActivity extends AppCompatActivity {
                     arrayList = ReservationArrayClass.getInstance(getApplicationContext()).getresArray();
                     long now = System.currentTimeMillis()/1000;
                     for(int i=0;i<arrayList.size();i++){
-                        if((now-arrayList.get(i).getNowsecond())>=30){
+                        if((now-arrayList.get(i).getNowsecond())>=10*60){
                             reservationArrayClass.res_delete(arrayList.get(i).getUid());
                             adapter.removeItem(i);
                         }
@@ -196,7 +252,7 @@ public class OnWaitActivity extends AppCompatActivity {
             }
         };
         timer = new Timer();
-        timer.schedule(timerTask,100,1000*2);
+        timer.schedule(timerTask,100,1000*3);
 
 
         Lmy.setOnClickListener(v -> {
@@ -248,39 +304,14 @@ public class OnWaitActivity extends AppCompatActivity {
         JsonObject prejsonobject = new JsonObject();
         prejsonobject.addProperty("res_id", res_id);
         prejsonobject.addProperty("res_token",userInfoClass.getOwnertoken());
+        prejsonobject.addProperty("is_call",getSharedPreferences("v1.0",MODE_PRIVATE).getString("background","true"));
         JSONObject jsonObject_id = null;
         try {
             jsonObject_id = new JSONObject(prejsonobject.toString());
         } catch (Exception e) {
             e.printStackTrace();
         }
-        /*
-        timerTask= new TimerTask() {
-            @Override
-            public void run() {
-                runOnUiThread(()-> {
-                    adapter.clearItem();
-                    getData();
-                    arrayList = ReservationArrayClass.getInstance(getApplicationContext()).getresArray();
-                    long now = System.currentTimeMillis()/1000;
-                    for(int i=0;i<arrayList.size();i++){
-                        if((now-arrayList.get(i).getNowsecond())>=30){
-                            reservationArrayClass.res_delete(arrayList.get(i).getUid());
-                            adapter.removeItem(i);
-                        }
-                    }
-                    adapter.notifyDataSetChanged();
-                    if(adapter.getItemCount()!=0){
-                        Tonwaitshow.setText("");
-                    }else{
-                        Tonwaitshow.setText("내역이 없습니다.");
-                    }
-                });
-            }
-        };
-        timer = new Timer();
-        timer.schedule(timerTask,10,1000*10);
-        */
+
         mSocket.emit("res_id", jsonObject_id);
         mSocket.connect();
     }

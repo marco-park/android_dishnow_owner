@@ -1060,6 +1060,7 @@ drawable hollow_buuton_white
 drawable ic_bubble
 drawable ic_dot
 drawable ic_icon_call
+drawable ic_icon_call_white
 drawable ic_icon_check
 drawable ic_icon_checkcircle
 drawable ic_icon_judge
@@ -1242,7 +1243,6 @@ id group_divider
 id groups
 id home
 id homeAsUp
-id home_fab
 id icon
 id icon_group
 id icon_only
@@ -1307,6 +1307,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id on_wait_floating_btn_call
 id onwait_bottom
 id onwait_matching_txtview
 id onwait_my_imageview
